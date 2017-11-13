@@ -112,6 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Capstone Project/Assets/Scene/Main.unity
 --- !u!1 &335578990
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +259,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of d5e9ed8... Added Script, Scene and Audio Folder:Capstone Project/Assets/Main.unity
 --- !u!1 &1812082767
 GameObject:
   m_ObjectHideFlags: 0
