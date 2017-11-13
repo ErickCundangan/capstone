@@ -275,7 +275,10 @@ GameObject:
   - component: {fileID: 1666960153}
   - component: {fileID: 1666960152}
   - component: {fileID: 1666960154}
+<<<<<<< HEAD
+=======
   - component: {fileID: 1666960155}
+>>>>>>> 10da87a288fa83bec25b14339a17ad4f1cf6f2fd
   m_Layer: 0
   m_Name: Heneral Luna
   m_TagString: Untagged
@@ -352,6 +355,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+<<<<<<< HEAD
+=======
 --- !u!95 &1666960155
 Animator:
   serializedVersion: 3
@@ -369,3 +374,4 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+>>>>>>> 10da87a288fa83bec25b14339a17ad4f1cf6f2fd
