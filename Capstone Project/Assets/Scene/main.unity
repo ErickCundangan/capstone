@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 1666960154}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   - component: {fileID: 1666960155}
 >>>>>>> 10da87a288fa83bec25b14339a17ad4f1cf6f2fd
@@ -285,6 +286,9 @@ GameObject:
 >>>>>>> parent of 884b57f... Player Animation
 =======
 >>>>>>> parent of e2d0f17... Merge branch 'master' of https://github.com/ErickCundangan/capstone
+=======
+  - component: {fileID: 1666960155}
+>>>>>>> parent of 6ff8995... Merge branch 'master' of https://github.com/ErickCundangan/capstone
   m_Layer: 0
   m_Name: Heneral Luna_1
   m_TagString: Untagged
@@ -364,7 +368,10 @@ MonoBehaviour:
   moveSpeed: 5
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 6ff8995... Merge branch 'master' of https://github.com/ErickCundangan/capstone
 --- !u!95 &1666960155
 Animator:
   serializedVersion: 3
@@ -382,8 +389,11 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+<<<<<<< HEAD
 >>>>>>> 10da87a288fa83bec25b14339a17ad4f1cf6f2fd
 =======
 >>>>>>> parent of 884b57f... Player Animation
 =======
 >>>>>>> parent of e2d0f17... Merge branch 'master' of https://github.com/ErickCundangan/capstone
+=======
+>>>>>>> parent of 6ff8995... Merge branch 'master' of https://github.com/ErickCundangan/capstone
