@@ -47,9 +47,14 @@ TagManager:
   - name: Player
     uniqueID: 440856719
     locked: 0
+<<<<<<< HEAD
   - name: background
     uniqueID: 2545932645
     locked: 0
   - name: login
     uniqueID: 3569842171
+=======
+  - name: WorldObjects
+    uniqueID: 697431673
+>>>>>>> 66cf0a9b52627f70148fdfd5956f6af805d70f31
     locked: 0
