@@ -54,13 +54,13 @@ public class Quiz_script : MonoBehaviour {
 		"47.\t In the Philippine flag, what symbolizes Filipino’s hope for equality",
 		"48.\t The red stripe found in the Philippine flag symbolizes ____.",
 		"49.\t The blue stripe found in the Philippine flag symbolizes ______.",
-		"     What is the favorite article of General Antonio Luna when implementing discipline to Filipino soldiers."
+		"50.\t What is the favorite article of General Antonio Luna when implementing discipline to Filipino soldiers."
 	};
 
 	// Use this for initialization
 	void Start () {
       //  GetComponent<TextMesh>().text = questions[0];
-		GetComponent<Text>().text = questions[49].ToString();
+		GetComponent<Text>().text = questions[9].ToString();
 	}
 	
 	// Update is called once per frame

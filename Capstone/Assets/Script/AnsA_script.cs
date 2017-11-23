@@ -61,7 +61,7 @@ public class AnsA_script : MonoBehaviour{
     void Start()
     {
 		//  GetComponent<TextMesh>().text = questions[0];
-		GetComponent<Text>().text = ChoicesA[49].ToString();
+		GetComponent<Text>().text = ChoicesA[9].ToString();
 
     }
 

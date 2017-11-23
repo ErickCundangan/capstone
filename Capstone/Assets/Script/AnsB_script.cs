@@ -61,7 +61,7 @@ public class AnsB_script : MonoBehaviour{
     void Start()
     {
 		//  GetComponent<TextMesh>().text = questions[0];
-		GetComponent<Text>().text = ChoiceB[49].ToString();
+		GetComponent<Text>().text = ChoiceB[9].ToString();
     }
 
     // Update is called once per frame
