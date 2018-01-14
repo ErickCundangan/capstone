@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 146ef279545c6ff4cbc242e2dec89ba4
 folderAsset: yes
+<<<<<<< HEAD
 timeCreated: 1511845347
+=======
+timeCreated: 1510641575
+>>>>>>> Temp
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

@@ -13,8 +13,13 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - First Map
   - Second Map
+=======
+  - background
+  - 
+>>>>>>> Temp
   - 
   - 
   - 
@@ -41,9 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 2390767459
+  - name: background
+    uniqueID: 1353325647
     locked: 0
-  - name: Player
-    uniqueID: 440856719
+  - name: player
+    uniqueID: 62506643
     locked: 0
