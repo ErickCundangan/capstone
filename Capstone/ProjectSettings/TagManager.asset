@@ -47,3 +47,6 @@ TagManager:
   - name: player
     uniqueID: 62506643
     locked: 0
+  - name: scroll
+    uniqueID: 4022879555
+    locked: 0
