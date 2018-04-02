@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/Maze/Maze_EntryLevel.unity
+    guid: be6b1b42217167e4d9c828f1501c468e
+  - enabled: 1
+    path: Assets/Scene/Maze/Maze_Level_1.unity
+    guid: e03a6d55029acdc4192077db5ed20db7
+  - enabled: 1
+    path: Assets/Scene/Maze/Maze_Level_3.unity
+    guid: 70810df980bac1c45b57add3a61dbacd
