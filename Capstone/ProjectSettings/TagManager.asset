@@ -44,9 +44,14 @@ TagManager:
   - name: background
     uniqueID: 1353325647
     locked: 0
+<<<<<<< HEAD
   - name: ground
     uniqueID: 3121727889
     locked: 0
   - name: player
     uniqueID: 3891659927
+=======
+  - name: player
+    uniqueID: 62506643
+>>>>>>> 08451d4e264fb58afae29b06fc24bef71181b25a
     locked: 0
