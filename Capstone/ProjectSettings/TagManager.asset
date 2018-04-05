@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
+=======
+  - name: background
+    uniqueID: 1353325647
+    locked: 0
+  - name: player
+    uniqueID: 62506643
+    locked: 0
+  - name: scroll
+    uniqueID: 4022879555
+    locked: 0
+>>>>>>> master
