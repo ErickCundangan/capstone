@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Maze/Maze_Level_3.unity
     guid: 70810df980bac1c45b57add3a61dbacd
+  - enabled: 1
+    path: Assets/Scene/Maze/Maze_Level_4.unity
+    guid: f66fe655eb525374fa82fab0398c1a1e

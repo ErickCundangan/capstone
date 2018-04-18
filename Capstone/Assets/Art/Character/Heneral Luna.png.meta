@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e666aca9eb117944ab2267b8f450f9a1
-timeCreated: 1510566468
+timeCreated: 1522943499
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -102,12 +102,12 @@ TextureImporter:
       name: Heneral Luna_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 144
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -116,12 +116,12 @@ TextureImporter:
       name: Heneral Luna_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 56
         y: 144
-        width: 48
-        height: 48
+        width: 33
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,12 +130,12 @@ TextureImporter:
       name: Heneral Luna_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 104
         y: 144
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: Heneral Luna_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 96
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: Heneral Luna_4
       rect:
         serializedVersion: 2
-        x: 48
+        x: 56
         y: 96
-        width: 48
-        height: 48
+        width: 33
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: Heneral Luna_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 104
         y: 96
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: Heneral Luna_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 48
-        width: 48
-        height: 48
+        width: 34
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: Heneral Luna_7
       rect:
         serializedVersion: 2
-        x: 48
+        x: 54
         y: 48
-        width: 48
-        height: 48
+        width: 33
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: Heneral Luna_8
       rect:
         serializedVersion: 2
-        x: 96
+        x: 102
         y: 48
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Heneral Luna_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: Heneral Luna_10
       rect:
         serializedVersion: 2
-        x: 48
+        x: 54
         y: 0
-        width: 48
-        height: 48
+        width: 33
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Heneral Luna_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 102
         y: 0
-        width: 48
-        height: 48
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
