@@ -33,7 +33,7 @@ public class LoadNewArea : MonoBehaviour {
         //Timer counter
         if (!stopTime)
         {
-            if (timeLeft < 0)
+            if (timeLeft == 0 || timeLeft < 0)
             {
                 stopTime = true;
                 Debug.Log("Game Over");
