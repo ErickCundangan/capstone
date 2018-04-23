@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class dialogueHolder : MonoBehaviour {
+public class DialogueHolder : MonoBehaviour {
     //DialogueSnippet delcarations
     private DialogueManager dManager;
 
@@ -15,7 +15,7 @@ public class dialogueHolder : MonoBehaviour {
     private bool    playerInsideTrigger = false;
 
     public  int     exitHolder;
-
+    
     // Use this for initialization
     void Start () {
         dManager = FindObjectOfType<DialogueManager>();

@@ -22,10 +22,10 @@ public class DialogueManager : MonoBehaviour {
     public int currentLine;
 
     public Animator animator;
-    PlayerController thePlayer;
+    public PlayerController thePlayer;
 
     private LoadNewArea LNArea;
-
+    
     // Use this for initialization
     void Start () {
         dBox.SetActive(false);
@@ -42,6 +42,8 @@ public class DialogueManager : MonoBehaviour {
     {
         dialogActive = true;
         dBox.SetActive(true);
+
+        LNArea.stopTime = true;
         LNArea.ExitCounter += exitValue;
 
         if (currentLine == 0)
@@ -83,6 +85,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void Close()
     {
+        LNArea.stopTime = false;
         animator.SetBool("IsOpen", false);
         thePlayer.canMove = true;
     }

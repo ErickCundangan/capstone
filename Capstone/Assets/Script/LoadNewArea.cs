@@ -13,7 +13,7 @@ public class LoadNewArea : MonoBehaviour {
     public  float   timeLeft;
     private float   minutes;
     private float   seconds;
-    private bool    stopTime = false;
+    public bool    stopTime = false;
 
     public  Text    counter;
     public  Text    timeCounter;
@@ -53,7 +53,7 @@ public class LoadNewArea : MonoBehaviour {
     //Entry to next level
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.name == "Heneral Luna") {
-            if (ExitCounter == 2)
+            if (ExitCounter == 4)
             {
                 SceneManager.LoadScene(levelToLoad);
             }
