@@ -3,14 +3,12 @@ using UnityEngine;
 
 public class MovementNPC : MonoBehaviour
 {
-
     public float movementSpeed;
     private Vector2 minWalkPoint;
     private Vector2 maxWalkPoint;
 
     private Rigidbody2D myRigidBody;
-
-    [SerializeField]
+    
     public bool isWalking;
 
     public float walkTime;
@@ -29,10 +27,12 @@ public class MovementNPC : MonoBehaviour
     private Vector2 tempMove;
     private Vector2 lastMove;
     
-    public bool playerMoving;
+    public bool npcsMoving;
     private bool isTalk;
 
-    private bool playerInsideTrigger = false;
+    private DialogueManager dialogManager;
+    GameObject NPC;
+    //private bool playerInsideTrigger = false;
 
     // Use this for initialization
     void Start()
@@ -40,10 +40,12 @@ public class MovementNPC : MonoBehaviour
         anim = GetComponent<Animator>();
 
         myRigidBody = GetComponent<Rigidbody2D>();
+        dialogManager = FindObjectOfType<DialogueManager>();
+        NPC = FindObjectOfType<GameObject>();
 
         waitCounter = waitTime;
         walkCounter = walkTime;
-
+        isWalking = true;
         ChooseDirection();
 
         if (walkZone != null)
@@ -57,59 +59,66 @@ public class MovementNPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isWalking)
+        if (isWalking)                              //is the NPC animating?
         {
-            walkCounter -= Time.deltaTime;
-
-            switch (WalkDirection)
+            if (dialogManager.thePlayer.canMove)    //check if player is talking to NPC    
             {
-                case 0: //UP
-                    playerMoving = true;
-                    myRigidBody.velocity = new Vector2(0, movementSpeed);
-                    tempMove = new Vector2(0, 1);
-                    if (hasWalkZone && myRigidBody.position.y > maxWalkPoint.y)
-                    {
-                        isWalking = false;
-                        waitCounter = waitTime;
+                walkCounter -= Time.deltaTime;
 
-                    }
-                    break;
-                case 1://RIGHT
-                    playerMoving = true;
-                    myRigidBody.velocity = new Vector2(movementSpeed, 0);
-                    tempMove = new Vector2(1, 0);
-                    if (hasWalkZone && myRigidBody.position.x > maxWalkPoint.x)
-                    {
-                        isWalking = false;
-                        waitCounter = waitTime;
-                    }
-                    break;
-                case 2://DOWN
-                    playerMoving = true;
-                    myRigidBody.velocity = new Vector2(0, -movementSpeed);
-                    tempMove = new Vector2(0, -1);
-                    if (hasWalkZone && myRigidBody.position.y < minWalkPoint.y)
-                    {
-                        isWalking = false;
-                        waitCounter = waitTime;
-                    }
-                    break;
-                case 3://LEFT
-                    playerMoving = true;
-                    myRigidBody.velocity = new Vector2(-movementSpeed, 0);
-                    tempMove = new Vector2(-1, 0);
-                    if (hasWalkZone && myRigidBody.position.x < minWalkPoint.x)
-                    {
-                        isWalking = false;
-                        waitCounter = waitTime;
-                    }
-                    break;
+                switch (WalkDirection)
+                {
+                    case 0: //UP
+                        npcsMoving = true;
+                        myRigidBody.velocity = new Vector2(0, movementSpeed);
+                        tempMove = new Vector2(0, 1);
+                        if (hasWalkZone && myRigidBody.position.y > maxWalkPoint.y)
+                        {
+                            isWalking = false;
+                            waitCounter = waitTime;
+
+                        }
+                        break;
+                    case 1://RIGHT
+                        npcsMoving = true;
+                        myRigidBody.velocity = new Vector2(movementSpeed, 0);
+                        tempMove = new Vector2(1, 0);
+                        if (hasWalkZone && myRigidBody.position.x > maxWalkPoint.x)
+                        {
+                            isWalking = false;
+                            waitCounter = waitTime;
+                        }
+                        break;
+                    case 2://DOWN
+                        npcsMoving = true;
+                        myRigidBody.velocity = new Vector2(0, -movementSpeed);
+                        tempMove = new Vector2(0, -1);
+                        if (hasWalkZone && myRigidBody.position.y < minWalkPoint.y)
+                        {
+                            isWalking = false;
+                            waitCounter = waitTime;
+                        }
+                        break;
+                    case 3://LEFT
+                        npcsMoving = true;
+                        myRigidBody.velocity = new Vector2(-movementSpeed, 0);
+                        tempMove = new Vector2(-1, 0);
+                        if (hasWalkZone && myRigidBody.position.x < minWalkPoint.x)
+                        {
+                            isWalking = false;
+                            waitCounter = waitTime;
+                        }
+                        break;
+                }
+                if (walkCounter < 0)
+                {
+                    npcsMoving = false;
+                    isWalking = false;
+                    waitCounter = waitTime;
+                }
             }
-
-            if (walkCounter < 0)
+            else
             {
-                playerMoving = false;
-                isWalking = false;
+                npcsMoving = false;
                 waitCounter = waitTime;
             }
         }
@@ -130,7 +139,7 @@ public class MovementNPC : MonoBehaviour
             lastMove = tempMove;
             anim.SetFloat("MoveX", tempMove.x);
             anim.SetFloat("MoveY", tempMove.y);
-            anim.SetBool("PlayerMoving", playerMoving);
+            anim.SetBool("PlayerMoving", npcsMoving);
             anim.SetFloat("LastMoveX", lastMove.x);
             anim.SetFloat("LastMoveY", lastMove.y);
         }
@@ -138,10 +147,9 @@ public class MovementNPC : MonoBehaviour
         {
             tempMove = new Vector2(0, 0);
             lastMove = tempMove;
-            isWalking = false;
             anim.SetFloat("MoveX", tempMove.x);
             anim.SetFloat("MoveY", tempMove.y);
-            anim.SetBool("PlayerMoving", playerMoving);
+            anim.SetBool("PlayerMoving", npcsMoving);
             anim.SetFloat("LastMoveX", lastMove.x);
             anim.SetFloat("LastMoveY", lastMove.y);
         }
@@ -156,34 +164,35 @@ public class MovementNPC : MonoBehaviour
 
     public void OnClick()
     {
+        
         Debug.Log("onclick");
-        if (playerInsideTrigger)
+        if (dialogManager.thePlayer.canMove)    //hindi na kikipagusap
         {
-            isTalk = true;
-            playerMoving = false;
+            isWalking = false;
+            npcsMoving = false;
         }
-        else
+        else                                   //nakikipagusap
         {
-            isTalk = false;
-            playerMoving = true;
-        }
-    }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Heneral Luna")
-        {
-            playerInsideTrigger = true;
+            isWalking = false;
+            npcsMoving = false;
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Heneral Luna")
-        {
-            playerInsideTrigger = false;
-        }
-    }
+    //void OnTriggerStay2D(Collider2D other)
+    //{
+    //    if (other.gameObject.name == "Heneral Luna")
+    //    {
+    //        playerInsideTrigger = true;
+    //    }
+    //}
+
+    //void OnTriggerExit2D(Collider2D other)
+    //{
+    //    if (other.gameObject.name == "Heneral Luna")
+    //    {
+    //        playerInsideTrigger = false;
+    //    }
+    //}
 
 
 
