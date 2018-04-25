@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: 8cddcc35e20d8ca43a6c580c42196128
-timeCreated: 1522745125
+guid: 6b965d70d98b8b545928e73069ab6db8
+timeCreated: 1522948914
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: player-bullet_0
+    21300000: Damage Heneral Luna_0
+    21300002: Damage Heneral Luna_1
+    21300004: Damage Heneral Luna_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -58,7 +60,7 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -67,7 +69,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Standalone
-    maxTextureSize: 64
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -76,7 +78,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Android
-    maxTextureSize: 64
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -88,26 +90,48 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-bullet_0
+      name: Damage Heneral Luna_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 4
-        width: 6
-        height: 15
+        x: 0
+        y: 336
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
-    outline:
-    - - {x: -6, y: 9.5}
-      - {x: -7, y: 6.5}
-      - {x: -7, y: -9.5}
-      - {x: 3, y: -9.5}
-      - {x: 3, y: 6.5}
-      - {x: -1, y: 9.5}
+    - serializedVersion: 2
+      name: Damage Heneral Luna_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Damage Heneral Luna_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
     physicsShape: []
   spritePackingTag: 
   userData: 

@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -44,8 +46,14 @@ TagManager:
   - name: background
     uniqueID: 1353325647
     locked: 0
+  - name: bullet
+    uniqueID: 3099027259
+    locked: 0
   - name: player
     uniqueID: 62506643
+    locked: 0
+  - name: enemy
+    uniqueID: 1745852477
     locked: 0
   - name: scroll
     uniqueID: 4022879555
