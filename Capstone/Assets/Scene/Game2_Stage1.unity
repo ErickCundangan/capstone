@@ -353,8 +353,8 @@ MonoBehaviour:
   shot: {fileID: 1565726164162596, guid: 4c1d6b18b51ab894f9d89ec0f23c9147, type: 2}
   shotSpawn: {fileID: 123017920}
   fireRate: 0.3
-  maxBound: 6
-  minBound: -6
+  maxBound: 5
+  minBound: -5
 --- !u!50 &123017922
 Rigidbody2D:
   serializedVersion: 4
@@ -719,7 +719,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 849971937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 7, z: 0}
+  m_LocalPosition: {x: -5, y: 7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1445373843}

@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Game2_Stage1.unity
     guid: 83f3ad5cdedb66a4b97156e2ca737313
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Main.unity
     guid: eb5a8dd15be2fa04799b016ec75f0ca1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Login_Scene/Login_Scene.unity
     guid: fc3021aebc4ec6840a1bab296298c2b5

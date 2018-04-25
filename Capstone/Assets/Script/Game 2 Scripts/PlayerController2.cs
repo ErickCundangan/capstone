@@ -12,6 +12,7 @@ public class PlayerController2 : MonoBehaviour {
 	private float nextFire;
 
 	void Start() {
+		Screen.orientation = ScreenOrientation.Portrait;
 		player = GetComponent<Transform> ();
 	}
 
@@ -37,6 +38,7 @@ public class PlayerController2 : MonoBehaviour {
 			h = minBound;
 		else
 			h = playerPos.x;
+		
 		transform.position = new Vector3 (h, -6.5f, 0);
 	}
 }

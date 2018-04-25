@@ -32,13 +32,13 @@ public class EnemyController : MonoBehaviour {
 			else
 				enemy.position += Vector3.right * speed;
 			
-			if (enemy.position.x < -6 || enemy.position.x > 6) {
+			if (enemy.position.x < -5 || enemy.position.x > 5) {
 				speed = -speed;
 				enemyHolder.position += Vector3.down * 0.5f;
 				return;
 			}
 
-			if (Random.value > fireRate) {
+			if (Random.value > fireRate && !enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead")) {
 				Instantiate (shot, enemy.position, enemy.rotation);
 				foreach(Animator anim in anims)
 					if (anim != null)
