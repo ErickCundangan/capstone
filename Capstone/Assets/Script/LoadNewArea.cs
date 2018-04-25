@@ -1,4 +1,4 @@
-﻿    using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,20 +9,23 @@ public class LoadNewArea : MonoBehaviour {
 
     public  string  levelToLoad;
     public  int     ExitCounter;
+    public  int     ExitRequirement;
 
     public  float   timeLeft;
     private float   minutes;
     private float   seconds;
-    public bool    stopTime = false;
+    public  bool    stopTime = false;
 
     public  Text    counter;
     public  Text    timeCounter;
 
-
+    Animator anim;
 
 	// Use this for initialization
 	void Start () {
         thePlayer = FindObjectOfType<PlayerController>();
+
+        anim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -48,12 +51,22 @@ public class LoadNewArea : MonoBehaviour {
 
             timeCounter.text = string.Format("{0:0}:{1:00}", minutes, seconds);
         }
+
+        //Exit Arrow animation
+        if(ExitCounter == ExitRequirement)
+        {
+            anim.SetBool("isLevelComplete", true);
+        }
+        else
+        {
+            anim.SetBool("isLevelComplete", false);
+        }
     }
 
     //Entry to next level
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.name == "Heneral Luna") {
-            if (ExitCounter == 4)
+            if (ExitCounter == ExitRequirement)
             {
                 SceneManager.LoadScene(levelToLoad);
             }

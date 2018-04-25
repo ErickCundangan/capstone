@@ -16,7 +16,7 @@ public class MovementNPC : MonoBehaviour
     public float waitTime;
     private float waitCounter;
 
-    private int WalkDirection;
+    public int WalkDirection;
 
     public Collider2D walkZone;
 
@@ -32,7 +32,6 @@ public class MovementNPC : MonoBehaviour
 
     private DialogueManager dialogManager;
     GameObject NPC;
-    //private bool playerInsideTrigger = false;
 
     // Use this for initialization
     void Start()
@@ -45,7 +44,6 @@ public class MovementNPC : MonoBehaviour
 
         waitCounter = waitTime;
         walkCounter = walkTime;
-        isWalking = true;
         ChooseDirection();
 
         if (walkZone != null)
@@ -69,42 +67,47 @@ public class MovementNPC : MonoBehaviour
                 {
                     case 0: //UP
                         npcsMoving = true;
-                        myRigidBody.velocity = new Vector2(0, movementSpeed);
-                        tempMove = new Vector2(0, 1);
+                        myRigidBody.velocity = new Vector2(0f, movementSpeed);
+                        tempMove = new Vector2(0f, 1f);
+                        
                         if (hasWalkZone && myRigidBody.position.y > maxWalkPoint.y)
                         {
                             isWalking = false;
+                            npcsMoving = false;
                             waitCounter = waitTime;
 
                         }
                         break;
                     case 1://RIGHT
                         npcsMoving = true;
-                        myRigidBody.velocity = new Vector2(movementSpeed, 0);
-                        tempMove = new Vector2(1, 0);
+                        myRigidBody.velocity = new Vector2(movementSpeed, 0f);
+                        tempMove = new Vector2(1f, 0f);
                         if (hasWalkZone && myRigidBody.position.x > maxWalkPoint.x)
                         {
                             isWalking = false;
+                            npcsMoving = false;
                             waitCounter = waitTime;
                         }
                         break;
                     case 2://DOWN
                         npcsMoving = true;
-                        myRigidBody.velocity = new Vector2(0, -movementSpeed);
-                        tempMove = new Vector2(0, -1);
+                        myRigidBody.velocity = new Vector2(0f, -movementSpeed);
+                        tempMove = new Vector2(0f, -1f);
                         if (hasWalkZone && myRigidBody.position.y < minWalkPoint.y)
                         {
                             isWalking = false;
+                            npcsMoving = false;
                             waitCounter = waitTime;
                         }
                         break;
                     case 3://LEFT
                         npcsMoving = true;
-                        myRigidBody.velocity = new Vector2(-movementSpeed, 0);
-                        tempMove = new Vector2(-1, 0);
+                        myRigidBody.velocity = new Vector2(-movementSpeed, 0f);
+                        tempMove = new Vector2(-1f, 0f);
                         if (hasWalkZone && myRigidBody.position.x < minWalkPoint.x)
                         {
                             isWalking = false;
+                            npcsMoving = false;
                             waitCounter = waitTime;
                         }
                         break;
@@ -119,6 +122,7 @@ public class MovementNPC : MonoBehaviour
             else
             {
                 npcsMoving = false;
+                isWalking = false;
                 waitCounter = waitTime;
             }
         }
@@ -134,25 +138,12 @@ public class MovementNPC : MonoBehaviour
             }
         }
 
-        if (!isTalk)
-        {
-            lastMove = tempMove;
-            anim.SetFloat("MoveX", tempMove.x);
-            anim.SetFloat("MoveY", tempMove.y);
-            anim.SetBool("PlayerMoving", npcsMoving);
-            anim.SetFloat("LastMoveX", lastMove.x);
-            anim.SetFloat("LastMoveY", lastMove.y);
-        }
-        else
-        {
-            tempMove = new Vector2(0, 0);
-            lastMove = tempMove;
-            anim.SetFloat("MoveX", tempMove.x);
-            anim.SetFloat("MoveY", tempMove.y);
-            anim.SetBool("PlayerMoving", npcsMoving);
-            anim.SetFloat("LastMoveX", lastMove.x);
-            anim.SetFloat("LastMoveY", lastMove.y);
-        }
+        lastMove = tempMove;
+        anim.SetFloat("MoveX", tempMove.x);
+        anim.SetFloat("MoveY", tempMove.y);
+        anim.SetFloat("LastMoveX", lastMove.x);
+        anim.SetFloat("LastMoveY", lastMove.y);
+        anim.SetBool("PlayerMoving", npcsMoving);
     }
 
     private void ChooseDirection()
@@ -162,21 +153,21 @@ public class MovementNPC : MonoBehaviour
         walkCounter = walkTime;
     }
 
-    public void OnClick()
-    {
+    //public void OnClick()
+    //{
         
-        Debug.Log("onclick");
-        if (dialogManager.thePlayer.canMove)    //hindi na kikipagusap
-        {
-            isWalking = false;
-            npcsMoving = false;
-        }
-        else                                   //nakikipagusap
-        {
-            isWalking = false;
-            npcsMoving = false;
-        }
-    }
+    //    Debug.Log("onclick");
+    //    if (dialogManager.thePlayer.canMove)
+    //    {
+    //        isWalking = false;
+    //        npcsMoving = false;
+    //    }
+    //    else
+    //    {
+    //        isWalking = false;
+    //        npcsMoving = false;
+    //    }
+    //}
 
     //void OnTriggerStay2D(Collider2D other)
     //{
