@@ -728,7 +728,7 @@ MonoBehaviour:
   dialogueLines:
   - Hmmmmmm. Careful on your journey.
   - You can never know who to trust.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
   exitHolder: 1
 --- !u!114 &332880267
 MonoBehaviour:
@@ -2611,6 +2611,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4153330615370756, guid: 10f430918727f334d9fc2d1b3c98f544, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5.66
@@ -2694,6 +2699,66 @@ Prefab:
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[84].Array.data[17].x
       value: 535.2597
+      objectReference: {fileID: 0}
+    - target: {fileID: 68280906953302718, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[2].x
+      value: 278.77878
+      objectReference: {fileID: 0}
+    - target: {fileID: 68280906953302718, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[2].y
+      value: -623.6637
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[0].x
+      value: 574.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[0].y
+      value: -951.1427
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[3].x
+      value: 555
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[3].y
+      value: -959
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[2].x
+      value: 561.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[2].y
+      value: -954.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[4].x
+      value: 582.12427
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[4].y
+      value: -959.5343
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[5].x
+      value: 575
+      objectReference: {fileID: 0}
+    - target: {fileID: 68786570300059218, guid: 10f430918727f334d9fc2d1b3c98f544,
+        type: 2}
+      propertyPath: m_Points.Array.data[5].y
+      value: -951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10f430918727f334d9fc2d1b3c98f544, type: 2}
@@ -2823,7 +2888,7 @@ MonoBehaviour:
   dialogueLines:
   - Good day general. Our troop are waiting for you.
   - Talk to everyone here then go down to meet the others.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
   exitHolder: 1
 --- !u!114 &1903288272
 MonoBehaviour:
