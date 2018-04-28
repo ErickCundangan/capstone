@@ -52,4 +52,9 @@ public class LoadScrollScript : MonoBehaviour
 		game.SetActive (false);
 		thePlayer.canMove = true;
 	}
+
+	public void Game2_Stage1_OnClick () 
+	{
+		Application.LoadLevel ("Game2_Stage1");
+	}
 }

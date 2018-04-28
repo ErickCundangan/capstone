@@ -16,7 +16,6 @@ public class StageClear : MonoBehaviour {
 	void Update () {
 		if (isStageComplete) {
 			stageClearPanel.SetActive (true);
-			Time.timeScale = 0;
 		}
 	}
 }

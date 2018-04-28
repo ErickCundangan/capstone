@@ -28,12 +28,22 @@ public class BulletController : MonoBehaviour {
 			Destroy (gameObject);
 		}
 
-		if (other.tag == "Boss") {
+		if (other.tag == "Boss" && other.gameObject.GetComponent<Transform>().position.y <= 4) {
 			BossController.bossHealth -= 1;
 			Destroy (gameObject);
 
-			if (BossController.bossHealth == 0)
-				Destroy (other.gameObject);
+			if (BossController.bossHealth == 0) {
+				//Destroy (other.gameObject);
+				anim = other.gameObject.GetComponent<Animator> ();
+				if (anim != null) {
+					anim.SetBool ("isBossDead", true);
+				}
+			}
+		}
+
+		if (other.tag == "EnemyBullet") {
+			Destroy (gameObject);
+			Destroy (other.gameObject);
 		}
 	}
 }

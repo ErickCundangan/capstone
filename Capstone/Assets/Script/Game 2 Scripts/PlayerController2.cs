@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController2 : MonoBehaviour {
-	private Transform player;
 	float distance = 10;
+	public static int playerHealth = 5;
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
@@ -13,21 +13,31 @@ public class PlayerController2 : MonoBehaviour {
 
 	void Start() {
 		Screen.orientation = ScreenOrientation.Portrait;
-		player = GetComponent<Transform> ();
 	}
 
 	void Update() {
+		if (GameOver.isPlayerDead)
+			return;
+		
 		if (Time.time > nextFire) {
 			nextFire = Time.time + fireRate;
 			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 		}
+
+		if (playerHealth <= 0) {
+			GameOver.isPlayerDead = true;
+		}
 	}
 
 	void OnMouseDrag() {
-		float h = 0;
+		if (Time.timeScale == 0)
+			return;
 
 		if (GameOver.isPlayerDead)
 			return;
+		
+		float h = 0;
+
 
 		Vector3 touchPos = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, distance);
 		Vector3 playerPos = Camera.main.ScreenToWorldPoint (touchPos);

@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour {
 	public float speed;
 	public GameObject shot;
 	public GameObject boss;
+	public GameObject warning;
 	public float fireRate = 0.5f;
 	private bool bossSpawned = false;
 	// Use this for initialization
@@ -34,7 +35,6 @@ public class EnemyController : MonoBehaviour {
 			
 			if (enemy.position.x < -5 || enemy.position.x > 5) {
 				speed = -speed;
-				enemyHolder.position += Vector3.down * 0.5f;
 				return;
 			}
 
@@ -52,7 +52,9 @@ public class EnemyController : MonoBehaviour {
 		}
 
 		if (enemyHolder.childCount == 0) {
-			if (!bossSpawned) {	
+			if (!bossSpawned) {
+				BossController.hasBossAppeared = true;
+				Instantiate (warning, Vector3.zero, new Quaternion (0, 0, 0, 0));	
 				Instantiate (boss, new Vector3 (0, 14, 0), new Quaternion (0, 0, 0, 0));
 				bossSpawned = true;
 			}

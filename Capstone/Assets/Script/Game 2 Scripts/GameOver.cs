@@ -18,7 +18,10 @@ public class GameOver : MonoBehaviour {
 		if (isPlayerDead) {
 			anim.SetBool ("isPlayerDead", isPlayerDead);
 			gameOverPanel.SetActive (true);
-			Time.timeScale = 0;
 		}
+	}
+
+	void stopTime() {
+		Time.timeScale = 0;
 	}
 }

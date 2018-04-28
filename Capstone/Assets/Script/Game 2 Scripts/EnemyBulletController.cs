@@ -22,8 +22,7 @@ public class EnemyBulletController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Player") {
 			Destroy (gameObject);
-			GameOver.isPlayerDead = true;
-			Time.timeScale = 0;
+			PlayerController2.playerHealth -= 1;
 		}
 	}
 }
