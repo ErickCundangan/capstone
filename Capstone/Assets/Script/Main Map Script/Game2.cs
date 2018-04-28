@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class LoadScrollScript : MonoBehaviour
+public class Game2 : MonoBehaviour
 {
 	public GameObject game;
 	public GameObject player;
@@ -14,6 +14,7 @@ public class LoadScrollScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		game.SetActive (false);
 		thePlayer = FindObjectOfType<PlayerController>();
 	}
 
