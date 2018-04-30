@@ -12,9 +12,9 @@ public class EnemyController : MonoBehaviour {
 	public GameObject warning;
 	public float fireRate = 0.5f;
 	private bool bossSpawned = false;
+
 	// Use this for initialization
 	void Start () {
-		//InvokeRepeating ("MoveEnemy", 0.1f, 0.3f);
 		enemyHolder = GetComponent<Transform> ();
 		anims = GetComponentsInChildren<Animator> ();
 		
@@ -22,12 +22,11 @@ public class EnemyController : MonoBehaviour {
 
 	void FixedUpdate() {
 		foreach (Animator anim in anims)
-			if (anim != null) {
+			if (anim != null)
 				anim.SetBool ("isEnemyShooting", false);
-			}
 
 		foreach (Transform enemy in enemyHolder) {
-			if (enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead"))
+			if (enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead") || enemyHolder.position.y > 7)
 				enemy.position += Vector3.zero;
 
 			else

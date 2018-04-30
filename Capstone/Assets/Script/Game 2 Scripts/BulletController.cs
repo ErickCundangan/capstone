@@ -37,6 +37,10 @@ public class BulletController : MonoBehaviour {
 				anim = other.gameObject.GetComponent<Animator> ();
 				if (anim != null) {
 					anim.SetBool ("isBossDead", true);
+					if (SaveManager.Instance.state.gameTwoStagesCleared == 0) {
+						SaveManager.Instance.state.gameTwoStagesCleared += 1;
+						SaveManager.Instance.Save ();
+					}
 				}
 			}
 		}

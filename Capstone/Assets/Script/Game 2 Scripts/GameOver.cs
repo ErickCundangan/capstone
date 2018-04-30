@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameOver : MonoBehaviour {
 	public GameObject player;
 	public GameObject gameOverPanel;
+	public GameObject buttons;
 	public static bool isPlayerDead = false;
 	private Animator anim;
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class GameOver : MonoBehaviour {
 		if (isPlayerDead) {
 			anim.SetBool ("isPlayerDead", isPlayerDead);
 			gameOverPanel.SetActive (true);
+			buttons.SetActive (true);
 		}
 	}
 

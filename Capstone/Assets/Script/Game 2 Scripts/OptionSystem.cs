@@ -43,4 +43,8 @@ public class OptionSystem : MonoBehaviour {
 		Time.timeScale = 1;
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);		
 	}
+
+	public void GoToMainMenu_onClick() {
+		SceneManager.LoadScene ("Main");
+	}
 }
