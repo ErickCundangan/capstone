@@ -19,7 +19,7 @@ public class OptionSystem : MonoBehaviour {
 	}
 
 	public void CogButton_onClick() {
-		if (GameOver.isPlayerDead || StageClear.isStageComplete)
+		if (GameOver.Instance.isPlayerDead || StageClear.Instance.isStageComplete)
 			return;
 		
 		if (!isOptionsActive) {

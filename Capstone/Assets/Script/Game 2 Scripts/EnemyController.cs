@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
-
-	private Transform enemyHolder;
+	public static EnemyController Instance { set; get; }
+	public Transform enemyHolder;
 	private Animator[] anims;
 	public float speed;
 	public GameObject shot;
@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Instance = this;
 		enemyHolder = GetComponent<Transform> ();
 		anims = GetComponentsInChildren<Animator> ();
 		
@@ -37,7 +38,7 @@ public class EnemyController : MonoBehaviour {
 				return;
 			}
 
-			if (Random.value > fireRate && !enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead")) {
+			if (Random.value > fireRate && !enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead") && enemyHolder.position.y <= 7) {
 				Instantiate (shot, enemy.position, enemy.rotation);
 				foreach(Animator anim in anims)
 					if (anim != null)
@@ -45,16 +46,15 @@ public class EnemyController : MonoBehaviour {
 			}
 
 			if (enemy.position.y <= -6.5) {
-				GameOver.isPlayerDead = true;
+				GameOver.Instance.isPlayerDead = true;
 				Time.timeScale = 0;
 			}
 		}
 
 		if (enemyHolder.childCount == 0) {
 			if (!bossSpawned) {
-				BossController.hasBossAppeared = true;
-				Instantiate (warning, Vector3.zero, new Quaternion (0, 0, 0, 0));	
-				Instantiate (boss, new Vector3 (0, 14, 0), new Quaternion (0, 0, 0, 0));
+				Instantiate (warning, Vector3.zero, new Quaternion (0, 0, 0, 0));
+				BossController.Instance.hasBossAppeared = true;
 				bossSpawned = true;
 			}
 		}

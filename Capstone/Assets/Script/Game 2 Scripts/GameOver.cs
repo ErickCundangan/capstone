@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameOver : MonoBehaviour {
+	public static GameOver Instance { set; get; }
 	public GameObject player;
 	public GameObject gameOverPanel;
 	public GameObject buttons;
-	public static bool isPlayerDead = false;
+	public bool isPlayerDead = false;
 	private Animator anim;
 	// Use this for initialization
 	void Start () {
+		Instance = this;
 		anim = player.GetComponent<Animator> ();
 		gameOverPanel.SetActive (false);
 	}

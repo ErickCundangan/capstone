@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossController : MonoBehaviour {
+	public static BossController Instance { set; get; }
 	private Transform boss;
 	private Animator anim;
 	public GameObject shot;
 	public float fireRate;
 	public float speed;
-	public static float bossHealth = 10;
-	public static bool hasBossAppeared = false;
+	public float bossHealth = 10;
+	public bool hasBossAppeared = false;
 	// Use this for initialization
 	void Start () {
+		Instance = this;
 		boss = GetComponent<Transform> ();
 		anim = GetComponent<Animator> ();
 	}
@@ -21,7 +23,7 @@ public class BossController : MonoBehaviour {
 			anim.SetBool ("isBossShooting", false);
 		}
 
-		if (boss.position.y >= 4)
+		if (boss.position.y >= 4 && EnemyController.Instance.enemyHolder.childCount == 0)
 			boss.position += Vector3.down * speed;
 		
 		else {
@@ -37,7 +39,7 @@ public class BossController : MonoBehaviour {
 			}
 		}
 
-		if (Random.value > fireRate && !anim.GetBool ("isBossDead")) {
+		if (Random.value > fireRate && !anim.GetBool ("isBossDead") && boss.position.y <= 4) {
 			Instantiate (shot, new Vector3(boss.position.x, boss.position.y - 2.75f, boss.position.z), boss.rotation);
 			if (anim != null)
 				anim.SetBool ("isBossShooting", true);
@@ -46,6 +48,6 @@ public class BossController : MonoBehaviour {
 
 	void DestroyEnemy() {
 		Destroy (gameObject);
-		StageClear.isStageComplete = true;
+		StageClear.Instance.isStageComplete = true;
 	}
 }

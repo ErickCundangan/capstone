@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController2 : MonoBehaviour {
+	public static PlayerController2 Instance { set; get; }
 	float distance = 10;
-	public static int playerHealth = 5;
+	public int playerHealth = 5;
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
@@ -12,11 +13,12 @@ public class PlayerController2 : MonoBehaviour {
 	private float nextFire;
 
 	void Start() {
+		Instance = this;
 		Screen.orientation = ScreenOrientation.Portrait;
 	}
 
 	void Update() {
-		if (GameOver.isPlayerDead)
+		if (GameOver.Instance.isPlayerDead)
 			return;
 		
 		if (Time.time > nextFire) {
@@ -25,7 +27,7 @@ public class PlayerController2 : MonoBehaviour {
 		}
 
 		if (playerHealth <= 0) {
-			GameOver.isPlayerDead = true;
+			GameOver.Instance.isPlayerDead = true;
 		}
 	}
 
@@ -33,7 +35,7 @@ public class PlayerController2 : MonoBehaviour {
 		if (Time.timeScale == 0)
 			return;
 
-		if (GameOver.isPlayerDead)
+		if (GameOver.Instance.isPlayerDead)
 			return;
 		
 		float h = 0;

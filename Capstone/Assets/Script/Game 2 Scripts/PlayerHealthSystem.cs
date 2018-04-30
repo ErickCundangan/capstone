@@ -11,11 +11,11 @@ public class PlayerHealthSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		heartUI = GetComponent<Image> ();
-		heartUI.sprite = heartSprites [PlayerController2.playerHealth];
+		heartUI.sprite = heartSprites [PlayerController2.Instance.playerHealth];
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		heartUI.sprite = heartSprites [PlayerController2.playerHealth];
+		heartUI.sprite = heartSprites [PlayerController2.Instance.playerHealth];
 	}
 }

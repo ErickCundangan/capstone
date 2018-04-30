@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Game2 : MonoBehaviour
 {
@@ -56,6 +57,6 @@ public class Game2 : MonoBehaviour
 
 	public void Game2_Stage1_OnClick () 
 	{
-		Application.LoadLevel ("Game2_Stage1");
+		SceneManager.LoadScene ("Game2_Stage1");
 	}
 }

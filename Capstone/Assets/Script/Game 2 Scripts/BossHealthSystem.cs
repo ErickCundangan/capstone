@@ -11,17 +11,17 @@ public class BossHealthSystem : MonoBehaviour {
 		gameObject.SetActive (false);
 		InvokeRepeating ("ActivateHealthBar", 0.1f, 0.1f);
 		bossHealth = GetComponent<Slider> ();
-		bossHealth.maxValue = BossController.bossHealth;
-		bossHealth.value = BossController.bossHealth;
+		bossHealth.maxValue = BossController.Instance.bossHealth;
+		bossHealth.value = BossController.Instance.bossHealth;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		bossHealth.value = BossController.bossHealth;
+		bossHealth.value = BossController.Instance.bossHealth;
 	}
 
 	void ActivateHealthBar() {
-		if (BossController.hasBossAppeared) {
+		if (BossController.Instance.hasBossAppeared) {
 			gameObject.SetActive (true);
 			CancelInvoke ();
 		}

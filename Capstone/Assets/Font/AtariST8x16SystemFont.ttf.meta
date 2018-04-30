@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9cb552b1b0551cd4daf21ef5aa0b60a6
+timeCreated: 1525102563
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Atari ST 8x16 System Font
+  fontNames:
+  - Atari ST 8x16 System Font
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
