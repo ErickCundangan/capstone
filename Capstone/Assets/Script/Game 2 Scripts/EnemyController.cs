@@ -9,9 +9,7 @@ public class EnemyController : MonoBehaviour {
 	public float speed;
 	public GameObject shot;
 	public GameObject boss;
-	public GameObject warning;
 	public float fireRate = 0.5f;
-	private bool bossSpawned = false;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +33,6 @@ public class EnemyController : MonoBehaviour {
 			
 			if (enemy.position.x < -5 || enemy.position.x > 5) {
 				speed = -speed;
-				return;
 			}
 
 			if (Random.value > fireRate && !enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead") && enemyHolder.position.y <= 7) {
@@ -48,14 +45,6 @@ public class EnemyController : MonoBehaviour {
 			if (enemy.position.y <= -6.5) {
 				GameOver.Instance.isPlayerDead = true;
 				Time.timeScale = 0;
-			}
-		}
-
-		if (enemyHolder.childCount == 0) {
-			if (!bossSpawned) {
-				BossController.Instance.hasBossAppeared = true;
-				Instantiate (warning, Vector3.zero, Quaternion.identity);
-				bossSpawned = true;
 			}
 		}
 	}

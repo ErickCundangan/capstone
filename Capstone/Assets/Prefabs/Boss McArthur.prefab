@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114584123175247838}
   - component: {fileID: 95402637742532108}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: Boss McArthur
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,6 +120,8 @@ MonoBehaviour:
   shot: {fileID: 1776877258795186, guid: 435099a869014cf4b9bfa3e7cd1aad94, type: 2}
   fireRate: 0.99
   speed: 0.1
+  bossHealth: 10
+  hasBossAppeared: 0
 --- !u!212 &212173196739903682
 SpriteRenderer:
   m_ObjectHideFlags: 1
