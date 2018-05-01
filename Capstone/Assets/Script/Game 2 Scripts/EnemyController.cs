@@ -53,8 +53,8 @@ public class EnemyController : MonoBehaviour {
 
 		if (enemyHolder.childCount == 0) {
 			if (!bossSpawned) {
-				Instantiate (warning, Vector3.zero, new Quaternion (0, 0, 0, 0));
 				BossController.Instance.hasBossAppeared = true;
+				Instantiate (warning, Vector3.zero, Quaternion.identity);
 				bossSpawned = true;
 			}
 		}

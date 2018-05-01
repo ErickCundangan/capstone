@@ -54,9 +54,4 @@ public class Game2 : MonoBehaviour
 		game.SetActive (false);
 		thePlayer.canMove = true;
 	}
-
-	public void Game2_Stage1_OnClick () 
-	{
-		SceneManager.LoadScene ("Game2_Stage1");
-	}
 }

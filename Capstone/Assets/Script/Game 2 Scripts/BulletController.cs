@@ -31,18 +31,6 @@ public class BulletController : MonoBehaviour {
 		if (other.tag == "Boss" && other.gameObject.GetComponent<Transform>().position.y <= 4) {
 			BossController.Instance.bossHealth -= 1;
 			Destroy (gameObject);
-
-			if (BossController.Instance.bossHealth == 0) {
-				//Destroy (other.gameObject);
-				anim = other.gameObject.GetComponent<Animator> ();
-				if (anim != null) {
-					anim.SetBool ("isBossDead", true);
-					if (SaveManager.Instance.state.gameTwoStagesCleared == 0) {
-						SaveManager.Instance.state.gameTwoStagesCleared += 1;
-						SaveManager.Instance.Save ();
-					}
-				}
-			}
 		}
 
 		if (other.tag == "EnemyBullet") {
