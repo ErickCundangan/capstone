@@ -9,7 +9,6 @@ public class SaveManager : MonoBehaviour {
 	private void Awake() {
 		DontDestroyOnLoad (this);
 		Instance = this;
-		Load ();
 	}
 
 	public void Save() {
@@ -23,6 +22,11 @@ public class SaveManager : MonoBehaviour {
 			state = new SaveState();
 			Save();
 		}
+	}
+
+	public void NewGame() {
+		PlayerPrefs.DeleteKey ("save");
+		Load ();
 	}
 
 	public bool isStageCleared(int game, int stage) {
