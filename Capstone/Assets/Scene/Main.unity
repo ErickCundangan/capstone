@@ -277,7 +277,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384472950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 644694167}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Game2_Stage5
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &384472950
@@ -743,7 +754,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 746417659}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 644694167}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Game2_Stage4
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &746417659
@@ -1548,11 +1570,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4536491399106288, guid: 581e0198e5fdfa6439c9bfd56f1b616a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4536491399106288, guid: 581e0198e5fdfa6439c9bfd56f1b616a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 4536491399106288, guid: 581e0198e5fdfa6439c9bfd56f1b616a, type: 2}
       propertyPath: m_LocalPosition.z
