@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 15abc41344f53a44da5cdcaada8d4ae7
+timeCreated: 1524136538
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Wheelchair_0
+    21300002: Wheelchair_1
+    21300004: Wheelchair_2
+    21300006: Wheelchair_3
+    21300008: Wheelchair_4
+    21300010: Wheelchair_5
+    21300012: Wheelchair_6
+    21300014: Wheelchair_7
+    21300016: Wheelchair_8
+    21300018: Wheelchair_9
+    21300020: Wheelchair_10
+    21300022: Wheelchair_11
+    21300024: Wheelchair_12
+    21300026: Wheelchair_13
+    21300028: Wheelchair_14
+    21300030: Wheelchair_15
+    21300032: Wheelchair_16
+    21300034: Wheelchair_17
+    21300036: Wheelchair_18
+    21300038: Wheelchair_19
+    21300040: Wheelchair_20
+    21300042: Wheelchair_21
+    21300044: Wheelchair_22
+    21300046: Wheelchair_23
+    21300048: Wheelchair_24
+    21300050: Wheelchair_25
+    21300052: Wheelchair_26
+    21300054: Wheelchair_27
+    21300056: Wheelchair_28
+    21300058: Wheelchair_29
+    21300060: Wheelchair_30
+    21300062: Wheelchair_31
+    21300064: Wheelchair_32
+    21300066: Wheelchair_33
+    21300068: Wheelchair_34
+    21300070: Wheelchair_35
+    21300072: Wheelchair_36
+    21300074: Wheelchair_37
+    21300076: Wheelchair_38
+    21300078: Wheelchair_39
+    21300080: Wheelchair_40
+    21300082: Wheelchair_41
+    21300084: Wheelchair_42
+    21300086: Wheelchair_43
+    21300088: Wheelchair_44
+    21300090: Wheelchair_45
+    21300092: Wheelchair_46
+    21300094: Wheelchair_47
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 48
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wheelchair_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 505
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 505
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 505
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 504
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 504
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 504
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 433
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 433
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 433
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 432
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 432
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 432
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 361
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 361
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 361
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_15
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 361
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 360
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_21
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 289
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 216
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 216
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 216
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 216
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 216
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_35
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_41
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 72
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wheelchair_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -285, y: -260}
+      - {x: -285, y: -288}
+      - {x: -239, y: -288}
+      - {x: -239, y: -252}
+      - {x: -243, y: -240}
+      - {x: -277, y: -240}
+      - {x: -282, y: -243}
+    - - {x: -200, y: -239}
+      - {x: -230, y: -239}
+      - {x: -235, y: -245}
+      - {x: -237, y: -256}
+      - {x: -237, y: -288}
+      - {x: -194, y: -288}
+      - {x: -191, y: -286}
+      - {x: -191, y: -241}
+    - - {x: -185, y: -239}
+      - {x: -189, y: -247}
+      - {x: -189, y: -286}
+      - {x: -188, y: -288}
+      - {x: -143, y: -288}
+      - {x: -143, y: -239}
+    - - {x: -107, y: -250}
+      - {x: -138, y: -250}
+      - {x: -141, y: -262}
+      - {x: -141, y: -288}
+      - {x: -96, y: -288}
+      - {x: -95, y: -284}
+      - {x: -95, y: -259}
+      - {x: -96, y: -258}
+    - - {x: -59, y: -250}
+      - {x: -90, y: -250}
+      - {x: -93, y: -262}
+      - {x: -93, y: -288}
+      - {x: -48, y: -288}
+      - {x: -47, y: -284}
+      - {x: -47, y: -259}
+      - {x: -48, y: -258}
+    - - {x: -44, y: -250}
+      - {x: -45, y: -256}
+      - {x: -45, y: -285}
+      - {x: -41, y: -288}
+      - {x: -3, y: -288}
+      - {x: 1, y: -284}
+      - {x: 1, y: -251}
+      - {x: -2, y: -250}
+    - - {x: -251, y: -162}
+      - {x: -270, y: -162}
+      - {x: -281, y: -169}
+      - {x: -286, y: -173}
+      - {x: -286, y: -212}
+      - {x: -280, y: -220}
+      - {x: -252, y: -220}
+      - {x: -240, y: -217}
+      - {x: -240, y: -188}
+      - {x: -246, y: -170}
+    - - {x: -233, y: -220}
+      - {x: -192, y: -220}
+      - {x: -192, y: -183}
+      - {x: -198, y: -161}
+      - {x: -224, y: -161}
+      - {x: -238, y: -165}
+      - {x: -238, y: -213}
+    - - {x: -176, y: -160}
+      - {x: -190, y: -173}
+      - {x: -190, y: -216}
+      - {x: -185, y: -220}
+      - {x: -144, y: -220}
+      - {x: -144, y: -160}
+    - - {x: -142, y: -169}
+      - {x: -142, y: -215}
+      - {x: -140, y: -220}
+      - {x: -96, y: -220}
+      - {x: -96, y: -188}
+      - {x: -103, y: -169}
+    - - {x: -94, y: -169}
+      - {x: -94, y: -215}
+      - {x: -92, y: -220}
+      - {x: -48, y: -220}
+      - {x: -48, y: -188}
+      - {x: -55, y: -169}
+    - - {x: -46, y: -213}
+      - {x: -43, y: -220}
+      - {x: 0, y: -220}
+      - {x: 0, y: -185}
+      - {x: -5, y: -171}
+      - {x: -11, y: -169}
+      - {x: -46, y: -169}
+    - - {x: -280, y: -90}
+      - {x: -285, y: -103}
+      - {x: -285, y: -140}
+      - {x: -282, y: -146}
+      - {x: -243, y: -146}
+      - {x: -240, y: -145}
+      - {x: -240, y: -96}
+      - {x: -257, y: -90}
+    - - {x: -228, y: -89}
+      - {x: -237, y: -92}
+      - {x: -237, y: -138}
+      - {x: -234, y: -146}
+      - {x: -197, y: -146}
+      - {x: -192, y: -143}
+      - {x: -192, y: -94}
+      - {x: -202, y: -89}
+    - - {x: -187, y: -88}
+      - {x: -189, y: -89}
+      - {x: -189, y: -142}
+      - {x: -184, y: -145}
+      - {x: -164, y: -146}
+      - {x: -149, y: -146}
+      - {x: -144, y: -144}
+      - {x: -144, y: -94}
+      - {x: -154, y: -88}
+    - - {x: -124, y: -97}
+      - {x: -133, y: -99}
+      - {x: -140, y: -115}
+      - {x: -140, y: -146}
+      - {x: -96, y: -146}
+      - {x: -96, y: -97}
+    - - {x: -76, y: -97}
+      - {x: -85, y: -99}
+      - {x: -92, y: -115}
+      - {x: -92, y: -146}
+      - {x: -48, y: -146}
+      - {x: -48, y: -97}
+    - - {x: -44, y: -115}
+      - {x: -44, y: -146}
+      - {x: 0, y: -146}
+      - {x: 0, y: -97}
+      - {x: -23, y: -97}
+      - {x: -36, y: -100}
+    - - {x: -277, y: -21}
+      - {x: -285, y: -33}
+      - {x: -285, y: -66}
+      - {x: -283, y: -73}
+      - {x: -240, y: -73}
+      - {x: -240, y: -37}
+      - {x: -251, y: -21}
+    - - {x: -231, y: -21}
+      - {x: -233, y: -22}
+      - {x: -237, y: -42}
+      - {x: -237, y: -68}
+      - {x: -232, y: -73}
+      - {x: -193, y: -73}
+      - {x: -192, y: -71}
+      - {x: -192, y: -34}
+      - {x: -199, y: -21}
+    - - {x: -183, y: -21}
+      - {x: -189, y: -39}
+      - {x: -189, y: -64}
+      - {x: -182, y: -73}
+      - {x: -145, y: -73}
+      - {x: -144, y: -70}
+      - {x: -144, y: -36}
+      - {x: -154, y: -21}
+    - - {x: -137, y: -21}
+      - {x: -141, y: -34}
+      - {x: -141, y: -68}
+      - {x: -140, y: -72}
+      - {x: -135, y: -73}
+      - {x: -100, y: -73}
+      - {x: -96, y: -70}
+      - {x: -96, y: -42}
+      - {x: -102, y: -21}
+    - - {x: -89, y: -21}
+      - {x: -93, y: -34}
+      - {x: -93, y: -68}
+      - {x: -92, y: -72}
+      - {x: -87, y: -73}
+      - {x: -52, y: -73}
+      - {x: -48, y: -70}
+      - {x: -48, y: -42}
+      - {x: -54, y: -21}
+    - - {x: -45, y: -21}
+      - {x: -45, y: -73}
+      - {x: 0, y: -73}
+      - {x: 0, y: -33}
+      - {x: -6, y: -21}
+    - - {x: -274, y: 48}
+      - {x: -285, y: 32}
+      - {x: -285, y: 2}
+      - {x: -282, y: -1}
+      - {x: -248, y: -1}
+      - {x: -242, y: 1}
+      - {x: -242, y: 30}
+      - {x: -254, y: 48}
+    - - {x: -200, y: 49}
+      - {x: -232, y: 49}
+      - {x: -236, y: 48}
+      - {x: -237, y: 41}
+      - {x: -237, y: 1}
+      - {x: -233, y: -1}
+      - {x: -196, y: -1}
+      - {x: -194, y: 4}
+      - {x: -194, y: 36}
+    - - {x: -183, y: 49}
+      - {x: -189, y: 40}
+      - {x: -189, y: 1}
+      - {x: -188, y: -1}
+      - {x: -146, y: -1}
+      - {x: -146, y: 34}
+      - {x: -151, y: 49}
+    - - {x: -135, y: 38}
+      - {x: -141, y: 33}
+      - {x: -141, y: 0}
+      - {x: -140, y: -1}
+      - {x: -99, y: -1}
+      - {x: -99, y: 31}
+      - {x: -106, y: 38}
+    - - {x: -87, y: 38}
+      - {x: -93, y: 33}
+      - {x: -93, y: 0}
+      - {x: -92, y: -1}
+      - {x: -51, y: -1}
+      - {x: -51, y: 31}
+      - {x: -58, y: 38}
+    - - {x: -8, y: 38}
+      - {x: -38, y: 38}
+      - {x: -45, y: 23}
+      - {x: -45, y: 3}
+      - {x: -39, y: -1}
+      - {x: -6, y: -1}
+      - {x: -3, y: 5}
+      - {x: -3, y: 33}
+    - - {x: -247, y: 129}
+      - {x: -267, y: 129}
+      - {x: -285, y: 124}
+      - {x: -286, y: 122}
+      - {x: -286, y: 81}
+      - {x: -285, y: 75}
+      - {x: -276, y: 71}
+      - {x: -247, y: 71}
+      - {x: -243, y: 80}
+      - {x: -243, y: 112}
+      - {x: -244, y: 119}
+    - - {x: -238, y: 127}
+      - {x: -238, y: 74}
+      - {x: -236, y: 71}
+      - {x: -195, y: 71}
+      - {x: -195, y: 127}
+    - - {x: -184, y: 128}
+      - {x: -190, y: 119}
+      - {x: -190, y: 75}
+      - {x: -187, y: 71}
+      - {x: -147, y: 71}
+      - {x: -147, y: 128}
+    - - {x: -142, y: 119}
+      - {x: -142, y: 81}
+      - {x: -141, y: 75}
+      - {x: -138, y: 71}
+      - {x: -100, y: 71}
+      - {x: -100, y: 105}
+      - {x: -105, y: 119}
+    - - {x: -94, y: 119}
+      - {x: -94, y: 81}
+      - {x: -93, y: 75}
+      - {x: -90, y: 71}
+      - {x: -52, y: 71}
+      - {x: -52, y: 105}
+      - {x: -57, y: 119}
+    - - {x: -46, y: 119}
+      - {x: -46, y: 73}
+      - {x: -40, y: 71}
+      - {x: -4, y: 71}
+      - {x: -4, y: 109}
+      - {x: -7, y: 119}
+    - - {x: -285, y: 201}
+      - {x: -285, y: 145}
+      - {x: -276, y: 143}
+      - {x: -245, y: 143}
+      - {x: -242, y: 145}
+      - {x: -242, y: 192}
+      - {x: -252, y: 201}
+    - - {x: -230, y: 199}
+      - {x: -237, y: 196}
+      - {x: -237, y: 148}
+      - {x: -235, y: 143}
+      - {x: -194, y: 143}
+      - {x: -194, y: 198}
+      - {x: -196, y: 199}
+    - - {x: -179, y: 200}
+      - {x: -189, y: 196}
+      - {x: -189, y: 143}
+      - {x: -151, y: 143}
+      - {x: -146, y: 151}
+      - {x: -146, y: 190}
+      - {x: -158, y: 200}
+    - - {x: -140, y: 178}
+      - {x: -140, y: 143}
+      - {x: -98, y: 143}
+      - {x: -98, y: 191}
+      - {x: -125, y: 191}
+      - {x: -132, y: 189}
+    - - {x: -92, y: 178}
+      - {x: -92, y: 143}
+      - {x: -50, y: 143}
+      - {x: -50, y: 191}
+      - {x: -77, y: 191}
+      - {x: -84, y: 189}
+    - - {x: -37, y: 191}
+      - {x: -44, y: 184}
+      - {x: -44, y: 144}
+      - {x: -41, y: 143}
+      - {x: -2, y: 143}
+      - {x: -2, y: 191}
+    - - {x: -249, y: 267}
+      - {x: -282, y: 267}
+      - {x: -285, y: 252}
+      - {x: -285, y: 220}
+      - {x: -279, y: 215}
+      - {x: -249, y: 215}
+      - {x: -243, y: 220}
+      - {x: -243, y: 255}
+      - {x: -244, y: 260}
+    - - {x: -203, y: 267}
+      - {x: -229, y: 267}
+      - {x: -237, y: 251}
+      - {x: -237, y: 215}
+      - {x: -200, y: 215}
+      - {x: -195, y: 222}
+      - {x: -195, y: 242}
+    - - {x: -189, y: 215}
+      - {x: -149, y: 215}
+      - {x: -147, y: 216}
+      - {x: -147, y: 257}
+      - {x: -152, y: 267}
+      - {x: -184, y: 267}
+      - {x: -189, y: 249}
+    - - {x: -139, y: 267}
+      - {x: -141, y: 262}
+      - {x: -141, y: 215}
+      - {x: -99, y: 215}
+      - {x: -99, y: 257}
+      - {x: -101, y: 267}
+    - - {x: -91, y: 267}
+      - {x: -93, y: 262}
+      - {x: -93, y: 215}
+      - {x: -51, y: 215}
+      - {x: -51, y: 257}
+      - {x: -53, y: 267}
+    - - {x: -43, y: 267}
+      - {x: -45, y: 262}
+      - {x: -45, y: 215}
+      - {x: -3, y: 215}
+      - {x: -3, y: 257}
+      - {x: -5, y: 267}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
