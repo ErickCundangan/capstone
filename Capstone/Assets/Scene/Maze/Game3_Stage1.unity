@@ -406,7 +406,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 62506643
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300026, guid: f4f60608ab9d9b64a8cec4e576d9aeb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -542,7 +542,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9cb552b1b0551cd4daf21ef5aa0b60a6, type: 3}
     m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
@@ -594,7 +594,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 548.9, y: 319}
-  m_SizeDelta: {x: 47.9, y: 38.9}
+  m_SizeDelta: {x: 50, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301361600
 MonoBehaviour:
@@ -616,7 +616,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9cb552b1b0551cd4daf21ef5aa0b60a6, type: 3}
     m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
@@ -724,12 +724,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
-  dialogueLines:
-  - Hmmmmmm. Careful on your journey.
-  - You can never know who to trust.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
-  exitHolder: 1
+  dialogueSpeaker: 
+  dialogueLines: []
+  dialogueSprite: {fileID: 0}
+  exitHolder: 0
 --- !u!114 &332880267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +872,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 62506643
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: e666aca9eb117944ab2267b8f450f9a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -980,7 +978,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 703313047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -472.40002, y: -212.20001, z: 0}
+  m_LocalPosition: {x: -472.40002, y: -252.20001, z: 0}
   m_LocalScale: {x: 1.3514218, y: 1.351422, z: 1.351422}
   m_Children: []
   m_Father: {fileID: 2076288830}
@@ -1109,13 +1107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Messenger
-  dialogueLines:
-  - Such a sad site to look at fallen soldiers.
-  - The President, Emilio Aguinaldo sent a message.
-  - The President wants you to go to Kawit,Cavite for a meeting.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
-  exitHolder: 1
+  dialogueSpeaker: 
+  dialogueLines: []
+  dialogueSprite: {fileID: 0}
+  exitHolder: 0
 --- !u!114 &818021573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1354,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9cb552b1b0551cd4daf21ef5aa0b60a6, type: 3}
     m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
@@ -1558,6 +1553,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 395226050}
   moveSpeed: 5
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!81 &1249554588
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2192,8 +2191,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1473371571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 640, y: 360, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 540, y: 360, z: 0}
+  m_LocalScale: {x: 0.84375, y: 0.84375, z: 0.84375}
   m_Children:
   - {fileID: 1302352380}
   - {fileID: 212073002}
@@ -2512,13 +2511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Apolinario Mabini
-  dialogueLines:
-  - Good day General Antonio Luna! I heard from...
-  - one of our soldier that President Emilio wants to see you
-  - Better look for him around the camp.
-  dialogueSprite: {fileID: 21300002, guid: ebd73782cb8fd4147ba91724a7e50d8c, type: 3}
-  exitHolder: 1
+  dialogueSpeaker: 
+  dialogueLines: []
+  dialogueSprite: {fileID: 0}
+  exitHolder: 0
 --- !u!114 &1632492326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2884,12 +2880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
-  dialogueLines:
-  - Good day general. Our troop are waiting for you.
-  - Talk to everyone here then go down to meet the others.
-  dialogueSprite: {fileID: 21300000, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
-  exitHolder: 1
+  dialogueSpeaker: 
+  dialogueLines: []
+  dialogueSprite: {fileID: 0}
+  exitHolder: 0
 --- !u!114 &1903288272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2962,7 +2956,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9cb552b1b0551cd4daf21ef5aa0b60a6, type: 3}
     m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
@@ -3110,7 +3104,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9cb552b1b0551cd4daf21ef5aa0b60a6, type: 3}
     m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
@@ -3207,8 +3201,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2076288826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 640, y: 360, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 540, y: 360, z: 0}
+  m_LocalScale: {x: 0.84375, y: 0.84375, z: 0.84375}
   m_Children:
   - {fileID: 703313048}
   - {fileID: 838958446}
