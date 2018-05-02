@@ -5,8 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Game2 : MonoBehaviour
-{
+public class GameStageManager : MonoBehaviour {
 	public GameObject game;
 	public GameObject player;
 	bool playerInsideTrigger = false;
