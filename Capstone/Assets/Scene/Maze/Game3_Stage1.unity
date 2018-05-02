@@ -927,7 +927,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.031186372}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -938,7 +938,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.93762726}
   m_EdgeRadius: 0
 --- !u!4 &443419385
 Transform:
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   dialogueSpeaker: Filipino Messenger
   dialogueLines:
   - Such a sad site to look at fallen soldiers.
-  - Genereal Luna, the President, Emilio Aguinaldo has a word.
+  - The President, Emilio Aguinaldo sent a message.
   - The President wants you to go to Kawit,Cavite for a meeting.
   dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
   exitHolder: 1
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a64ba45abef7d4d892c79eb2c6f348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Maze_Level_2
+  levelToLoad: Game3_Stage2
   ExitCounter: 0
   ExitRequirement: 4
   timeLeft: 90
@@ -2246,7 +2246,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.7916667, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2288,12 +2288,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: b1029d7c5a060d743be557614d7d8df0, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 14792e65d3ee21e4781cb79e7be8a371, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7916667, y: 1}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

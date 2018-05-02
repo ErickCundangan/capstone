@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Maze/Maze_EntryLevel.unity
+    path: Assets/Scene/Maze/Game3_Stage1.unity
     guid: be6b1b42217167e4d9c828f1501c468e
   - enabled: 1
-    path: Assets/Scene/Maze/Maze_Level_2.unity
+    path: Assets/Scene/Maze/Game3_Stage2.unity
     guid: 3aa8c595507c2274f965d02f42740944
   - enabled: 1
-    path: Assets/Scene/Maze/Maze_Level_3.unity
+    path: Assets/Scene/Maze/Game3_Stage3.unity
     guid: 70810df980bac1c45b57add3a61dbacd
   - enabled: 1
-    path: Assets/Scene/Maze/Maze_Level_4.unity
+    path: Assets/Scene/Maze/Game3_Stage4.unity
     guid: f66fe655eb525374fa82fab0398c1a1e
+  - enabled: 1
+    path: Assets/Scene/Main.unity
+    guid: eb5a8dd15be2fa04799b016ec75f0ca1
