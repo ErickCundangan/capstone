@@ -1291,6 +1291,7 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Capstone/Assets/Scene/Maze/Maze_Level_2.unity
     - target: {fileID: 224001798818246390, guid: 9529ecc3d479da5499993355e6c2cb4f,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1317,6 +1318,13 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 9866a92691696b346901281f2b329034,
         type: 3}
+=======
+    - target: {fileID: 114473401884976362, guid: c4401be4c8f249849b22ae68267be510,
+        type: 2}
+      propertyPath: m_Text
+      value: Loading..
+      objectReference: {fileID: 0}
+>>>>>>> master:Capstone/Assets/Scene/Home.unity
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
   m_IsPrefabParent: 0
