@@ -43,6 +43,7 @@ public class DialogueManager : MonoBehaviour {
         dialogActive = true;
         dBox.SetActive(true);
         LNArea.ExitCounter += exitValue;
+		LNArea.stopTime = true;
 
         if (currentLine == 0)
         {
@@ -83,6 +84,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void Close()
     {
+		LNArea.stopTime = false;
         animator.SetBool("IsOpen", false);
         thePlayer.canMove = true;
     }
