@@ -16,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - background
+  - 
   - 
   - 
   - 
@@ -44,21 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: background
-    uniqueID: 1353325647
-    locked: 0
-  - name: bullet
-    uniqueID: 3099027259
-    locked: 0
   - name: player
-    uniqueID: 62506643
+    uniqueID: 495427961
     locked: 0
-  - name: enemy
-    uniqueID: 1745852477
-    locked: 0
-  - name: scroll
-    uniqueID: 4022879555
-    locked: 0
-  - name: UI
-    uniqueID: 3083771929
+  - name: background
+    uniqueID: 2265137557
     locked: 0

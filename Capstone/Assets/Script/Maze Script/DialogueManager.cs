@@ -45,6 +45,7 @@ public class DialogueManager : MonoBehaviour {
 
         LNArea.stopTime = true;
         LNArea.ExitCounter += exitValue;
+		LNArea.stopTime = true;
 
         if (currentLine == 0)
         {
@@ -85,7 +86,8 @@ public class DialogueManager : MonoBehaviour {
 
     public void Close()
     {
-        LNArea.stopTime = false;
+		LNArea.stopTime = false;
+		
         animator.SetBool("IsOpen", false);
         thePlayer.canMove = true;
     }

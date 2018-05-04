@@ -12,12 +12,14 @@ public class LoadNewArea : MonoBehaviour {
 	public GameObject buttons;
     public  string  levelToLoad;
     public  int     ExitCounter;
-    public  int     ExitRequirement;
+
+	public  int 	ExitRequirement;
 
     public  float   timeLeft;
     private float   minutes;
     private float   seconds;
-    public  bool    stopTime = false;
+
+	public bool    stopTime = false;
 
     public  Text    counter;
     public  Text    timeCounter;
@@ -78,6 +80,7 @@ public class LoadNewArea : MonoBehaviour {
 				SaveManager.Instance.Save ();
 				buttons.SetActive (true);
 				stageClearPanel.SetActive (true);
+				Time.timeScale = 0;
             }
 		}
 	}
