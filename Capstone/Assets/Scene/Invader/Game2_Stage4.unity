@@ -331,7 +331,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 495427961
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300020, guid: f9653210db997d74db1b9b18a8dccd75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1120597304}
         m_MethodName: Restart_onClick
         m_Mode: 1
         m_Arguments:
@@ -956,8 +956,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: GoToMainMenu_onClick
+      - m_Target: {fileID: 1120597304}
+        m_MethodName: Resume_onClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1604,6 +1604,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224679892076399198, guid: d3fa4a44ddbfff942872a77f282227c5,
     type: 2}
   m_PrefabInternal: {fileID: 1120597302}
+--- !u!114 &1120597304 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114255128879263498, guid: d3fa4a44ddbfff942872a77f282227c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1120597302}
+  m_Script: {fileID: 11500000, guid: 9ab77046d855a1d409d4afad2078693d, type: 3}
 --- !u!1 &1188998394
 GameObject:
   m_ObjectHideFlags: 0
