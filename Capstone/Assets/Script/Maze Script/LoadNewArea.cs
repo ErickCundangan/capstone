@@ -12,20 +12,14 @@ public class LoadNewArea : MonoBehaviour {
 	public GameObject buttons;
     public  string  levelToLoad;
     public  int     ExitCounter;
-<<<<<<< HEAD:Capstone/Assets/Script/LoadNewArea.cs
+
 	public  int 	ExitRequirement;
-=======
-    public  int     ExitRequirement;
->>>>>>> master:Capstone/Assets/Script/Maze Script/LoadNewArea.cs
 
     public  float   timeLeft;
     private float   minutes;
     private float   seconds;
-<<<<<<< HEAD:Capstone/Assets/Script/LoadNewArea.cs
+
 	public bool    stopTime = false;
-=======
-    public  bool    stopTime = false;
->>>>>>> master:Capstone/Assets/Script/Maze Script/LoadNewArea.cs
 
     public  Text    counter;
     public  Text    timeCounter;
@@ -77,11 +71,7 @@ public class LoadNewArea : MonoBehaviour {
     //Entry to next level
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.name == "Heneral Luna") {
-<<<<<<< HEAD:Capstone/Assets/Script/LoadNewArea.cs
-			if (ExitCounter == ExitRequirement)
-=======
             if (ExitCounter == ExitRequirement)
->>>>>>> master:Capstone/Assets/Script/Maze Script/LoadNewArea.cs
             {
 				string sceneName = SceneManager.GetActiveScene().name;
 				char[] gameStage = sceneName.Where (char.IsDigit).ToArray ();

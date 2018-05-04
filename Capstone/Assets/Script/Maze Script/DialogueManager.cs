@@ -86,11 +86,8 @@ public class DialogueManager : MonoBehaviour {
 
     public void Close()
     {
-<<<<<<< HEAD:Capstone/Assets/Script/DialogueManager.cs
 		LNArea.stopTime = false;
-=======
-        LNArea.stopTime = false;
->>>>>>> master:Capstone/Assets/Script/Maze Script/DialogueManager.cs
+		
         animator.SetBool("IsOpen", false);
         thePlayer.canMove = true;
     }
