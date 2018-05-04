@@ -6,7 +6,6 @@ public class StageCanvasScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject.Find ("Game1").SetActive (false);
 	}
 	
 	// Update is called once per frame

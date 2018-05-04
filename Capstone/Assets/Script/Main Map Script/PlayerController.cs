@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Screen.orientation = ScreenOrientation.Landscape;
 		anim = GetComponent<Animator> ();
 		myRigidbody = GetComponent<Rigidbody2D> ();
 	}
