@@ -3661,8 +3661,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1419067513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.200001, y: -135.4, z: 0}
-  m_LocalScale: {x: 3.146451, y: 0.5979844, z: 0.4556071}
+  m_LocalPosition: {x: 16, y: -20, z: 0}
+  m_LocalScale: {x: 2.11, y: 0.42, z: 0.4556071}
   m_Children:
   - {fileID: 424516103}
   - {fileID: 987600595}
@@ -3672,8 +3672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.2, y: -135.4}
-  m_SizeDelta: {x: 116.62, y: 164.13}
+  m_AnchoredPosition: {x: 16, y: -20}
+  m_SizeDelta: {x: 116.2, y: 164.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1419067515
 Animator:
@@ -4174,6 +4174,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 223075631831357788, guid: 9529ecc3d479da5499993355e6c2cb4f,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
