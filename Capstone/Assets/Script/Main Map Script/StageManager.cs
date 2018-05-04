@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour {
-
+	public GameObject game1;
+	Button[] game1Stages;
 	public GameObject game2;
 	Button[] game2Stages;
 	public GameObject game3;
@@ -12,9 +13,13 @@ public class StageManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		game1Stages = game1.GetComponentsInChildren<Button> ();
 		game2Stages = game2.GetComponentsInChildren<Button> ();
 		game3Stages = game3.GetComponentsInChildren<Button> ();
 
+		foreach (Button stage in game1Stages) {
+			stage.interactable = false;
+		}
 		foreach (Button stage in game2Stages) {
 			stage.interactable = false;
 		}
@@ -23,6 +28,14 @@ public class StageManager : MonoBehaviour {
 			stage.interactable = false;
 		}
 
+		game1Stages [0].interactable = true;
+
+		if (SaveManager.Instance.isStageCleared (1, 0))
+			game1Stages [1].interactable = true;
+		
+		if (SaveManager.Instance.isStageCleared (1, 1))
+			game1Stages [2].interactable = true;
+		
 		if (SaveManager.Instance.isStageCleared (1, 2))
 			game2Stages [0].interactable = true;
 		

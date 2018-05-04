@@ -80,6 +80,7 @@ public class LoadNewArea : MonoBehaviour {
 				SaveManager.Instance.Save ();
 				buttons.SetActive (true);
 				stageClearPanel.SetActive (true);
+				Time.timeScale = 0;
             }
 		}
 	}
