@@ -19,9 +19,6 @@ public class OptionSystem : MonoBehaviour {
 	}
 
 	public void CogButton_onClick() {
-		if (GameOver.Instance.isPlayerDead || StageClear.Instance.isStageComplete)
-			return;
-		
 		if (!isOptionsActive) {
 			options.SetActive (true);
 			isOptionsActive = true;
@@ -46,5 +43,6 @@ public class OptionSystem : MonoBehaviour {
 
 	public void GoToMainMenu_onClick() {
 		SceneManager.LoadScene ("Main");
+		Time.timeScale = 1;
 	}
 }

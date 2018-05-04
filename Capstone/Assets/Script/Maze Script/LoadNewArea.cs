@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
 
 public class LoadNewArea : MonoBehaviour {
     PlayerController thePlayer;
-
+	public GameObject stageClearPanel;
+	public GameObject gameOverPanel;
+	public GameObject buttons;
     public  string  levelToLoad;
     public  int     ExitCounter;
     public  int     ExitRequirement;
@@ -39,9 +42,9 @@ public class LoadNewArea : MonoBehaviour {
             if (timeLeft == 0 || timeLeft < 0)
             {
                 stopTime = true;
-                Debug.Log("Game Over");
                 thePlayer.canMove = false;
-
+				gameOverPanel.SetActive (true);
+				buttons.SetActive (true);
                 return;
             }
 
@@ -68,7 +71,13 @@ public class LoadNewArea : MonoBehaviour {
 		if (other.gameObject.name == "Heneral Luna") {
             if (ExitCounter == ExitRequirement)
             {
-                SceneManager.LoadScene(levelToLoad);
+				string sceneName = SceneManager.GetActiveScene().name;
+				char[] gameStage = sceneName.Where (char.IsDigit).ToArray ();
+
+				SaveManager.Instance.completeStage (gameStage[0] - '0', gameStage[1] - '0' - 1);
+				SaveManager.Instance.Save ();
+				buttons.SetActive (true);
+				stageClearPanel.SetActive (true);
             }
 		}
 	}
