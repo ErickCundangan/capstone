@@ -2188,6 +2188,21 @@ Prefab:
       propertyPath: fireRate
       value: 0.97
       objectReference: {fileID: 0}
+    - target: {fileID: 212173196739903682, guid: 470c4433698e00a49bab05d3283938bd,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -759641211
+      objectReference: {fileID: 0}
+    - target: {fileID: 212173196739903682, guid: 470c4433698e00a49bab05d3283938bd,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584123175247838, guid: 470c4433698e00a49bab05d3283938bd,
+        type: 2}
+      propertyPath: speed
+      value: 0.11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 470c4433698e00a49bab05d3283938bd, type: 2}
   m_IsPrefabParent: 0
