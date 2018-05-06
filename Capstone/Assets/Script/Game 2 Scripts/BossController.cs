@@ -12,7 +12,7 @@ public class BossController : MonoBehaviour {
 	public GameObject shot;
 	public float fireRate;
 	public float speed;
-	public float bossHealth = 10;
+	public float bossHealth;
 	public bool hasBossAppeared = false;
 	// Use this for initialization
 	void Start () {

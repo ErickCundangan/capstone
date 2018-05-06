@@ -599,7 +599,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Game3_Stage3
+          m_StringArgument: Game2_Stage3
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -720,7 +720,6 @@ GameObject:
   m_Component:
   - component: {fileID: 433150720}
   - component: {fileID: 433150721}
-  - component: {fileID: 433150722}
   m_Layer: 5
   m_Name: BossHealthBar
   m_TagString: Untagged
@@ -797,17 +796,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &433150722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 433150719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baf9f4364d4b4b24d9e714ca54f2c22d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &558768955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1186,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stage 1!!
+  m_Text: Stage 3!!
 --- !u!222 &771926697
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1260,6 +1248,7 @@ GameObject:
   - component: {fileID: 901615017}
   - component: {fileID: 901615016}
   - component: {fileID: 901615019}
+  - component: {fileID: 901615020}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1324,6 +1313,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 1223460523}
+--- !u!114 &901615020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901615015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf9f4364d4b4b24d9e714ca54f2c22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 433150719}
+  boss: {fileID: 1912040436}
 --- !u!1 &960270124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,8 +2193,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1906127379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 360, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 540, y: 360, z: 0}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_Children:
   - {fileID: 1188998395}
   - {fileID: 739082215}
@@ -2276,6 +2278,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 470c4433698e00a49bab05d3283938bd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1912040436 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1858778773079660, guid: 470c4433698e00a49bab05d3283938bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1912040435}
 --- !u!1 &1916065438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,7 +2308,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916065438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -260, y: 481, z: 0}
+  m_LocalPosition: {x: -710, y: 481, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1906127383}

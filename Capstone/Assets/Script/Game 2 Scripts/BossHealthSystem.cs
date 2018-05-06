@@ -4,26 +4,30 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class BossHealthSystem : MonoBehaviour {
-
+	public GameObject health;
+	public GameObject boss;
+	BossController bossCtrlr;
 	Slider bossHealth;
 	// Use this for initialization
 	void Start () {
-		gameObject.SetActive (false);
+		bossCtrlr = boss.GetComponent<BossController> ();
+		bossHealth = health.GetComponent<Slider> ();
+		bossHealth.maxValue = bossCtrlr.bossHealth;
+		bossHealth.value = bossCtrlr.bossHealth;
 		InvokeRepeating ("ActivateHealthBar", 0.1f, 0.1f);
-		bossHealth = GetComponent<Slider> ();
-		bossHealth.maxValue = BossController.Instance.bossHealth;
-		bossHealth.value = BossController.Instance.bossHealth;
+		health.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		bossHealth.value = BossController.Instance.bossHealth;
+		bossHealth.value = bossCtrlr.bossHealth;
 	}
 
 	void ActivateHealthBar() {
 		if (BossController.Instance.hasBossAppeared) {
-			gameObject.SetActive (true);
-			CancelInvoke ();
+			health.SetActive (true);
 		}
+
+		bossHealth.value = bossCtrlr.bossHealth;
 	}
 }
