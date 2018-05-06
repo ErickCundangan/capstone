@@ -77,7 +77,7 @@ public class LoadNewArea : MonoBehaviour {
 				char[] gameStage = sceneName.Where (char.IsDigit).ToArray ();
 
 				SaveManager.Instance.completeStage (gameStage[0] - '0', gameStage[1] - '0' - 1);
-				SaveManager.Instance.Save ();
+				SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 				buttons.SetActive (true);
 				stageClearPanel.SetActive (true);
 				Time.timeScale = 0;

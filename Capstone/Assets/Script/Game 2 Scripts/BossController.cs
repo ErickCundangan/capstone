@@ -58,7 +58,7 @@ public class BossController : MonoBehaviour {
 			}
 
 			SaveManager.Instance.completeStage (gameStage[0] - '0', gameStage[1] - '0' - 1);
-			SaveManager.Instance.Save ();
+			SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 		}
 	}
 

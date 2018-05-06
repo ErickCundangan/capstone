@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadingScreenControl : MonoBehaviour {
+	public static LoadingScreenControl Instance {set;get;}
 	public GameObject loadingScreen;
 	AsyncOperation async;
+
+	void Start() {
+		Instance = this;
+	}
 
 	public void LoadScene(string scene) {
 		StartCoroutine (LoadingScreen (scene));
