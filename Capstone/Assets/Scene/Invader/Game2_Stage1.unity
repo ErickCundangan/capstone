@@ -673,7 +673,7 @@ Prefab:
     - target: {fileID: 224241017720224288, guid: 86c96eec7192c8241a8f914868f2d2df,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20.119995
+      value: -46.946686
       objectReference: {fileID: 0}
     - target: {fileID: 224241017720224288, guid: 86c96eec7192c8241a8f914868f2d2df,
         type: 2}
@@ -1058,7 +1058,7 @@ Prefab:
     - target: {fileID: 224246987845596758, guid: 448ceee946b624c40bb9e8b4ddfd1f6c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20.119995
+      value: -46.946686
       objectReference: {fileID: 0}
     - target: {fileID: 224246987845596758, guid: 448ceee946b624c40bb9e8b4ddfd1f6c,
         type: 2}
@@ -1317,7 +1317,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 586430442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 360, y: 540, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1131008748}
@@ -2237,11 +2237,11 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 720, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -2446,7 +2446,7 @@ Prefab:
     - target: {fileID: 224679892076399198, guid: d3fa4a44ddbfff942872a77f282227c5,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 301
+      value: 781
       objectReference: {fileID: 0}
     - target: {fileID: 224679892076399198, guid: d3fa4a44ddbfff942872a77f282227c5,
         type: 2}
