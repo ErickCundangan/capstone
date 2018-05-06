@@ -2171,7 +2171,7 @@ Prefab:
     - target: {fileID: 114584123175247838, guid: 470c4433698e00a49bab05d3283938bd,
         type: 2}
       propertyPath: bossHealth
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114584123175247838, guid: 470c4433698e00a49bab05d3283938bd,
         type: 2}
@@ -2181,16 +2181,21 @@ Prefab:
     - target: {fileID: 212173196739903682, guid: 470c4433698e00a49bab05d3283938bd,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: 495427961
+      value: -759641211
       objectReference: {fileID: 0}
     - target: {fileID: 212173196739903682, guid: 470c4433698e00a49bab05d3283938bd,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1858778773079660, guid: 470c4433698e00a49bab05d3283938bd, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584123175247838, guid: 470c4433698e00a49bab05d3283938bd,
+        type: 2}
+      propertyPath: speed
+      value: 0.12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 470c4433698e00a49bab05d3283938bd, type: 2}
