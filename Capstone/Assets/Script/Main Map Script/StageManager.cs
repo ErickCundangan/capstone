@@ -10,12 +10,15 @@ public class StageManager : MonoBehaviour {
 	Button[] game2Stages;
 	public GameObject game3;
 	Button[] game3Stages;
+	public GameObject game4;
+	Button[] game4Stages;
 
 	// Use this for initialization
 	void Start () {
 		game1Stages = game1.GetComponentsInChildren<Button> ();
 		game2Stages = game2.GetComponentsInChildren<Button> ();
 		game3Stages = game3.GetComponentsInChildren<Button> ();
+		game4Stages = game4.GetComponentsInChildren<Button> ();
 
 		foreach (Button stage in game1Stages) {
 			stage.interactable = false;
@@ -25,6 +28,10 @@ public class StageManager : MonoBehaviour {
 		}
 
 		foreach (Button stage in game3Stages) {
+			stage.interactable = false;
+		}
+
+		foreach (Button stage in game4Stages) {
 			stage.interactable = false;
 		}
 
@@ -60,8 +67,11 @@ public class StageManager : MonoBehaviour {
 		if (SaveManager.Instance.isStageCleared (3, 2))
 			game3Stages [3].interactable = true;
 
-		//if (SaveManager.Instance.isStageCleared (3, 3))
-			//game4Stages [0].interactable = true;
+		if (SaveManager.Instance.isStageCleared (3, 3))
+			game4Stages [0].interactable = true;
+
+		if (SaveManager.Instance.isStageCleared (4, 0))
+			game4Stages [1].interactable = true;
 	}
 
 	// Update is called once per frame
