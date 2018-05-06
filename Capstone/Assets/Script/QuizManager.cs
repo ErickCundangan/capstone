@@ -86,7 +86,6 @@ public class QuizManager : MonoBehaviour {
 		if (noOfQuestions < 50)
 			LoadQuestion ();
 		else {
-			scoreObject.SetActive (true);
 			scoreText = scoreObject.GetComponent<Text> ();
 			scoreText.text = score.ToString () + "/50";
 
@@ -96,6 +95,7 @@ public class QuizManager : MonoBehaviour {
 				gameObject.SetActive (false);
 			} else {
 				SaveManager.Instance.SetPostQuizScore (score);
+				SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 				gameObject.SetActive (false);
 			}
 		}
