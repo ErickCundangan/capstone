@@ -18,9 +18,9 @@ public class Game4_BulletController_Left : MonoBehaviour
     {
         bullet.position += Vector3.left * speed;
 
-        if (bullet.position.x <= -10)
+        if (bullet.position.x <= -12.5)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -28,9 +28,7 @@ public class Game4_BulletController_Left : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            anim = other.gameObject.GetComponent<Animator>();
-            if (anim != null)
-                anim.SetBool("isDead", true);
+            Game4_PlayerController.Instance.kills += 1;
             Destroy(gameObject);
         }
 

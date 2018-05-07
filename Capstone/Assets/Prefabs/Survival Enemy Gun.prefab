@@ -20,11 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4876862138261178}
   - component: {fileID: 212127831042469002}
-  - component: {fileID: 95451027357786562}
-  - component: {fileID: 114567708550693020}
-  - component: {fileID: 61208856732492154}
   - component: {fileID: 61646806898857732}
   - component: {fileID: 50808077067298864}
+  - component: {fileID: 95545322904631970}
+  - component: {fileID: 114063583702817722}
   m_Layer: 0
   m_Name: Survival Enemy Gun
   m_TagString: Enemy
@@ -38,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653189808073494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.58, y: -0.04, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.74, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,7 +51,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653189808073494}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -65,31 +64,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61208856732492154
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1653189808073494}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!61 &61646806898857732
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -105,8 +79,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5001064, y: 0.58945817}
+    oldSize: {x: 0.8125, y: 1.1666666}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -115,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69, y: 1}
   m_EdgeRadius: 0
---- !u!95 &95451027357786562
+--- !u!95 &95545322904631970
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -124,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1653189808073494}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0cda7216406c32e4a9beecfa51e185f7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 10af95b6cec8fe04fac7a904cfe40ea6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -132,7 +106,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114567708550693020
+--- !u!114 &114063583702817722
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -140,18 +114,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1653189808073494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1628b9d7a98979140b646374d6c9a2f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ee1847b3a6d57b4486be7f51c7017dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 1
+  speed: 0.5
   distance: 0
   isNotDead: 0
   isMoving: 0
   isAttacking: 0
-  attackRange: 1.35
-  attackTime: 4
-  attackCooldown: 3
+  attackRange: 7
+  attackTime: 6
+  attackCooldown: 4
+  shotUp: {fileID: 1531834365832006, guid: f28bd4d4b339fb44da3bb35721dfb93c, type: 2}
+  shotRight: {fileID: 1526926795834732, guid: c740b5e46470f5043af71d2423bf3a5d, type: 2}
+  shotDown: {fileID: 1793596060265190, guid: 450d7737b91426440b5e7cf54cd2244f, type: 2}
+  shotLeft: {fileID: 1908881977451076, guid: eb6ce7c5a12d60a4f929a340d8778aa0, type: 2}
+  shotSpawn: {fileID: 4876862138261178}
 --- !u!212 &212127831042469002
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -186,7 +165,7 @@ SpriteRenderer:
   m_SortingLayerID: 62506643
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: ca5000bbee4a8cb4e8418ecd021085e8, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 91f99c56b6e51c64b89f233dc562c9f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

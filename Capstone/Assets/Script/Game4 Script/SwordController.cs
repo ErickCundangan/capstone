@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwordController : MonoBehaviour {
 
+    public float attackDamage;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +19,8 @@ public class SwordController : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            DestroyObject(collision.gameObject);
+            Game4_PlayerController.Instance.playerHealth -= attackDamage;
         }
+        //Debug.Log("player health = " + Game4_PlayerController.Instance.playerHealth + "-\n attack =  " + attackDamage);
     }
 }

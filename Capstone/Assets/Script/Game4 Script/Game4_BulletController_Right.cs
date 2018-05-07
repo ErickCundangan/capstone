@@ -18,9 +18,9 @@ public class Game4_BulletController_Right : MonoBehaviour
     {
         bullet.position += Vector3.right * speed;
 
-        if (bullet.position.x >= 10)
+        if (bullet.position.x >= 15.5)
         {
-           // Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -28,6 +28,7 @@ public class Game4_BulletController_Right : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
+            Game4_PlayerController.Instance.kills += 1;
             Destroy(gameObject);
         }
 

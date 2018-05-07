@@ -18,9 +18,9 @@ public class Game4_BulletController : MonoBehaviour
     {
 
         bullet.position += Vector3.up * speed;
-        if (bullet.position.y >= 10)
+        if (bullet.position.y >= 10.5)
         {
-           // Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
     
@@ -29,6 +29,7 @@ public class Game4_BulletController : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Destroy(gameObject);
+            Game4_PlayerController.Instance.kills += 1;
         }
 
         if (other.tag == "Boss" && other.gameObject.GetComponent<Transform>().position.y <= 4)
