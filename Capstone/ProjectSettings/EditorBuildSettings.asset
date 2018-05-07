@@ -6,5 +6,52 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scene/Game 2/Game2_Stage5.unity
     guid: 91524edbd018ecd419fa05c2f6f84b81
+=======
+    path: Assets/Scene/Main/Home.unity
+    guid: 8074ba86a72a34f41859bea26da47310
+  - enabled: 1
+    path: Assets/Scene/Main/Main.unity
+    guid: eb5a8dd15be2fa04799b016ec75f0ca1
+  - enabled: 1
+    path: Assets/Scene/Main/Quiz.unity
+    guid: 63fc7561ef2f1734aba38859e9960f8e
+  - enabled: 1
+    path: Assets/Scene/Cutscene/Meeting.unity
+    guid: b99d9516d2ff78241a65d4c55cf1f740
+  - enabled: 1
+    path: Assets/Scene/Finding Game/Game1_Stage1.unity
+    guid: 514a62de29023f442ab5a6fde1e6972c
+  - enabled: 1
+    path: Assets/Scene/Finding Game/Game1_Stage2.unity
+    guid: 8b04d590687e07348b4e1fd4648f2159
+  - enabled: 1
+    path: Assets/Scene/Finding Game/Game1_Stage3.unity
+    guid: 03702ab9bea15754591a179577f54f1f
+  - enabled: 1
+    path: Assets/Scene/Invader/Game2_Stage1.unity
+    guid: 83f3ad5cdedb66a4b97156e2ca737313
+  - enabled: 1
+    path: Assets/Scene/Invader/Game2_Stage2.unity
+    guid: eb1594f0abb073645ba725dbdcdaddf1
+  - enabled: 1
+    path: Assets/Scene/Invader/Game2_Stage3.unity
+    guid: 1d18861d8e57ba34f810c9630018ed9b
+  - enabled: 1
+    path: Assets/Scene/Invader/Game2_Stage4.unity
+    guid: dcd678e8800360d479ff4451189a7a81
+  - enabled: 1
+    path: Assets/Scene/Maze/Game3_Stage4.unity
+    guid: f66fe655eb525374fa82fab0398c1a1e
+  - enabled: 1
+    path: Assets/Scene/Maze/Game3_Stage1.unity
+    guid: be6b1b42217167e4d9c828f1501c468e
+  - enabled: 1
+    path: Assets/Scene/Maze/Game3_Stage2.unity
+    guid: 559d2a7ff7472e84899cd7bd77707cc5
+  - enabled: 1
+    path: Assets/Scene/Maze/Game3_Stage3.unity
+    guid: bd3dc8cc2ff2c9442b53ac78705f4d3d
+>>>>>>> master

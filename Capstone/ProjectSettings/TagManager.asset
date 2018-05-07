@@ -17,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - background
-  - 
+  - Dialog Layer
+  - Button Layer
   - 
   - 
   - 
@@ -46,20 +46,17 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: background
-    uniqueID: 1353325647
+    uniqueID: 2265137557
     locked: 0
   - name: bullet
-    uniqueID: 3099027259
-    locked: 0
-  - name: player
-    uniqueID: 62506643
+    uniqueID: 1119555009
     locked: 0
   - name: enemy
-    uniqueID: 1745852477
+    uniqueID: 3535326085
     locked: 0
-  - name: scroll
-    uniqueID: 4022879555
+  - name: NPC
+    uniqueID: 748799937
     locked: 0
-  - name: UI
-    uniqueID: 3083771929
+  - name: player
+    uniqueID: 495427961
     locked: 0
