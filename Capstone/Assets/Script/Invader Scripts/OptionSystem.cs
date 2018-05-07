@@ -45,4 +45,9 @@ public class OptionSystem : MonoBehaviour {
 		SceneManager.LoadScene ("Main");
 		Time.timeScale = 1;
 	}
+
+	public void GoToHome_onClick() {
+		SceneManager.LoadScene ("Home");
+		Time.timeScale = 1;
+	}
 }
