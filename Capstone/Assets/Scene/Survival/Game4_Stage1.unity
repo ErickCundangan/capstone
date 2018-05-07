@@ -1116,6 +1116,7 @@ BoxCollider2D:
   serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 0.6551187, y: 0.981144}
 =======
 <<<<<<< HEAD:Capstone/Assets/Scene/Maze/Maze_EntryLevel.unity
@@ -1180,6 +1181,9 @@ GameObject:
 =======
   m_Size: {x: 0.69246674, y: 0.71232367}
 >>>>>>> master
+=======
+  m_Size: {x: 0.69246674, y: 0.9683393}
+>>>>>>> parent of b7c5543... Commit - survival
 =======
   m_Size: {x: 0.69246674, y: 0.9683393}
 >>>>>>> parent of b7c5543... Commit - survival
@@ -2012,6 +2016,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1659556441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2026,6 +2031,8 @@ MonoBehaviour:
 <<<<<<< HEAD
   playeHP: 100
   healthBar: {fileID: 868657806}
+=======
+>>>>>>> parent of b7c5543... Commit - survival
 =======
 >>>>>>> parent of b7c5543... Commit - survival
 --- !u!1 &1686013599
