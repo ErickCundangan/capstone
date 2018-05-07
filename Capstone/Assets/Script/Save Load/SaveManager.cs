@@ -88,6 +88,7 @@ public class SaveManager : MonoBehaviour {
 	}
 
 	public void SetPostQuizScore(int score) {
+		state.isPostQuizDone = true;
 		state.postQuizScore = score;
 	}
 }

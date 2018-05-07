@@ -142,7 +142,8 @@ public class Game4_PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Debug.Log("FIRE");
-
+			AudioSource audio = GetComponent<AudioSource> ();
+			audio.Play ();
             if (direction == "up")
             {
                 Instantiate(shotUp, shotSpawn.position, shotSpawn.rotation);
@@ -214,7 +215,8 @@ public class Game4_PlayerController : MonoBehaviour
         if(kills >= 10)
         {
             isStageClear = true;
-            Debug.Log("Stage is Clear :: " + isStageClear);
+			SaveManager.Instance.completeStage (4, 0);
+			SaveManager.Instance.Save (SaveManager.Instance.currentUser);
         }
     }
 }

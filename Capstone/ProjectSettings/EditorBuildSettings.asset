@@ -50,3 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Maze/Game3_Stage3.unity
     guid: bd3dc8cc2ff2c9442b53ac78705f4d3d
+  - enabled: 1
+    path: Assets/Scene/Survival/Game4_Stage1.unity
+    guid: efac1df507f2c9540adc921c2b451efd

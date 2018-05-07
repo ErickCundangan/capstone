@@ -164,6 +164,8 @@ public class EnemyGunController_Game4 : MonoBehaviour
     {
         if (isAttacking)
         {
+			AudioSource audio = GetComponent<AudioSource> ();
+			audio.Play ();
             if (attackTime >= attackCooldown)
             {
                 isAttacking = true;

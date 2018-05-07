@@ -1,5 +1,6 @@
 ﻿public class SaveState {
 	public bool isPreQuizDone = false;
+	public bool isPostQuizDone = false;
 	public string password;
 	public int preQuizScore = 0;
 	public int gameOneStagesCleared = 0;

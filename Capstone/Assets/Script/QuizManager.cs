@@ -107,4 +107,12 @@ public class QuizManager : MonoBehaviour {
 		int index = rand.Next (0, 49 - exclude.Count);
 		return range.ElementAt (index);
 	}
+
+	public void NextScene() {
+		if (!SaveManager.Instance.state.isPostQuizDone) {
+			LoadingScreenControl.Instance.LoadScene ("Meeting");
+		} else {
+			LoadingScreenControl.Instance.LoadScene ("Main");
+		}
+	}
 }
