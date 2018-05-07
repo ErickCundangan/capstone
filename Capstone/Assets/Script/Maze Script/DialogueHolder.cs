@@ -15,7 +15,7 @@ public class DialogueHolder : MonoBehaviour {
     private bool    playerInsideTrigger = false;
 
     public  int     exitHolder;
-    
+	public	Text	itemText;
     // Use this for initialization
     void Start () {
         dManager = FindObjectOfType<DialogueManager>();
@@ -33,6 +33,7 @@ public class DialogueHolder : MonoBehaviour {
         //DialogueSnippet
         if (playerInsideTrigger)
 		{
+			itemText.color = new Color32 (103, 255, 103, 255);
 			if (!isAudioPlayed) {
 				AudioSource audio = GetComponent<AudioSource> ();
 				audio.Play ();
