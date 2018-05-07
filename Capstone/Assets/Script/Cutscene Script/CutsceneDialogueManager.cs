@@ -95,10 +95,15 @@ public class CutsceneDialogueManager : MonoBehaviour {
 		btn.interactable = true;
 	}
 
+	bool isSceneLoading = false;
+
 	public void EndCutScene() {
-		Animator canvasAnim = canvas.GetComponent<Animator> ();
-		canvasAnim.SetBool ("isCutsceneDone", true);
-		StartCoroutine (Load ());
+		if (!isSceneLoading) {
+			Animator canvasAnim = canvas.GetComponent<Animator> ();
+			canvasAnim.SetBool ("isCutsceneDone", true);
+			StartCoroutine (Load ());
+			isSceneLoading = true;
+		}
 
 	}
 

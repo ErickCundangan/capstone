@@ -33,7 +33,8 @@ public class DialogueHolder : MonoBehaviour {
         //DialogueSnippet
         if (playerInsideTrigger)
 		{
-			itemText.color = new Color32 (103, 255, 103, 255);
+			if (itemText != null)
+				itemText.color = new Color32 (103, 255, 103, 255);
 			if (!isAudioPlayed) {
 				AudioSource audio = GetComponent<AudioSource> ();
 				audio.Play ();

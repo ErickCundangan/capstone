@@ -6611,7 +6611,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1893328150083932, guid: 28b5e6ed88a054e4a819fd14781a208e, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114675449265822332, guid: 28b5e6ed88a054e4a819fd14781a208e,
         type: 2}
@@ -6651,7 +6651,7 @@ Prefab:
     - target: {fileID: 224064390392136746, guid: 28b5e6ed88a054e4a819fd14781a208e,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 48
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 224380281751240070, guid: 28b5e6ed88a054e4a819fd14781a208e,
         type: 2}
