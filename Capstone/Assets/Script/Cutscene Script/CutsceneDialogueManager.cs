@@ -98,6 +98,13 @@ public class CutsceneDialogueManager : MonoBehaviour {
 	public void EndCutScene() {
 		Animator canvasAnim = canvas.GetComponent<Animator> ();
 		canvasAnim.SetBool ("isCutsceneDone", true);
+		StartCoroutine (Load ());
+
+	}
+
+	IEnumerator Load() {
+		yield return new WaitForSeconds (1f);
+		LoadingScreenControl.Instance.LoadScene (sceneToLoad);
 	}
 }
 
