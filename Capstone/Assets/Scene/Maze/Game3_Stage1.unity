@@ -585,7 +585,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 301361598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548.9, y: 319, z: 0}
+  m_LocalPosition: {x: 551.65, y: 319, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1473371575}
@@ -593,8 +593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548.9, y: 319}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: 551.65, y: 319}
+  m_SizeDelta: {x: 55.5, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301361600
 MonoBehaviour:
@@ -724,10 +724,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: 
-  dialogueLines: []
-  dialogueSprite: {fileID: 0}
-  exitHolder: 0
+  dialogueSpeaker: aasds
+  dialogueLines:
+  - asdasd
+  dialogueSprite: {fileID: 21300004, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  exitHolder: 1
 --- !u!114 &332880267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,7 +979,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 703313047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -472.40002, y: -252.20001, z: 0}
+  m_LocalPosition: {x: -472.40002, y: -212.20001, z: 0}
   m_LocalScale: {x: 1.3514218, y: 1.351422, z: 1.351422}
   m_Children: []
   m_Father: {fileID: 2076288830}
@@ -1107,10 +1108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: 
-  dialogueLines: []
-  dialogueSprite: {fileID: 0}
-  exitHolder: 0
+  dialogueSpeaker: Messenger
+  dialogueLines:
+  - sdasd
+  dialogueSprite: {fileID: 21300004, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  exitHolder: 1
 --- !u!114 &818021573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1241,17 +1243,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 332880266}
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1367746505}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -1548,15 +1539,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1249554586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb01c329523d1e4f837a9561b55b913, type: 3}
+  m_Script: {fileID: 11500000, guid: a3205259e5871e64f86e310ce1a1aed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 395226050}
   moveSpeed: 5
-  minX: 0
-  maxX: 0
-  minY: 0
-  maxY: 0
 --- !u!81 &1249554588
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2191,8 +2178,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1473371571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 360, z: 0}
-  m_LocalScale: {x: 0.84375, y: 0.84375, z: 0.84375}
+  m_LocalPosition: {x: 640, y: 360, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1302352380}
   - {fileID: 212073002}
@@ -2511,10 +2498,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: 
-  dialogueLines: []
-  dialogueSprite: {fileID: 0}
-  exitHolder: 0
+  dialogueSpeaker: Apolinario Mabini
+  dialogueLines:
+  - Hello Find your soldiers
+  dialogueSprite: {fileID: 21300002, guid: ebd73782cb8fd4147ba91724a7e50d8c, type: 3}
+  exitHolder: 1
 --- !u!114 &1632492326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2880,10 +2868,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: 
-  dialogueLines: []
-  dialogueSprite: {fileID: 0}
-  exitHolder: 0
+  dialogueSpeaker: asdasd
+  dialogueLines:
+  - sdasd
+  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  exitHolder: 1
 --- !u!114 &1903288272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3201,8 +3190,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2076288826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 360, z: 0}
-  m_LocalScale: {x: 0.84375, y: 0.84375, z: 0.84375}
+  m_LocalPosition: {x: 640, y: 360, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 703313048}
   - {fileID: 838958446}

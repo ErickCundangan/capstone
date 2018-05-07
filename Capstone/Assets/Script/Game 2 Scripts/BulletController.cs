@@ -4,29 +4,31 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour {
 	private Transform bullet;
-	private Animator anim;
+	//private Animator anim;
 	public float speed;
 
 	// Use this for initialization
 	void Start () {
 		bullet = GetComponent<Transform> ();
-	}
+        //anim = GetComponent<Animator>();
+    }
 
 	void FixedUpdate () {
-		bullet.position += Vector3.up * speed;
+        bullet.position += Vector3.up * speed;
 
-		if (bullet.position.y >= 10) {
-			Destroy (gameObject);
-		}
-	}
+        if (bullet.position.y >= 10)
+        {
+            Destroy(gameObject);
+        }
+    }
 
 	void OnTriggerEnter2D (Collider2D other) {
-		if (other.tag == "Enemy") {
-			anim = other.gameObject.GetComponent<Animator> ();	
-			if (anim != null)
-				anim.SetBool ("isEnemyDead", true);
-			Destroy (gameObject);
-		}
+		//if (other.tag == "Enemy") {
+		//	anim = other.gameObject.GetComponent<Animator> ();	
+		//	if (anim != null)
+		//		anim.SetBool ("isDead", true);
+		//	Destroy (gameObject);
+		//}
 
 		if (other.tag == "Boss" && other.gameObject.GetComponent<Transform>().position.y <= 4) {
 			BossController.Instance.bossHealth -= 1;

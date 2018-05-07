@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f9653210db997d74db1b9b18a8dccd75
-timeCreated: 1522686247
+timeCreated: 1525279916
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -102,12 +102,12 @@ TextureImporter:
       name: hen-luna-with-gun_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 250
-        width: 50
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 229
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5224624, y: 0.6269828}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -116,12 +116,12 @@ TextureImporter:
       name: hen-luna-with-gun_1
       rect:
         serializedVersion: 2
-        x: 115
-        y: 241
-        width: 33
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 87
+        y: 229
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5124136, y: 0.62619704}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,12 +130,12 @@ TextureImporter:
       name: hen-luna-with-gun_2
       rect:
         serializedVersion: 2
-        x: 202
-        y: 250
-        width: 33
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 174
+        y: 229
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.50942504, y: 0.6264786}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: hen-luna-with-gun_3
       rect:
         serializedVersion: 2
-        x: 22
-        y: 175
-        width: 41
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 158
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.53595346, y: 0.5707688}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,11 +159,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 87
-        y: 173
-        width: 60
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 158
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5273882}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: hen-luna-with-gun_5
       rect:
         serializedVersion: 2
-        x: 179
-        y: 173
-        width: 55
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 174
+        y: 158
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5006896, y: 0.5256337}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: hen-luna-with-gun_6
       rect:
         serializedVersion: 2
-        x: 21
-        y: 95
-        width: 41
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 87
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.4317241, y: 0.4374642}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: hen-luna-with-gun_7
       rect:
         serializedVersion: 2
-        x: 114
-        y: 95
-        width: 60
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 87
+        y: 87
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5009196, y: 0.4236619}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: hen-luna-with-gun_8
       rect:
         serializedVersion: 2
-        x: 201
-        y: 95
-        width: 55
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 174
+        y: 87
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5002298, y: 0.42422497}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: hen-luna-with-gun_9
       rect:
         serializedVersion: 2
-        x: 26
-        y: 17
-        width: 33
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 16
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.48931012, y: 0.33799028}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: hen-luna-with-gun_10
       rect:
         serializedVersion: 2
-        x: 114
-        y: 18
-        width: 33
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 87
+        y: 16
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.50160986, y: 0.35209128}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: hen-luna-with-gun_11
       rect:
         serializedVersion: 2
-        x: 201
-        y: 18
-        width: 33
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 174
+        y: 16
+        width: 87
+        height: 71
+      alignment: 9
+      pivot: {x: 0.50173527, y: 0.33839864}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

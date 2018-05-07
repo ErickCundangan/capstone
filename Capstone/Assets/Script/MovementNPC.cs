@@ -31,7 +31,6 @@ public class MovementNPC : MonoBehaviour
     private bool isTalk;
 
     private DialogueManager dialogManager;
-    GameObject NPC;
 
     // Use this for initialization
     void Start()
@@ -40,7 +39,6 @@ public class MovementNPC : MonoBehaviour
 
         myRigidBody = GetComponent<Rigidbody2D>();
         dialogManager = FindObjectOfType<DialogueManager>();
-        NPC = FindObjectOfType<GameObject>();
 
         waitCounter = waitTime;
         walkCounter = walkTime;
