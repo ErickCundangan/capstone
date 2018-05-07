@@ -22,106 +22,90 @@ public class Game4_PlayerController : MonoBehaviour
     public GameObject shotLeft;
     public Transform shotSpawn;
     public string direction = "up";
+    
 
-    public float playerHealth;
-
-    public int kills;
-
-    private bool isStageClear;
     // Use this for initialization
     void Start()
     {
-        playerHealth = 100f;
         Screen.orientation = ScreenOrientation.Landscape;
         anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         //shooting
-        lastMove = new Vector2(0, -1f);
-
         Instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        ChecIfStageIsClear();
-
         playerMoving = false;
 
-        if (playerHealth >= 0)
+        if (!canMove)
         {
-            if (!canMove)
-            {
-                myRigidbody.velocity = Vector2.zero;
-                return;
-            }
-
-            if (CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0.5f || CrossPlatformInputManager.GetAxisRaw("Horizontal") < -0.5f)
-            {
-                //transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-                myRigidbody.velocity = new Vector2(CrossPlatformInputManager.GetAxisRaw("Horizontal") * moveSpeed, myRigidbody.velocity.y);
-                playerMoving = true;
-                lastMove = new Vector2(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0);
-
-            }
-
-            if (CrossPlatformInputManager.GetAxisRaw("Vertical") > 0.5f || CrossPlatformInputManager.GetAxisRaw("Vertical") < -0.5f)
-            {
-                //transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0f));
-                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, CrossPlatformInputManager.GetAxisRaw("Vertical") * moveSpeed);
-                playerMoving = true;
-                lastMove = new Vector2(0, CrossPlatformInputManager.GetAxisRaw("Vertical"));
-
-            }
-
-            if (CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0.5f && CrossPlatformInputManager.GetAxisRaw("Horizontal") > -0.5f)
-            {
-                myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
-
-            }
-
-            if (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.5f && CrossPlatformInputManager.GetAxisRaw("Vertical") > -0.5f)
-            {
-                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
-            }
-
-            //diagonal checking direction
-            if ((CrossPlatformInputManager.GetAxisRaw("Horizontal") > -0.71f && CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0.71f)
-                && (CrossPlatformInputManager.GetAxisRaw("Vertical") > 0 && CrossPlatformInputManager.GetAxisRaw("Vertical") > 0))
-
-            {
-                direction = "up";
-            }
-            else if ((CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.71f && CrossPlatformInputManager.GetAxisRaw("Vertical") > -0.71f) &&
-                (CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0 && CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0))
-
-            {
-                direction = "left";
-            }
-            else if ((CrossPlatformInputManager.GetAxisRaw("Horizontal") > -0.71f && CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0.71f)
-                && (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0 && CrossPlatformInputManager.GetAxisRaw("Vertical") < 0))
-
-            {
-                direction = "down";
-            }
-            else if ((CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0 && CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0)
-                && (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.71f && CrossPlatformInputManager.GetAxisRaw("Vertical") > -0.71f))
-
-            {
-                direction = "right";
-            }
-
-            anim.SetBool("PlayerMoving", playerMoving);
-            anim.SetFloat("LastMoveX", lastMove.x);
-            anim.SetFloat("LastMoveY", lastMove.y);
-
-            HandleAnimation();
+            myRigidbody.velocity = Vector2.zero;
+            return;
         }
-        else
+
+        if (CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0.5f || CrossPlatformInputManager.GetAxisRaw("Horizontal") < -0.5f)
         {
-            Debug.Log("Game Over: Player dead");
-            Destroy(gameObject);
+            //transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+            myRigidbody.velocity = new Vector2(CrossPlatformInputManager.GetAxisRaw("Horizontal") * moveSpeed, myRigidbody.velocity.y);
+            playerMoving = true;
+            lastMove = new Vector2(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0);
+            
         }
+
+        if (CrossPlatformInputManager.GetAxisRaw("Vertical") > 0.5f || CrossPlatformInputManager.GetAxisRaw("Vertical") < -0.5f)
+        {
+            //transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0f));
+            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, CrossPlatformInputManager.GetAxisRaw("Vertical") * moveSpeed);
+            playerMoving = true;
+            lastMove = new Vector2(0, CrossPlatformInputManager.GetAxisRaw("Vertical"));
+            
+        }
+
+        if (CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0.5f && CrossPlatformInputManager.GetAxisRaw("Horizontal") > -0.5f)
+        {
+            myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
+
+        }
+
+        if (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.5f && CrossPlatformInputManager.GetAxisRaw("Vertical") > -0.5f)
+        {
+            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
+        }
+        
+        //diagonal checking direction
+        if ((CrossPlatformInputManager.GetAxisRaw("Horizontal") > -0.71f && CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0.71f)
+            && (CrossPlatformInputManager.GetAxisRaw("Vertical") > 0 && CrossPlatformInputManager.GetAxisRaw("Vertical") > 0))
+
+        {
+            direction = "up";
+        }
+        else if ((CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.71f && CrossPlatformInputManager.GetAxisRaw("Vertical") > -0.71f)  &&
+            (CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0 && CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0))
+
+        {
+            direction = "left";
+        }
+        else if ((CrossPlatformInputManager.GetAxisRaw("Horizontal") > -0.71f && CrossPlatformInputManager.GetAxisRaw("Horizontal") < 0.71f)
+            && (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0 && CrossPlatformInputManager.GetAxisRaw("Vertical") < 0))
+
+        {
+            direction = "down";
+        }
+        else if ((CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0 && CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0)
+            && (CrossPlatformInputManager.GetAxisRaw("Vertical") < 0.71f && CrossPlatformInputManager.GetAxisRaw("Vertical") > -0.71f))
+
+        {
+            direction = "right";
+        }
+
+        anim.SetBool("PlayerMoving", playerMoving);
+        anim.SetFloat("LastMoveX", lastMove.x);
+        anim.SetFloat("LastMoveY", lastMove.y);
+
+        HandleAnimation();
+        
     }
 
     public void HandleAnimation()
@@ -207,14 +191,5 @@ public class Game4_PlayerController : MonoBehaviour
 
         isAttack = true;
         StartCoroutine(Attack());
-    }
-
-    void ChecIfStageIsClear()
-    {
-        if(kills >= 10)
-        {
-            isStageClear = true;
-            Debug.Log("Stage is Clear :: " + isStageClear);
-        }
     }
 }

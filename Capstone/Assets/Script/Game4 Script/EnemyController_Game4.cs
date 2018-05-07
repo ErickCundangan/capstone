@@ -18,7 +18,7 @@ public class EnemyController_Game4 : MonoBehaviour
     public float attackRange;
     public float attackTime;
     public float attackCooldown = 5f;
-    private Vector2 moveInput;
+
 
     // Use this for initialization
     void Start()
@@ -36,16 +36,14 @@ public class EnemyController_Game4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         isMoving = true;
         //distance = new Vector2(target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y);
         distance =  Vector2.Distance(transform.position, target.position);
         direction = (target.transform.position - transform.position).normalized;
 
-       
         if (isNotDead)
         {
-            if (distance > attackRange)            //MOVCE
+            if (distance >= attackRange)            //MOVCE
             {
                 if (isMoving)
                 {
@@ -98,23 +96,20 @@ public class EnemyController_Game4 : MonoBehaviour
     {
         isNotDead = true;
         isMoving = true;
-        
+
         if (target != null)
         {
-            float distanceTarget = Vector2.Distance(transform.position, target.position);
+            //float distanceTarget = Vector2.Distance(transform.position, target.position);
 
-            if (distanceTarget <= 1.05f) //1f
-            {
-                rigid.isKinematic = true;
-                return;
-            }
-            else
-            {
-                rigid.isKinematic = false;
-            }
-            //moveInput = new Vector2(direction.x, direction.y).normalized;
-
-            //rigid.velocity = new Vector2(moveInput.x * speed, moveInput.y * speed);
+            //if (distanceTarget <= 1.2f)
+            //{
+            //    rigid.isKinematic = true;
+            //    return;
+            //}
+            //else
+            //{
+            //    rigid.isKinematic = false;
+            //}
 
             isAttacking = false;
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
@@ -139,7 +134,7 @@ public class EnemyController_Game4 : MonoBehaviour
         anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 0);
         anim.SetLayerWeight(anim.GetLayerIndex("Attack"), 0);
         anim.SetLayerWeight(anim.GetLayerIndex ("Dead"), 1);
-        
+        Debug.Log("HIT!!");
         anim.SetBool("isDead", true);
     }
 
@@ -151,6 +146,7 @@ public class EnemyController_Game4 : MonoBehaviour
     public void DestroyCollider()
     {
         Destroy(gameObject.GetComponents<Collider2D>()[0]);
+        Destroy(gameObject.GetComponents<Collider2D>()[1]);
     }
 
     public void Attack()
@@ -176,7 +172,6 @@ public class EnemyController_Game4 : MonoBehaviour
             {
                 anim.SetBool("isAttack", false);
             }
-            
         }
         else
         {
