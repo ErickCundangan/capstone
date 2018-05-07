@@ -4138,7 +4138,7 @@ MonoBehaviour:
   dialogueSpeaker: Pluma
   dialogueLines:
   - An Item that is made from a big bird's feather.
-  - is known to be used by writers and soldiers in battle
+  - is known to be used by writers
   dialogueSprite: {fileID: 21300000, guid: b0813cac5cb80cb44b340691ac2d87f9, type: 3}
   exitHolder: 1
   itemText: {fileID: 1920244170}
