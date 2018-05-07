@@ -14,6 +14,8 @@ public class AccountLoader : MonoBehaviour {
 	Text error;
 	// Use this for initialization
 	void Start () {
+		passNew.inputType = InputField.InputType.Password;
+		passLoad.inputType = InputField.InputType.Password;
 		error = errorHolder.GetComponentInChildren<Text> ();
 	}
 	

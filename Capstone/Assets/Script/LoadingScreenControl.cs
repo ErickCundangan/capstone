@@ -13,8 +13,8 @@ public class LoadingScreenControl : MonoBehaviour {
 	}
 
 	public void LoadScene(string scene) {
-		StartCoroutine (LoadingScreen (scene));
 		Time.timeScale = 1;
+		StartCoroutine (LoadingScreen (scene));
 	}
 
 	IEnumerator LoadingScreen(string scene) {

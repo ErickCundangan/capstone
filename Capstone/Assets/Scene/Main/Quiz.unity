@@ -767,7 +767,6 @@ GameObject:
   - component: {fileID: 511117599}
   - component: {fileID: 511117598}
   - component: {fileID: 511117597}
-  - component: {fileID: 511117596}
   - component: {fileID: 511117601}
   - component: {fileID: 511117603}
   - component: {fileID: 511117602}
@@ -778,17 +777,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &511117596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 511117595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb059196819ce64dadcd1202225905c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &511117597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,7 +902,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Main
+          m_StringArgument: Meeting
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

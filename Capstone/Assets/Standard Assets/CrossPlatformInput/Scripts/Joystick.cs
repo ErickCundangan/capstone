@@ -102,7 +102,10 @@ namespace UnityStandardAssets.CrossPlatformInput
 		}
 
 
-		public void OnPointerDown(PointerEventData data) { m_StartPos = transform.position; }
+		public void OnPointerDown(PointerEventData data) 
+		{ 
+			m_StartPos = transform.position;
+		}
 
 		void OnDisable()
 		{
