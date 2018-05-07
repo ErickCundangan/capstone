@@ -26,21 +26,30 @@ public class DialogueHolder : MonoBehaviour {
 		
 	}
 
+	bool isAudioPlayed = false;
+
     public void OnClick()
     {
         //DialogueSnippet
         if (playerInsideTrigger)
-        {
+		{
+			if (!isAudioPlayed) {
+				AudioSource audio = GetComponent<AudioSource> ();
+				audio.Play ();
+				isAudioPlayed = true;
+			}
+
             if (!dManager.dialogActive || (dManager.dialogActive && dManager.currentLine <= dManager.dialogLines.Length))
-            {
+			{
                 dManager.dialogSpeaker = dialogueSpeaker;
                 dManager.dialogLines = dialogueLines;
                 dManager.dialogSprite = dialogueSprite;
-                if (exitHolder == 1)
-                    dManager.exitValue = exitHolder--;
-                else
-                    dManager.exitValue = exitHolder;
-
+				if (exitHolder == 1) {
+					dManager.exitValue = exitHolder--;
+				}
+				else {
+					dManager.exitValue = exitHolder;
+				}
                 dManager.ShowDialogue();
             }
         }

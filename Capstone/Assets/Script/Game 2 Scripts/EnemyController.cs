@@ -35,7 +35,7 @@ public class EnemyController : MonoBehaviour {
 				speed = -speed;
 			}
 
-			if (Random.value > fireRate && !enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead") && enemyHolder.position.y <= 7) {
+			if (Random.value > fireRate/* && !enemy.gameObject.GetComponent<Animator> ().GetBool ("isEnemyDead") && enemyHolder.position.y <= 7*/) {
 				Instantiate (shot, enemy.position, enemy.rotation);
 				foreach(Animator anim in anims)
 					if (anim != null)

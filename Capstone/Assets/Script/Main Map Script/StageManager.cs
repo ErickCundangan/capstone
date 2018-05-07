@@ -78,4 +78,9 @@ public class StageManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void PlayOnClick() {
+		AudioSource audio = GetComponent<AudioSource> ();
+		audio.Play ();
+	}
 }
