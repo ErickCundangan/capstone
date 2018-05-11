@@ -99,10 +99,10 @@ public class CutsceneDialogueManager : MonoBehaviour {
 
 	public void EndCutScene() {
 		if (!isSceneLoading) {
+			isSceneLoading = true;
 			Animator canvasAnim = canvas.GetComponent<Animator> ();
 			canvasAnim.SetBool ("isCutsceneDone", true);
 			StartCoroutine (Load ());
-			isSceneLoading = true;
 		}
 
 	}

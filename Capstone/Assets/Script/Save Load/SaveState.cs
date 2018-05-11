@@ -8,4 +8,5 @@
 	public int gameThreeStagesCleared = 0;
 	public int gameFourStagesCleared = 0;
 	public int postQuizScore = 0;
+	public bool sound = true;
 }
