@@ -16,7 +16,7 @@ public class OptionSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		audioListener.enabled = SaveManager.Instance.state.sound;
 	}
 
 	public void TurnOnSound() {
