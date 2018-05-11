@@ -38,10 +38,11 @@ public class SpawnManager : MonoBehaviour {
         time += Time.deltaTime;
         killsAmp = Game4_PlayerController.Instance.kills / 50;
 
-        if (time > lastTimeSword + spawnTimeSword + killsAmp)                 //Spawn an enemy every interval
+        if (time > lastTimeSword + spawnTimeSword + killsAmp)             //Spawn an enemy every interval
         {
             if(!(spawnTimeSword <= 1))
                 spawnTimeSword -= 0.05f;
+            
             SpawnSword();
             lastTimeSword = time;
         }

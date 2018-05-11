@@ -18,7 +18,7 @@ public class Game4_BulletController_Down : MonoBehaviour
     {
         bullet.position += Vector3.down * speed;
 
-        if (bullet.position.y <= -18.5)
+        if (bullet.position.y <= -21.57)
         {
             Destroy(gameObject);
         }

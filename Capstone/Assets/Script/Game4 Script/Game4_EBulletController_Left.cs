@@ -26,7 +26,7 @@ public class Game4_EBulletController_Left : MonoBehaviour {
     {
 
         bullet.position += Vector3.left * speed;
-        if (bullet.position.x <= -12.5)
+        if (bullet.position.x <= -20.29)
         {
              Destroy(gameObject);
         }

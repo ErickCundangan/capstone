@@ -25,7 +25,7 @@ public class Game4_EBulletController_Up : MonoBehaviour {
         //    lastTime = SpawnManager.Instance.time;
         //}
         bullet.position += Vector3.up * speed;
-        if (bullet.position.y >= 10.5)
+        if (bullet.position.y >= 13.33)
         {
              Destroy(gameObject);
         }
