@@ -91,4 +91,8 @@ public class SaveManager : MonoBehaviour {
 		state.isPostQuizDone = true;
 		state.postQuizScore = score;
 	}
+
+	public void SetSound (bool isOn) {
+		state.sound = isOn;
+	}
 }

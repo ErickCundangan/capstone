@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class OptionSystem : MonoBehaviour {
 	public GameObject options;
+	public AudioListener audioListener;
 	bool isOptionsActive = false;
 
 	// Use this for initialization
@@ -15,7 +16,19 @@ public class OptionSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		audioListener.enabled = SaveManager.Instance.state.sound;
+	}
+
+	public void TurnOnSound() {
+		audioListener.enabled = true;
+		SaveManager.Instance.SetSound (true);
+		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
+	}
+
+	public void TurnOffSound() {
+		audioListener.enabled = false;
+		SaveManager.Instance.SetSound (false);
+		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 	}
 
 	public void CogButton_onClick() {
@@ -50,4 +63,6 @@ public class OptionSystem : MonoBehaviour {
 		SceneManager.LoadScene ("Home");
 		Time.timeScale = 1;
 	}
+
+
 }
