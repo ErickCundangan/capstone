@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Soldier 3
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - 'Greetings Sir! Thank you for leading this country. '
   - I know for a fact that you are not related to the famous painter Juan Luna.\
@@ -2195,10 +2195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Soldier 1
+  dialogueSpeaker: Filipino Messenger
   dialogueLines:
-  - Hello General Luna Im giving you a letter that was sent by president aguinaldo
-    be there on time.
+  - Hello General Luna Im giving you a letter that was sent by president Aguinaldo.
+  - Go to Kawit Cavite on time.
   dialogueSprite: {fileID: 21300000, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
@@ -4675,7 +4675,7 @@ MonoBehaviour:
   dialogueSpeaker: Apolinario Mabini
   dialogueLines:
   - Greetings General Luna!
-  - Do you know that Pluma's are not used in battle instead it is used for writing?
+  - Do you know that Plumas are used for writing?
   dialogueSprite: {fileID: 21300002, guid: ebd73782cb8fd4147ba91724a7e50d8c, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
@@ -5281,7 +5281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Soldier 2
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - General! Have a safe trip. It will be a long travel.
   - Do you know that there is no such thing as "agimat sa dugo"

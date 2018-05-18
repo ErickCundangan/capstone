@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: Filipino Soldier
   dialogueLines:
-  - Hmmmmmm. Careful on your journey.
+  - Always keep your guard up.
   - You can never know who to trust.
   dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
   exitHolder: 1
@@ -3495,7 +3495,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.07}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3506,7 +3506,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.56, y: 0.76}
   m_EdgeRadius: 0
 --- !u!114 &910969236
 MonoBehaviour:

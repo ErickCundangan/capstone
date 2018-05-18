@@ -1,12 +1,13 @@
 fileFormatVersion: 2
 guid: bcf6002faddd4e2479c569f3425ee5fe
-timeCreated: 1526622472
+timeCreated: 1526629082
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: joystick_5
     21300002: joystick_6
     21300004: joystick_6
+    21300006: joystick_0
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -90,15 +91,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: joystick_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 393
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
       name: joystick_6
       rect:
         serializedVersion: 2
-        x: 149
-        y: 8
-        width: 132
-        height: 132
+        x: 150
+        y: 7
+        width: 130
+        height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -112,7 +127,7 @@ TextureImporter:
         width: 115
         height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
