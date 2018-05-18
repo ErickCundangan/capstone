@@ -2076,6 +2076,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 224155327192441296, guid: 9529ecc3d479da5499993355e6c2cb4f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155327192441296, guid: 9529ecc3d479da5499993355e6c2cb4f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155327192441296, guid: 9529ecc3d479da5499993355e6c2cb4f,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155327192441296, guid: 9529ecc3d479da5499993355e6c2cb4f,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 2}
   m_IsPrefabParent: 0
@@ -5208,7 +5228,7 @@ GameObject:
   - component: {fileID: 1492871790}
   - component: {fileID: 1492871789}
   m_Layer: 5
-  m_Name: Gulok
+  m_Name: Bolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5264,7 +5284,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gulok
+  m_Text: Bolo
 --- !u!222 &1492871790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5603,7 +5623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Gulok
+  dialogueSpeaker: Bolo
   dialogueLines:
   - A weapon that is usually used by katipuneros
   dialogueSprite: {fileID: 21300000, guid: 665b83d21ee3d5242b0a9aa99227f93e, type: 3}

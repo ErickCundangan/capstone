@@ -27,6 +27,21 @@ public class AccountLoader : MonoBehaviour {
 	public void NewAccSumbit_OnClick() {
 		string uname = unameNew.text;
 		string pass = passNew.text;
+
+		if (uname.Length < 8) {
+			error.text = "Username must be at least 8 characters.";
+			errorHolder.SetActive (true);
+			StartCoroutine (Wait ());
+			return;
+		}
+
+		if (pass.Length < 8) {
+			error.text = "Password must be at least 8 characters.";
+			errorHolder.SetActive (true);
+			StartCoroutine (Wait ());
+			return;
+		}
+
 		if (SaveManager.Instance.NewGame (uname, pass))
 			LoadingScreenControl.Instance.LoadScene ("Quiz");
 		else {
