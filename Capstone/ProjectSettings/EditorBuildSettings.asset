@@ -57,5 +57,11 @@ EditorBuildSettings:
     path: Assets/Scene/Survival/Game4_Stage1.unity
     guid: efac1df507f2c9540adc921c2b451efd
   - enabled: 1
+<<<<<<< HEAD
+=======
+    path: Assets/Scene/Cutscene/Survival.unity
+    guid: 0e3cd23c0a3b29149a10df09e210b659
+  - enabled: 1
+>>>>>>> 594eb06eb9e8ddd099dd99a7455b6577eed6d6a4
     path: Assets/Scene/Cutscene/Credits.unity
     guid: 32f2285a5cc0efb408996dbfa24f2fae
