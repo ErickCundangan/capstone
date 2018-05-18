@@ -5,7 +5,9 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Game4_PlayerController : MonoBehaviour
 {
-
+    public GameObject stageClearPanel;
+    public GameObject gameOverPanel;
+    public GameObject buttons;
     public float moveSpeed;
     public bool canMove;
     private Animator anim;
@@ -13,6 +15,7 @@ public class Game4_PlayerController : MonoBehaviour
     public bool playerMoving;
     private Vector2 lastMove;
     public bool isAttack;
+    public bool isDead;
 
     //shooting
     public static Game4_PlayerController Instance { set; get; }
@@ -22,6 +25,7 @@ public class Game4_PlayerController : MonoBehaviour
     public GameObject shotLeft;
     public Transform shotSpawn;
     public string direction = "up";
+    private Vector3 offset;
 
     public float playerHealth;
 
@@ -47,14 +51,9 @@ public class Game4_PlayerController : MonoBehaviour
         ChecIfStageIsClear();
 
         playerMoving = false;
-
-        if (playerHealth >= 0)
+        if (playerHealth > 0)
         {
-            if (!canMove)
-            {
-                myRigidbody.velocity = Vector2.zero;
-                return;
-            }
+            
 
             if (CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0.5f || CrossPlatformInputManager.GetAxisRaw("Horizontal") < -0.5f)
             {
@@ -119,8 +118,22 @@ public class Game4_PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Game Over: Player dead");
-            Destroy(gameObject);
+            canMove = false;
+            direction = "";
+            if (kills < 100)
+                gameOverPanel.SetActive(true);
+
+            else
+                stageClearPanel.SetActive(true);
+
+            buttons.SetActive(true);
+            StartCoroutine(Death());
+        }
+
+        if (!canMove)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            return;
         }
     }
 
@@ -128,83 +141,108 @@ public class Game4_PlayerController : MonoBehaviour
     {
         if (playerMoving)
         {
-            anim.SetLayerWeight(0, 1);
+            anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 1);
 
             anim.SetFloat("MoveX", CrossPlatformInputManager.GetAxisRaw("Horizontal"));
             anim.SetFloat("MoveY", CrossPlatformInputManager.GetAxisRaw("Vertical"));
 
         }
-        if (isAttack)
-        {
-            anim.SetLayerWeight(1, 1);
-        }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
             Debug.Log("FIRE");
-			AudioSource audio = GetComponent<AudioSource> ();
-			audio.Play ();
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             if (direction == "up")
             {
-                Instantiate(shotUp, shotSpawn.position, shotSpawn.rotation);
+                offset = new Vector3(0, 0.5f, 0);
+                Instantiate(shotUp, shotSpawn.position + offset, shotSpawn.rotation);
             }
             if (direction == "right")
             {
-                Instantiate(shotRight, shotSpawn.position, shotSpawn.rotation);
+                offset = new Vector3(0.5f, 0, 0);
+                Instantiate(shotRight, shotSpawn.position + offset, shotSpawn.rotation);
             }
             if (direction == "down")
             {
-                Instantiate(shotDown, shotSpawn.position, shotSpawn.rotation);
+                offset = new Vector3(0, -0.5f, 0);
+                Instantiate(shotDown, shotSpawn.position + offset, shotSpawn.rotation);
             }
             if (direction == "left")
             {
-                Instantiate(shotLeft, shotSpawn.position, shotSpawn.rotation);
+                offset = new Vector3(-0.5f, 0, 0);
+                Instantiate(shotLeft, shotSpawn.position + offset, shotSpawn.rotation);
             }
-            
+
             isAttack = true;
             StartCoroutine(Attack());
         }
+
     }
 
     private IEnumerator Attack()
     {
         //isAttack = true;
-
-        anim.SetBool("isAttack", isAttack);
+        
+        anim.SetBool("isAttack", true);
+        anim.SetLayerWeight(anim.GetLayerIndex("Attacking"),1);
 
         //yield return new WaitForFixedUpdate();
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
 
         StopAttack();
         
     }
-    
+
+
     public void StopAttack()
     {
         isAttack = false;
 
         anim.SetBool("isAttack", isAttack);
+        anim.SetLayerWeight(anim.GetLayerIndex("Attacking"), 0);
+    }
+
+    private IEnumerator Death()
+    {
+
+        Debug.Log("Game Over: Player dead");
+        anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 0);
+        anim.SetLayerWeight(anim.GetLayerIndex("Attacking"), 0);
+        anim.SetLayerWeight(anim.GetLayerIndex("Death"), 1);
+
+        anim.SetBool("isDead", true);
+
+        //yield return new WaitForFixedUpdate();
+        yield return new WaitForEndOfFrame();
+        
     }
 
     public void OnClick()
     {
-        if(direction == "up")
+        Debug.Log("FIRE");
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+        if (direction == "up")
         {
-            Instantiate(shotUp, shotSpawn.position, shotSpawn.rotation);
+            offset = new Vector3(0, 2.5f, 0);
+            Instantiate(shotUp, shotSpawn.position + offset, shotSpawn.rotation);
         }
-        if(direction == "right")
+        if (direction == "right")
         {
-            Instantiate(shotRight, shotSpawn.position, shotSpawn.rotation);
+            offset = new Vector3(2.5f, 0, 0);
+            Instantiate(shotRight, shotSpawn.position + offset, shotSpawn.rotation);
         }
-        if(direction == "down")
+        if (direction == "down")
         {
-            Instantiate(shotDown, shotSpawn.position, shotSpawn.rotation);
+            offset = new Vector3(0, -2.5f, 0);
+            Instantiate(shotDown, shotSpawn.position + offset, shotSpawn.rotation);
         }
-        if(direction == "left")
+        if (direction == "left")
         {
-            Instantiate(shotLeft, shotSpawn.position, shotSpawn.rotation);
+            offset = new Vector3(-2.5f, 0, 0);
+            Instantiate(shotLeft, shotSpawn.position + offset, shotSpawn.rotation);
         }
-
 
         isAttack = true;
         StartCoroutine(Attack());
@@ -212,10 +250,10 @@ public class Game4_PlayerController : MonoBehaviour
 
     void ChecIfStageIsClear()
     {
-        if(kills >= 10)
+        if(kills >= 100)
         {
             isStageClear = true;
-			SaveManager.Instance.completeStage (4, 0);
+			SaveManager.Instance.completeStage(4, 0);
 			SaveManager.Instance.Save (SaveManager.Instance.currentUser);
         }
     }

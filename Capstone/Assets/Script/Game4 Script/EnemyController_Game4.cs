@@ -23,6 +23,7 @@ public class EnemyController_Game4 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //speed = SpawnManager.Instance.speedSword;
         target = FindObjectOfType<Game4_PlayerController>().transform;
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
@@ -103,7 +104,7 @@ public class EnemyController_Game4 : MonoBehaviour
         {
             float distanceTarget = Vector2.Distance(transform.position, target.position);
 
-            if (distanceTarget <= 1.05f) //1f
+            if (distanceTarget <= 1.1f) //1f
             {
                 rigid.isKinematic = true;
                 return;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyGunController_Game4 : MonoBehaviour
 {
     Animator anim;
-    public Transform target;
+    private Transform target;
     public float speed;
     private Vector2 direction;
     public float distance;
@@ -31,6 +31,7 @@ public class EnemyGunController_Game4 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //speed = SpawnManager.Instance.spawnTimeGun;
         target = FindObjectOfType<Game4_PlayerController>().transform;
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
@@ -44,7 +45,6 @@ public class EnemyGunController_Game4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         ChangeDirection();
 
         isMoving = true;
@@ -52,6 +52,7 @@ public class EnemyGunController_Game4 : MonoBehaviour
         distance = Vector2.Distance(transform.position, target.position);
         direction = (target.transform.position - transform.position).normalized;
 
+        
 
         if (isNotDead)
         {
@@ -64,6 +65,8 @@ public class EnemyGunController_Game4 : MonoBehaviour
             }
             else                                      //ATTACK
             {
+                anim.SetBool("isMoving", false);
+                anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 0);
                 isMoving = false;
                 isAttacking = true;
                 Attack();
@@ -73,21 +76,6 @@ public class EnemyGunController_Game4 : MonoBehaviour
         {
             Death();                                    //DIE
         }
-        //if (isNotDead)
-        //{
-        //    if (isAttacking)
-        //    {
-        //        Attack();
-        //    }
-        //    else
-        //    {
-        //        FollowTarget();
-        //    }
-        //}
-        //else
-        //{
-        //    Death();
-        //}
 
         attackTime += Time.deltaTime;
 
@@ -106,9 +94,9 @@ public class EnemyGunController_Game4 : MonoBehaviour
     {
         isNotDead = true;
         isMoving = true;
-
         if (target != null)
         {
+            //anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 1);
             float distanceTarget = Vector2.Distance(transform.position, target.position);
 
             if (distanceTarget <= 1f) //1f
@@ -131,10 +119,6 @@ public class EnemyGunController_Game4 : MonoBehaviour
 
     private void ChangeDirection()
     {
-        anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 1);
-        anim.SetLayerWeight(anim.GetLayerIndex("Attack"), 0);
-        anim.SetLayerWeight(anim.GetLayerIndex("Dead"), 0);
-
         anim.SetBool("isMoving", true);
 
         anim.SetFloat("MoveX", direction.x);
@@ -164,19 +148,13 @@ public class EnemyGunController_Game4 : MonoBehaviour
     {
         if (isAttacking)
         {
+            anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 0);
             if (attackTime >= attackCooldown)
             {
                 AudioSource audio = GetComponent<AudioSource>();
                 audio.Play();
 
-                isAttacking = true;
-
-                anim.SetBool("isAttack", true);
-                anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 0);
-                anim.SetLayerWeight(anim.GetLayerIndex("Attack"), 1);
-                anim.SetLayerWeight(anim.GetLayerIndex("Dead"), 0);
-
-                anim.SetBool("isMoving", false);
+                StartCoroutine(AttackAnim());
 
                 attackTime = 0;
                 rigid.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -216,4 +194,30 @@ public class EnemyGunController_Game4 : MonoBehaviour
         }
        
     }
+    private IEnumerator AttackAnim()
+    {
+        //isAttack = true;
+
+        anim.SetBool("isAttack", true);
+        anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 0);
+        anim.SetLayerWeight(anim.GetLayerIndex("Attack"), 1);
+        anim.SetLayerWeight(anim.GetLayerIndex("Dead"), 0);
+
+        anim.SetBool("isMoving", false);
+
+
+        //yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(1f);
+
+        StopAttack();
+
+    }
+
+    public void StopAttack()
+    {
+
+        anim.SetBool("isAttack", false);
+        anim.SetLayerWeight(anim.GetLayerIndex("Attack"), 0);
+    }
+
 }

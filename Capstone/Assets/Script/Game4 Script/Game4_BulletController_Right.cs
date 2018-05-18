@@ -18,7 +18,7 @@ public class Game4_BulletController_Right : MonoBehaviour
     {
         bullet.position += Vector3.right * speed;
 
-        if (bullet.position.x >= 23.34)
+        if (bullet.position.x >= 45.75)
         {
             Destroy(gameObject);
         }
@@ -26,21 +26,20 @@ public class Game4_BulletController_Right : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (!(other.tag == "Player"))
+            Destroy(gameObject);
         if (other.tag == "Enemy")
         {
             Game4_PlayerController.Instance.kills += 1;
-            Destroy(gameObject);
         }
 
         if (other.tag == "Boss" && other.gameObject.GetComponent<Transform>().position.y <= 4)
         {
             BossController.Instance.bossHealth -= 1;
-            Destroy(gameObject);
         }
 
         if (other.tag == "EnemyBullet")
         {
-            Destroy(gameObject);
             Destroy(other.gameObject);
         }
     }

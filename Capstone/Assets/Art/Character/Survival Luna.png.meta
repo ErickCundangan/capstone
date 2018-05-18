@@ -1,0 +1,334 @@
+fileFormatVersion: 2
+guid: 9ae14326b0177af43bcd7904d44649c6
+timeCreated: 1526570146
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Survival Luna_0
+    21300002: Survival Luna_1
+    21300004: Survival Luna_2
+    21300006: Survival Luna_3
+    21300008: Survival Luna_4
+    21300010: Survival Luna_5
+    21300012: Survival Luna_6
+    21300014: Survival Luna_7
+    21300016: Survival Luna_8
+    21300018: Survival Luna_9
+    21300020: Survival Luna_10
+    21300022: Survival Luna_11
+    21300024: Survival Luna_12
+    21300026: Survival Luna_13
+    21300028: Survival Luna_14
+    21300030: Survival Luna_15
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 48
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Survival Luna_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 228
+        width: 33
+        height: 54
+      alignment: 9
+      pivot: {x: 0.49515152, y: 0.5077766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 227
+        width: 33
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4987876, y: 0.5978497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 228
+        width: 33
+        height: 55
+      alignment: 9
+      pivot: {x: 0.4987876, y: 0.59099674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 237
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 160
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7256667, y: 0.5004439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 60
+        height: 46
+      alignment: 9
+      pivot: {x: 0.7273333, y: 0.5099998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7231351, y: 0.5002984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 55
+        height: 45
+      alignment: 9
+      pivot: {x: 0.7018183, y: 0.4991109}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 84
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: 0.29099998, y: 0.48711056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 84
+        width: 59
+        height: 46
+      alignment: 9
+      pivot: {x: 0.2764383, y: 0.49653792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_10
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 82
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: 0.27266666, y: 0.48666653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_11
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 82
+        width: 55
+        height: 45
+      alignment: 9
+      pivot: {x: 0.295636, y: 0.48533276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_12
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 7
+        width: 33
+        height: 60
+      alignment: 9
+      pivot: {x: 0.49187678, y: 0.36660248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 6
+        width: 33
+        height: 61
+      alignment: 9
+      pivot: {x: 0.47525764, y: 0.4099079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_14
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 5
+        width: 33
+        height: 61
+      alignment: 9
+      pivot: {x: 0.48781517, y: 0.3930689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Survival Luna_15
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 5
+        width: 33
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33415487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
