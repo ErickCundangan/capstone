@@ -36,7 +36,6 @@ public class StageManager : MonoBehaviour {
 		}
 
 		game1Stages [0].interactable = true;
-
 		if (SaveManager.Instance.isStageCleared (1, 0))
 			game1Stages [1].interactable = true;
 		
