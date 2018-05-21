@@ -4792,7 +4792,7 @@ MonoBehaviour:
   - I will follow your Artikulo Uno "Ang hindi sumunod sa utos ng Punong Heneral ng
     Digmaan ay tatanggalan ng ranggo at ipapapatay ng walang paglilitis sa Husgado
     Militar."
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300002, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1637574997
