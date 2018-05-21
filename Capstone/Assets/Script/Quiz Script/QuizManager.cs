@@ -73,7 +73,7 @@ public class QuizManager : MonoBehaviour {
 		noOfQuestions++;
 		i = GetRandomNum ();
 		exclude.Add (i);
-		questionNo.text = "Question # " + noOfQuestions.ToString();
+		questionNo.text = "Question # " + noOfQuestions.ToString() + "/50";
 		question.text = questions [i];
 		ansA.text = answerA [i];
 		ansB.text = answerB [i];
