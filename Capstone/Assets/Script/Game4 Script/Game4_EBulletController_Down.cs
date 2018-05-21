@@ -25,7 +25,7 @@ public class Game4_EBulletController_Down : MonoBehaviour {
         //    lastTime = SpawnManager.Instance.time;
         //}
         bullet.position += Vector3.down * speed;
-        if (bullet.position.y <= -21.57)
+        if (bullet.position.y <= -38.09)
         {
              Destroy(gameObject);
         }

@@ -491,7 +491,7 @@ MonoBehaviour:
   dialogueLines:
   - Good day general. Our troops are waiting for you.
   - Talk to everyone here then go down to meet the others.
-  dialogueSprite: {fileID: 21300000, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &331940497
@@ -2052,7 +2052,7 @@ MonoBehaviour:
   dialogueLines:
   - Hmmmmmm. Careful on your journey.
   - You can never know who to trust.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300002, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1103830727
@@ -2381,7 +2381,7 @@ MonoBehaviour:
   dialogueSpeaker: Filipino Messenger
   dialogueLines:
   - Such a sad site to look at fallen soldiers.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300002, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1273981755
@@ -2727,9 +2727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: Filipino Messenger
   dialogueLines:
-  - Greetings General I heard that your scientific paper won a top prize in Sto. Thomas
-    University
-  - You also graduated in the field of pharmcay.
+  - Greetings General, I read about your scientific paper which won a top prize in
+    Sto. Thomas University in you're chemistry course.
+  - Where you also graduated in the field of pharmacy.
   dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
@@ -3801,7 +3801,7 @@ MonoBehaviour:
   dialogueSpeaker: Filipino Messenger
   dialogueLines:
   - 'General Luna thank you for establishing the first military academy for filipinos. '
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300002, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1705809419
@@ -4051,7 +4051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489af113f686eff448444f54f467e788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   canMove: 1
 --- !u!95 &1779379123
 Animator:
@@ -5306,7 +5306,7 @@ MonoBehaviour:
   dialogueSpeaker: Filipino Messenger
   dialogueLines:
   - General Luna I heard that you are a great scientist.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1887935740

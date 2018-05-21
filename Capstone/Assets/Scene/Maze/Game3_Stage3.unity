@@ -180,10 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Messenger
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - General don't keep your defense down. Protect our soldiers and country.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300004, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &27996132
@@ -430,7 +430,7 @@ MonoBehaviour:
   - 'Greetings General can you teach me how to unlit a candle using a gun in just
     one shot? '
   - I've heard that you are good at it.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300002, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &56683544
@@ -773,7 +773,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.10639882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -784,7 +784,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 3, y: 0.91459227}
   m_EdgeRadius: 0
 --- !u!114 &182422395
 MonoBehaviour:
@@ -797,11 +797,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
+  dialogueSpeaker: Maria Clara
   dialogueLines:
   - Greetings General!
   - Can you teach me martial arts? I've heard that you are good at it.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300010, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &182422396
@@ -1127,11 +1127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
+  dialogueSpeaker: General Jose Alenjandrino
   dialogueLines:
   - Always keep your guard up.
-  - You can never know who to trust.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  - Allies can also turn into  enemies.
+  dialogueSprite: {fileID: 21300008, guid: 4134c539d88d88b46b34ac160613d5ff, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &318950388
@@ -1928,11 +1928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
+  dialogueSpeaker: Juan Dela Cruz
   dialogueLines:
   - Our bravest General Luna I've heard that you are a great marksman.
   - Hope you enjoy your stay here in our village.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300006, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &637894982
@@ -2510,11 +2510,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Messenger
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
-  - General Luna my uncle told me that you were not that interested in military tactics
-    during your highschool days.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  - General Luna my uncle told me that you were not into military tactics during your
+    highschool days.
+  dialogueSprite: {fileID: 21300004, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &719111743
@@ -3436,7 +3436,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854102648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.05, y: -5.08, z: -1.27}
+  m_LocalPosition: {x: 6.96, y: -5.08, z: -1.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 182422393}
@@ -3519,7 +3519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489af113f686eff448444f54f467e788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   canMove: 1
 --- !u!95 &910969237
 Animator:
@@ -3827,6 +3827,60 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1091165825}
+--- !u!1 &1113060942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1113060944}
+  - component: {fileID: 1113060943}
+  m_Layer: 0
+  m_Name: Additional Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1113060943
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113060942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1113060944
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113060942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.87, y: 3.56, z: -1.1447797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140857171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6102,10 +6156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Messenger
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - Hello General going to cavite is a long way make sure you eat.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1966140089

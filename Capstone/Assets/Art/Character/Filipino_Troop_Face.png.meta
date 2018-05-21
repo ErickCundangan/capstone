@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: dd752e4497a03394d83d3a2a549b3fce
-timeCreated: 1524812971
+guid: b333b3c96826c504085c178e5e028c53
+timeCreated: 1526893410
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Filipino_Troop_Face_0
     21300002: Filipino_Troop_Face_1
     21300004: Filipino_Troop_Face_2
+    21300006: Filipino_Troop_Face_3
+    21300008: Filipino_Troop_Face_4
+    21300010: Filipino_Troop_Face_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -34,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -123,6 +126,48 @@ TextureImporter:
         serializedVersion: 2
         x: 288
         y: 144
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Filipino_Troop_Face_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Filipino_Troop_Face_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Filipino_Troop_Face_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
         width: 144
         height: 144
       alignment: 0

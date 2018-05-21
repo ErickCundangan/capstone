@@ -1105,8 +1105,8 @@ MonoBehaviour:
   dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - 'Greetings Sir! Thank you for leading this country. '
-  - I know for a fact that you are not related to the famous painter Juan Luna.\
-  dialogueSprite: {fileID: 21300004, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  - I know for a fact that you are related to the famous painter Juan Luna.
+  dialogueSprite: {fileID: 21300002, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &332880267
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489af113f686eff448444f54f467e788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   canMove: 1
 --- !u!95 &395226054
 Animator:
@@ -2197,9 +2197,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: Filipino Messenger
   dialogueLines:
-  - Hello General Luna Im giving you a letter that was sent by president Aguinaldo.
+  - Hello General Luna Im giving you a telegram that was sent by president Aguinaldo.
   - Go to Kawit Cavite on time.
-  dialogueSprite: {fileID: 21300000, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300004, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &818021573
@@ -5285,7 +5285,7 @@ MonoBehaviour:
   dialogueLines:
   - General! Have a safe trip. It will be a long travel.
   - Do you know that there is no such thing as "agimat sa dugo"
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1903288272

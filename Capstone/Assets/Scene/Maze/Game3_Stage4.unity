@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489af113f686eff448444f54f467e788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   canMove: 1
 --- !u!95 &74177266
 Animator:
@@ -3222,11 +3222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
+  dialogueSpeaker: Imelda Santos
   dialogueLines:
   - Good Day General Luna!
   - Thank you for the visit today.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  - Have a safe trip to Kawit, Cavite.
+  dialogueSprite: {fileID: 21300010, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1338368188
@@ -3489,12 +3490,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
+  dialogueSpeaker: Jose Castillo
   dialogueLines:
   - Good day General Luna
   - The villagers were talking about you because they were amazed that you almost
     had a duel with Dr. Jose Rizal
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300006, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1416341870
@@ -4410,7 +4411,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06667149}
+  m_Offset: {x: 0.03254032, y: -0.06667149}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4421,7 +4422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8808868}
+  m_Size: {x: 0.7917385, y: 0.8808868}
   m_EdgeRadius: 0
 --- !u!212 &1561209403
 SpriteRenderer:
@@ -5131,7 +5132,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.016269684, y: 0.20500755}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5142,7 +5143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 0.5877266, y: 2.0065079}
   m_EdgeRadius: 0
 --- !u!114 &1790454557
 MonoBehaviour:
@@ -5155,10 +5156,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Messenger
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - General I'm scared of all the killings.
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  - I wish I was brave as you.
+  dialogueSprite: {fileID: 21300000, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1790454558
@@ -5197,7 +5199,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.7982464
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 1
@@ -5329,7 +5331,7 @@ MonoBehaviour:
   dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - "Good Day General the cavite\xF1os are waiting for your arrival."
-  dialogueSprite: {fileID: 21300000, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1857407295
@@ -5497,11 +5499,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Messenger
+  dialogueSpeaker: Filipino Soldier
   dialogueLines:
   - General please take care of our people.
   - We are counting on you!
-  dialogueSprite: {fileID: 21300006, guid: d58e5b53883024b43b5685b72f9e7e61, type: 3}
+  dialogueSprite: {fileID: 21300004, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1860080501
@@ -5980,10 +5982,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: Gregorio Del Pilar
   dialogueLines:
-  - Greetings General Luna
-  - Are you sure you don't want me to go to you at cavite?
+  - Greetings General Luna.
+  - Are you sure you don't want me to go with you to cavite?
   - I'll just guard this village and you should continue your journey.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  dialogueSprite: {fileID: 21300000, guid: 4134c539d88d88b46b34ac160613d5ff, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1978104128
@@ -6151,12 +6153,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: Filipino Soldier
+  dialogueSpeaker: Lisa Castor
   dialogueLines:
   - Good Day Sir!
-  - Do you know that the philippine archipelago has 7,107 islands? cool right? such
-    a great country to be in.
-  dialogueSprite: {fileID: 21300002, guid: dd752e4497a03394d83d3a2a549b3fce, type: 3}
+  - Do you know that the philippine archipelago has 7,107 islands?
+  - Cool right?
+  - Such a great country to be in.
+  dialogueSprite: {fileID: 21300008, guid: b333b3c96826c504085c178e5e028c53, type: 3}
   exitHolder: 1
   itemText: {fileID: 0}
 --- !u!114 &1987795562
