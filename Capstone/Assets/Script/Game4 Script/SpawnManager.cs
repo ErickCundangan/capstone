@@ -41,36 +41,38 @@ public class SpawnManager : MonoBehaviour {
         time += Time.deltaTime;
         killsAmp = Game4_PlayerController.Instance.kills / 30;
 
-        if (time - killsAmp > lastTimeSword + spawnTimeSword )             //Spawn an enemy every interval
+        if (!(Game4_PlayerController.Instance.playerHealth <= 0))
         {
-            if(!(spawnTimeSword <= 1))
-                spawnTimeSword -= 0.25f;
+            if (time - killsAmp > lastTimeSword + spawnTimeSword)             //Spawn an enemy every interval
+            {
+                if (!(spawnTimeSword <= 1))
+                    spawnTimeSword -= 0.25f;
 
-            //if(!(speedSword >= 2f))
-            //    speedSword += 0.05f;
-            
-            SpawnSword();
-            lastTimeSword = time;
+                //if(!(speedSword >= 2f))
+                //    speedSword += 0.05f;
+
+                SpawnSword();
+                lastTimeSword = time;
+            }
+
+            if (time - killsAmp > lastTimeGun + spawnTimeGun)                 //Spawn an enemy every interval
+            {
+                if (!(spawnTimeGun <= 1))
+                    spawnTimeGun -= 0.5f;
+
+                //if (!(speedGun >= 1.5f))
+                //   speedGun += 0.05f;
+
+                SpawnGun();
+                lastTimeGun = time;
+            }
+
+            minutes = Mathf.Floor(time / 60);
+            seconds = time % 60;
+            //Debug.Log("Time: " + time);
+            textTime.text = string.Format("Time: {0:0}:{1:00}", minutes, seconds);
+            textKills.text = "Kills: " + Game4_PlayerController.Instance.kills.ToString();
         }
-
-        if (time - killsAmp > lastTimeGun + spawnTimeGun )                 //Spawn an enemy every interval
-        {
-            if (!(spawnTimeGun <= 1))
-                spawnTimeGun -= 0.5f;
-
-            //if (!(speedGun >= 1.5f))
-             //   speedGun += 0.05f;
-
-            SpawnGun();
-            lastTimeGun = time;
-        }
-        
-
-        minutes = Mathf.Floor(time / 60);
-        seconds = time % 60;
-        //Debug.Log("Time: " + time);
-        textTime.text = string.Format("Time: {0:0}:{1:00}", minutes, seconds);
-        textKills.text = "Kills: " + Game4_PlayerController.Instance.kills.ToString();
     }
 
     void SpawnSword()

@@ -99,15 +99,15 @@ public class EnemyGunController_Game4 : MonoBehaviour
             //anim.SetLayerWeight(anim.GetLayerIndex("Movement"), 1);
             float distanceTarget = Vector2.Distance(transform.position, target.position);
 
-            if (distanceTarget <= 1f) //1f
-            {
-                rigid.isKinematic = true;
-                return;
-            }
-            else
-            {
-                rigid.isKinematic = false;
-            }
+            //if (distanceTarget <= 1f) //1f
+            //{
+            //    rigid.isKinematic = true;
+            //    return;
+            //}
+            //else
+            //{
+            //    rigid.isKinematic = false;
+            //}
             //moveInput = new Vector2(direction.x, direction.y).normalized;
 
             //rigid.velocity = new Vector2(moveInput.x * speed, moveInput.y * speed);
@@ -137,6 +137,7 @@ public class EnemyGunController_Game4 : MonoBehaviour
     public void DestroyObject()
     {
         Destroy(gameObject);
+        DestroyCollider();
     }
 
     public void DestroyCollider()
@@ -157,7 +158,6 @@ public class EnemyGunController_Game4 : MonoBehaviour
                 StartCoroutine(AttackAnim());
 
                 attackTime = 0;
-                rigid.constraints = RigidbodyConstraints2D.FreezeAll;
 
                 //diagonal checking direction
                 if ((direction.x > -0.71f && direction.x < 0.71f)

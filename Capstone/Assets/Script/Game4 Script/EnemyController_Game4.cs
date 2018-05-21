@@ -18,7 +18,6 @@ public class EnemyController_Game4 : MonoBehaviour
     public float attackRange;
     public float attackTime;
     public float attackCooldown = 5f;
-    private Vector2 moveInput;
 
     // Use this for initialization
     void Start()
@@ -65,23 +64,6 @@ public class EnemyController_Game4 : MonoBehaviour
             Death();                                    //DIE
         }
 
-
-        //if (isNotDead)
-        //{
-        //    if (isAttacking)
-        //    {
-        //        Attack();
-        //    }
-        //    else
-        //    {
-        //        FollowTarget();
-        //    }
-        //}
-        //else
-        //{
-        //    Death();
-        //}
-
         attackTime += Time.deltaTime;
 
     }
@@ -104,15 +86,15 @@ public class EnemyController_Game4 : MonoBehaviour
         {
             float distanceTarget = Vector2.Distance(transform.position, target.position);
 
-            if (distanceTarget <= 1.1f) //1f
-            {
-                rigid.isKinematic = true;
-                return;
-            }
-            else
-            {
-                rigid.isKinematic = false;
-            }
+            //if (distanceTarget <= 1.1f) //1f
+            //{
+            //    rigid.isKinematic = true;
+            //    return;
+            //}
+            //else
+            //{
+            //    rigid.isKinematic = false;
+            //}
             //moveInput = new Vector2(direction.x, direction.y).normalized;
 
             //rigid.velocity = new Vector2(moveInput.x * speed, moveInput.y * speed);
@@ -152,6 +134,7 @@ public class EnemyController_Game4 : MonoBehaviour
     public void DestroyCollider()
     {
         Destroy(gameObject.GetComponents<Collider2D>()[0]);
+        Destroy(this.GetComponentInChildren<Collider2D>());
     }
 
     public void Attack()
@@ -171,7 +154,6 @@ public class EnemyController_Game4 : MonoBehaviour
                 anim.SetBool("isMoving", false);
 
                 attackTime = 0;
-                rigid.constraints = RigidbodyConstraints2D.FreezeAll;
             }
             else
             {

@@ -7,6 +7,7 @@ public class Game4_PlayerController : MonoBehaviour
 {
     public GameObject stageClearPanel;
     public GameObject gameOverPanel;
+    public GameObject dialogEnd;
     public GameObject buttons;
     public float moveSpeed;
     public bool canMove;
@@ -120,11 +121,13 @@ public class Game4_PlayerController : MonoBehaviour
         {
             canMove = false;
             direction = "";
-            if (kills < 100)
+            if (kills < 2)
                 gameOverPanel.SetActive(true);
-
             else
+            {
                 stageClearPanel.SetActive(true);
+                dialogEnd.SetActive(true);
+            }
 
             buttons.SetActive(true);
             StartCoroutine(Death());
@@ -225,22 +228,22 @@ public class Game4_PlayerController : MonoBehaviour
         audio.Play();
         if (direction == "up")
         {
-            offset = new Vector3(0, 2.5f, 0);
+            offset = new Vector3(0, 0.5f, 0);
             Instantiate(shotUp, shotSpawn.position + offset, shotSpawn.rotation);
         }
         if (direction == "right")
         {
-            offset = new Vector3(2.5f, 0, 0);
+            offset = new Vector3(0.5f, 0, 0);
             Instantiate(shotRight, shotSpawn.position + offset, shotSpawn.rotation);
         }
         if (direction == "down")
         {
-            offset = new Vector3(0, -2.5f, 0);
+            offset = new Vector3(0, -0.5f, 0);
             Instantiate(shotDown, shotSpawn.position + offset, shotSpawn.rotation);
         }
         if (direction == "left")
         {
-            offset = new Vector3(-2.5f, 0, 0);
+            offset = new Vector3(-0.5f, 0, 0);
             Instantiate(shotLeft, shotSpawn.position + offset, shotSpawn.rotation);
         }
 

@@ -795,7 +795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: 
   dialogueLines:
-  - '*(Gun shots)*'
+  - '*(Gun shot)*'
   dialogueSprite: {fileID: 21300054, guid: 570d110fb65b62046857ee5978bb543c, type: 3}
 --- !u!4 &911764868
 Transform:
