@@ -1083,9 +1083,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1779379119}
   moveSpeed: 5
-  minX: 0
-  maxX: 0
-  minY: 0
+  minX: -1
+  maxX: 8
+  minY: -8
   maxY: 0
 --- !u!81 &664779978
 AudioListener:
@@ -1143,7 +1143,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 664779976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.83, y: -0.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3715,7 +3715,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39795375, y: 0.7513977}
+  m_Size: {x: 0.43, y: 0.55}
   m_EdgeRadius: 0
 --- !u!4 &1685548353
 Transform:
@@ -3724,7 +3724,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1685548351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.41, y: 0.82000065, z: 0}
+  m_LocalPosition: {x: 13.57, y: 1.84, z: 0}
   m_LocalScale: {x: 3.0943353, y: 4.3681803, z: 3.16663}
   m_Children: []
   m_Father: {fileID: 0}

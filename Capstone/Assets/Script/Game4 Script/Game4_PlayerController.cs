@@ -121,7 +121,7 @@ public class Game4_PlayerController : MonoBehaviour
         {
             canMove = false;
             direction = "";
-            if (kills < 2)
+            if (kills < 100)
                 gameOverPanel.SetActive(true);
             else
             {

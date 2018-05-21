@@ -1619,11 +1619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: Gen. Antonio Luna
   dialogueLines:
-<<<<<<< HEAD
   - Why are you laughing?
-=======
-  - Why you are laughing?
->>>>>>> 6fa4cbaaa5b16894d4867b107dc1529d1ff18332
   - What kind of government is this!?
   dialogueSprite: {fileID: 21300004, guid: 4134c539d88d88b46b34ac160613d5ff, type: 3}
 --- !u!4 &1884308055

@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcfde5eea878ba4cb51073bd6770ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeaker: General Jose Alenjandrino
+  dialogueSpeaker: Gen. Jose Alejandrino
   dialogueLines:
   - Always keep your guard up.
   - Allies can also turn into  enemies.
@@ -5451,10 +5451,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 910969233}
   moveSpeed: 5
-  minX: 0
-  maxX: 0
-  minY: 0
-  maxY: 0
+  minX: -4
+  maxX: 22
+  minY: -13
+  maxY: 3
 --- !u!81 &1867083245
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5511,7 +5511,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1867083243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -3.49, y: 2.69, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

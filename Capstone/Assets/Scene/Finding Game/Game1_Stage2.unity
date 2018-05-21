@@ -4042,10 +4042,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1669326765}
   moveSpeed: 5
-  minX: 0
+  minX: -4
   maxX: 0
-  minY: 0
-  maxY: 0
+  minY: -0.5
+  maxY: 5.5
 --- !u!81 &932160069
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4102,7 +4102,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 932160067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -0.22, z: -10}
+  m_LocalPosition: {x: 0, y: -0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
