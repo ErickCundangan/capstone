@@ -146,9 +146,9 @@ public class QuizManager : MonoBehaviour {
 
 	public void NextScene() {
 		if (!SaveManager.Instance.state.isPostQuizDone) {
-			LoadingScreenControl.Instance.LoadScene ("Credits");
+			LoadingScreenControl.Instance.LoadScene ("Meeting");
 		} else {
-			LoadingScreenControl.Instance.LoadScene ("Main");
+			LoadingScreenControl.Instance.LoadScene ("Credits");
 		}
 	}
 }
