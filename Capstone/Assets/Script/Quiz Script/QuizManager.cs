@@ -79,46 +79,87 @@ public class QuizManager : MonoBehaviour {
 		ansB.text = answerB [i];
 		ansC.text = answerC [i];
 		ansD.text = answerD [i];
-
 	}
 
+	bool flag = false;
+
 	public void AnsA_OnClick() {
+		if (flag)
+			return;
+		
+		flag = true;
 		if (answer [i] == 1) {
 			score++;
+			ansA.color = new Color (0.5f, 1f, 0.5f, 1f);
 		} else {
+			ansA.color = new Color (1f, 0.2f, 0.2f, 1f);
 		}
 
-		CheckQuestions ();
+		StartCoroutine (Wait ());
 	}
 
 	public void AnsB_OnClick() {
+		if (flag)
+			return;
+		
+		flag = true;
 		if (answer [i] == 2) {
 			score++;
+			ansB.color = new Color (0.5f, 1f, 0.5f, 1f);
 		} else {
+			ansB.color = new Color (1f, 0.2f, 0.2f, 1f);
 		}
 
-		CheckQuestions ();
+		StartCoroutine (Wait ());
 	}
 
 	public void AnsC_OnClick() {
+		if (ansC.text.Equals (""))
+			return;
+
+		if (flag)
+			return;
+		
+		flag = true;
 		if (answer [i] == 3) {
 			score++;
+			ansC.color = new Color (0.5f, 1f, 0.5f, 1f);
 		} else {
+			ansC.color = new Color (1f, 0.2f, 0.2f, 1f);
 		}
 
-		CheckQuestions ();
+		StartCoroutine (Wait ());
 	}
 
 	public void AnsD_OnClick() {
+		if (ansD.text.Equals (""))
+			return;
+		
+		if (flag)
+			return;
+		
+		flag = true;
 		if (answer [i] == 4) {			
 			score++;
+			ansD.color = new Color (0.5f, 1f, 0.5f, 1f);
 		} else {
+			ansD.color = new Color (1f, 0.2f, 0.2f, 1f);
 		}
 
+		StartCoroutine (Wait ());
+	}
+
+	IEnumerator Wait () {
+		yield return new WaitForSeconds (1f);
 		CheckQuestions ();
 	}
 
 	void CheckQuestions() {
+		flag = false;
+		ansA.color = new Color (0f, 0f, 0f, 1f);
+		ansB.color = new Color (0f, 0f, 0f, 1f);
+		ansC.color = new Color (0f, 0f, 0f, 1f);
+		ansD.color = new Color (0f, 0f, 0f, 1f);
 		if (noOfQuestions < 50)
 			LoadQuestion ();
 		else {
