@@ -69,18 +69,6 @@ public class QuizManager : MonoBehaviour {
 		}
 	}
 
-	void LoadQuestion() {
-		noOfQuestions++;
-		i = GetRandomNum ();
-		exclude.Add (i);
-		questionNo.text = "Question # " + noOfQuestions.ToString() + "/50";
-		question.text = questions [i];
-		ansA.text = answerA [i];
-		ansB.text = answerB [i];
-		ansC.text = answerC [i];
-		ansD.text = answerD [i];
-	}
-
 	bool flag = false;
 
 	public void AnsA_OnClick() {
@@ -176,6 +164,18 @@ public class QuizManager : MonoBehaviour {
 				gameObject.SetActive (false);
 			}
 		}
+	}
+
+	void LoadQuestion() {
+		noOfQuestions++;
+		i = GetRandomNum ();
+		exclude.Add (i);
+		questionNo.text = "Question # " + noOfQuestions.ToString() + "/50";
+		question.text = questions [i];
+		ansA.text = answerA [i];
+		ansB.text = answerB [i];
+		ansC.text = answerC [i];
+		ansD.text = answerD [i];
 	}
 
 	int GetRandomNum() {

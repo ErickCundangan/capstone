@@ -58,7 +58,7 @@ public class DialogueHolder : MonoBehaviour {
         //end Dialogue
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Heneral Luna")
         {
