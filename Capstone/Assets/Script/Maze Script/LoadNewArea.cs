@@ -54,7 +54,10 @@ public class LoadNewArea : MonoBehaviour {
             minutes = Mathf.Floor(timeLeft / 60);
             seconds = timeLeft % 60;
 
-            timeCounter.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            if(!(timeLeft <= 0))
+                timeCounter.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+            else
+                timeCounter.text = string.Format("{0:0}:{1:00}", 0, 0);
         }
 
         //Exit Arrow animation
