@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour {
     public Animator animator;
     public PlayerController thePlayer;
 
+	public DialogueHolder dialogHolder;
     private LoadNewArea LNArea;
     
     // Use this for initialization
@@ -57,7 +58,7 @@ public class DialogueManager : MonoBehaviour {
             if (currentLine >= dialogLines.Length)
             {
                 Close();
-
+				dialogHolder.gameObject.transform.parent.gameObject.SetActive (false);
                 currentLine = 0;
             }
             else
