@@ -92,7 +92,12 @@ public class SaveManager : MonoBehaviour {
 		state.postQuizScore = score;
 	}
 
-	public void SetSound (bool isOn) {
-		state.sound = isOn;
+	public void SetSound (float bgm, float sfx) {
+		state.bgmVolume = bgm;
+		state.sfxVolume = sfx;
+	}
+
+	public float[] GetSound() {
+		return new float[] {state.bgmVolume, state.sfxVolume};
 	}
 }

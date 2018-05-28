@@ -8,5 +8,6 @@
 	public int gameThreeStagesCleared = 0;
 	public int gameFourStagesCleared = 0;
 	public int postQuizScore = 0;
-	public bool sound = true;
+	public float bgmVolume = 1f;
+	public float sfxVolume = 1f;
 }
