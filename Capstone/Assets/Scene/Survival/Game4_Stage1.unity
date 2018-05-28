@@ -660,7 +660,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015341759, y: -0.0716638}
+  m_Offset: {x: -0.015341759, y: -0.058371484}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -671,7 +671,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6652603, y: 0.8566724}
+  m_Size: {x: 0.6652603, y: 0.8300878}
   m_EdgeRadius: 0
 --- !u!1 &265611283
 GameObject:
@@ -1639,6 +1639,114 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506723559}
+--- !u!1 &522469888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 522469890}
+  - component: {fileID: 522469889}
+  m_Layer: 0
+  m_Name: Heart Spawn Point1
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &522469889
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522469888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &522469890
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522469888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.47, y: -1.297863, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583611622}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &524561339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 524561341}
+  - component: {fileID: 524561340}
+  m_Layer: 0
+  m_Name: Heart Spawn Point 2
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &524561340
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524561339}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &524561341
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524561339}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.03, y: -1.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583611622}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534909259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1801,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1953604}
   m_EdgeRadius: 0
+--- !u!1 &583611621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 583611622}
+  - component: {fileID: 583611623}
+  m_Layer: 0
+  m_Name: Heart Spawn Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &583611622
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 583611621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.420862, y: -19.662136, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 522469890}
+  - {fileID: 524561341}
+  - {fileID: 658408077}
+  - {fileID: 2093245814}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583611623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 583611621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36eb52c49301da439327175616a877f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  lastTime: 0
+  isExisting: 0
+  heart: {fileID: 1140419880441400, guid: d8e9a9016b6557f44bc474b7fc5110ab, type: 2}
+  spawnPoints:
+  - {fileID: 522469890}
+  - {fileID: 524561341}
+  - {fileID: 658408077}
+  - {fileID: 2093245814}
 --- !u!1 &618818449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,6 +1932,60 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 618818449}
+--- !u!1 &658408075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 658408077}
+  - component: {fileID: 658408076}
+  m_Layer: 0
+  m_Name: Heart Spawn Point 3
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &658408076
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658408075}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &658408077
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658408075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.28, y: -10.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583611622}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686155481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,6 +2932,7 @@ MonoBehaviour:
   direction: 
   playerHealth: 100
   kills: 0
+  isStageClear: 0
 --- !u!95 &1087465696
 Animator:
   serializedVersion: 3
@@ -3112,7 +3328,7 @@ Prefab:
     - target: {fileID: 224241017720224288, guid: 86c96eec7192c8241a8f914868f2d2df,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20.119995
+      value: 28.880005
       objectReference: {fileID: 0}
     - target: {fileID: 224241017720224288, guid: 86c96eec7192c8241a8f914868f2d2df,
         type: 2}
@@ -3152,7 +3368,7 @@ Prefab:
     - target: {fileID: 224241017720224288, guid: 86c96eec7192c8241a8f914868f2d2df,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 224241017720224288, guid: 86c96eec7192c8241a8f914868f2d2df,
         type: 2}
@@ -3315,7 +3531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1616829863294318, guid: 275a7eefb0f825a44a26d580f45b4a78, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 275a7eefb0f825a44a26d580f45b4a78, type: 2}
@@ -5942,6 +6158,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d47e0c2b95dc544c9a4888140bc2a1b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2093245812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2093245814}
+  - component: {fileID: 2093245813}
+  m_Layer: 0
+  m_Name: Heart Spawn Point 4
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2093245813
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2093245812}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &2093245814
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2093245812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.51, y: -10.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583611622}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2115138639 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1678913515532478, guid: c4401be4c8f249849b22ae68267be510,

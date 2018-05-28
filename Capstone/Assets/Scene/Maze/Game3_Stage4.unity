@@ -342,7 +342,7 @@ MonoBehaviour:
   levelToLoad: Main
   ExitCounter: 0
   ExitRequirement: 8
-  timeLeft: 180
+  timeLeft: 150
   stopTime: 0
   counter: {fileID: 1588449954}
   timeCounter: {fileID: 1017816683}

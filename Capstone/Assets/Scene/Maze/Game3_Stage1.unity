@@ -2867,7 +2867,7 @@ MonoBehaviour:
   levelToLoad: Game3_Stage2
   ExitCounter: 0
   ExitRequirement: 4
-  timeLeft: 120
+  timeLeft: 60
   stopTime: 0
   counter: {fileID: 2033604982}
   timeCounter: {fileID: 1980690507}
