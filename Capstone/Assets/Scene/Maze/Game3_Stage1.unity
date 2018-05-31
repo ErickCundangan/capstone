@@ -2774,6 +2774,7 @@ GameObject:
   - component: {fileID: 1149518837}
   - component: {fileID: 1149518835}
   - component: {fileID: 1149518839}
+  - component: {fileID: 1149518840}
   m_Layer: 0
   m_Name: Exit_Level1
   m_TagString: Untagged
@@ -2912,6 +2913,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1149518840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149518833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e344067456e414b48be1c0b3d756b654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScore: 0
+  threeStarScore: 20
+  twoStarScore: 15
+  oneStarScore: 10
+  time: 0
 --- !u!1 &1249554586
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,8 +5573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab77046d855a1d409d4afad2078693d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgm: {fileID: 0}
+  sfx: {fileID: 0}
   options: {fileID: 410264129}
-  audioListener: {fileID: 1249554588}
 --- !u!114 &1916108062
 MonoBehaviour:
   m_ObjectHideFlags: 0

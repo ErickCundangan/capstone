@@ -529,8 +529,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab77046d855a1d409d4afad2078693d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgm: {fileID: 0}
+  sfx: {fileID: 0}
   options: {fileID: 1620325316}
-  audioListener: {fileID: 0}
 --- !u!114 &231312961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4577,6 +4578,7 @@ GameObject:
   - component: {fileID: 1640216542}
   - component: {fileID: 1640216543}
   - component: {fileID: 1640216544}
+  - component: {fileID: 1640216545}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4763,6 +4765,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorial: {fileID: 731787506}
+--- !u!114 &1640216545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640216536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a08fd8504a708478cd07543497dbb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScore: 0
+  threeStarScore: 10
+  twoStarScore: 20
+  oneStarScore: 21
+  achievedStar: 0
+  time: 0
+  kills: 0
 --- !u!1 &1643254826
 GameObject:
   m_ObjectHideFlags: 0

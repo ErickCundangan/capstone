@@ -254,7 +254,7 @@ public class Game4_PlayerController : MonoBehaviour
 
     void ChecIfStageIsClear()
     {
-        if(kills >= 200)
+        if(kills >= 200 )
         {
             isStageClear = true;
 
