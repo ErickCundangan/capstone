@@ -52,8 +52,10 @@ public class ScoreManager : MonoBehaviour {
 			string sceneName = SceneManager.GetActiveScene().name;
 			char[] gameStage = sceneName.Where (char.IsDigit).ToArray ();
 
-			SaveManager.Instance.SetHighScore (gameStage [0] - '0', gameStage [1] - '0', star);
-			SaveManager.Instance.Save (SaveManager.Instance.currentUser);
+			if (SaveManager.Instance.GetScore (gameStage [0] - '0', gameStage [1] - '0') < star) {
+				SaveManager.Instance.SetHighScore (gameStage [0] - '0', gameStage [1] - '0', star);
+				SaveManager.Instance.Save (SaveManager.Instance.currentUser);
+			}
 			flag = true;
 		}
 	}
