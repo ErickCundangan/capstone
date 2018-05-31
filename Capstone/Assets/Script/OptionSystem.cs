@@ -11,7 +11,6 @@ public class OptionSystem : MonoBehaviour {
 
 	List<AudioSource> audioList;
 	AudioSource bgmAudio;
-	int volume = 0;
 
 	bool isOptionsActive = false;
 
@@ -41,18 +40,6 @@ public class OptionSystem : MonoBehaviour {
 		}
 
 		SaveManager.Instance.SetSound (bgm.value, sfx.value);
-		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
-	}
-
-	public void TurnOnSound() {
-		volume = 1;
-		//SaveManager.Instance.SetSound (true);
-		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
-	}
-
-	public void TurnOffSound() {
-		volume = 0;
-		//SaveManager.Instance.SetSound (false);
 		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 	}
 

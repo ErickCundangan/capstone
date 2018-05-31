@@ -21,6 +21,7 @@ public class StageClear : MonoBehaviour {
 		if (isStageComplete) {
 			buttons.SetActive (true);
 			stageClearPanel.SetActive (true);
+			PlayerController2.Instance.stopTime = true;
 		}
 	}
 }

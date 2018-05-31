@@ -22,10 +22,13 @@ public class BulletController : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.tag == "Enemy") {
-			anim = other.gameObject.GetComponent<Animator> ();	
-			if (anim != null)
-				anim.SetBool ("isEnemyDead", true);
-			Destroy (gameObject);
+			anim = other.gameObject.GetComponent<Animator> ();
+			if (!anim.GetBool ("isEnemyDead")) {
+				if (anim != null)
+					anim.SetBool ("isEnemyDead", true);
+				Destroy (gameObject);
+				ScoreManager.Instance.currentScore += 100;
+			}
 		}
 
 		if (other.tag == "Boss" && other.gameObject.GetComponent<Transform>().position.y <= 4) {
