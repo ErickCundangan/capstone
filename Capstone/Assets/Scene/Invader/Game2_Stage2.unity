@@ -2008,14 +2008,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd94ce4be8208ca429305f67983c931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalScore: 0
   currentScore: 0
-  threeStarScore: 6200
-  twoStarScore: 5700
+  threeStarScore: 5800
+  twoStarScore: 5300
   oneStarScore: 3400
   bossScore: 1000
-  healthScore: 0
-  timeScore: 0
   textScores: {fileID: 1972352479}
   stars: {fileID: 915916526}
   starSprites:

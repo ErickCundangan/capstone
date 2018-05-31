@@ -375,7 +375,7 @@ MonoBehaviour:
   maxBound: 5
   minBound: -5
   timeCounter: {fileID: 2029719216}
-  timeLeft: 90
+  timeLeft: 120
   stopTime: 0
 --- !u!50 &123017922
 Rigidbody2D:
@@ -1861,14 +1861,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd94ce4be8208ca429305f67983c931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalScore: 0
   currentScore: 0
   threeStarScore: 6000
   twoStarScore: 5500
   oneStarScore: 4000
   bossScore: 1000
-  healthScore: 0
-  timeScore: 0
   textScores: {fileID: 2012343134}
   stars: {fileID: 353495163}
   starSprites:

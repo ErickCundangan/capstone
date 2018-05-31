@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 	public static ScoreManager Instance { set; get; }
 
+	public int currentScore;
 	public int threeStarScore;
 	public int twoStarScore;
 	public int oneStarScore;
 	public int bossScore;
 
 	int totalScore;
-	int currentScore;
 	int healthScore;
 	int timeScore;
 

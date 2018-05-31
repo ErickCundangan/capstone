@@ -21,8 +21,6 @@ public class BossController : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 
-	bool flag = false;
-
 	void FixedUpdate () {
 		if (anim != null) {
 			anim.SetBool ("isBossShooting", false);
@@ -57,10 +55,6 @@ public class BossController : MonoBehaviour {
 
 			if (anim != null) {
 				anim.SetBool ("isBossDead", true);
-				if (!flag) {
-					ScoreManager.Instance.currentScore += 1000;
-					flag = true;
-				}
 			}
 
 			SaveManager.Instance.completeStage (gameStage[0] - '0', gameStage[1] - '0' - 1);

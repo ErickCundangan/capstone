@@ -1912,14 +1912,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd94ce4be8208ca429305f67983c931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalScore: 0
   currentScore: 0
-  threeStarScore: 7400
-  twoStarScore: 6600
+  threeStarScore: 6500
+  twoStarScore: 6000
   oneStarScore: 5500
   bossScore: 1000
-  healthScore: 0
-  timeScore: 0
   textScores: {fileID: 410906508}
   stars: {fileID: 1424992368}
   starSprites:
