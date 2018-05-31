@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class OptionSystem : MonoBehaviour {
+	public Slider bgm;
+	public Slider sfx;
 	public GameObject options;
-	public AudioListener audioListener;
 
 	List<AudioSource> audioList;
+	AudioSource bgmAudio;
 	int volume = 0;
 
 	bool isOptionsActive = false;
@@ -15,31 +18,41 @@ public class OptionSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		audioList = new List<AudioSource>(Resources.FindObjectsOfTypeAll<AudioSource> ());
+		for (int i = 0; i < audioList.Count; i ++) {
+			if (audioList[i].gameObject.tag == "MainCamera") {
+				bgmAudio = audioList[i];
+				audioList.Remove (audioList[i]);
+			}
+		}
+
+		bgm.value = SaveManager.Instance.GetSound () [0];
+		sfx.value = SaveManager.Instance.GetSound () [1];
+
 		options.SetActive (false);
 		isOptionsActive = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (SaveManager.Instance.state.sound)
-			volume = 1;
-		else
-			volume = 0;
-		
+		bgmAudio.volume = bgm.value;
+
 		foreach (AudioSource audio in audioList) {
-			audio.volume = volume;
+			audio.volume = sfx.value;
 		}
+
+		SaveManager.Instance.SetSound (bgm.value, sfx.value);
+		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 	}
 
 	public void TurnOnSound() {
 		volume = 1;
-		SaveManager.Instance.SetSound (true);
+		//SaveManager.Instance.SetSound (true);
 		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 	}
 
 	public void TurnOffSound() {
 		volume = 0;
-		SaveManager.Instance.SetSound (false);
+		//SaveManager.Instance.SetSound (false);
 		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
 	}
 

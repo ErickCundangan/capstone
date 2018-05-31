@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController2 : MonoBehaviour {
 	public static PlayerController2 Instance { set; get; }
@@ -12,22 +13,43 @@ public class PlayerController2 : MonoBehaviour {
 	public float maxBound, minBound;
 	private float nextFire;
 
+	public Text timeCounter;
+	public float timeLeft;
+	private float minutes;
+	private float seconds;
+	public bool stopTime = false;
+
 	void Start() {
 		Instance = this;
 		Screen.orientation = ScreenOrientation.Portrait;
 	}
 
 	void Update() {
-		if (GameOver.Instance.isPlayerDead)
-			return;
-		
-		if (Time.time > nextFire) {
-			nextFire = Time.time + fireRate;
-			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-		}
+		if (!stopTime) {
+			if (timeLeft <= 0) {
+				stopTime = true;
+				GameOver.Instance.isPlayerDead = true;
+				return;
+			}
 
-		if (playerHealth <= 0) {
-			GameOver.Instance.isPlayerDead = true;
+			if (GameOver.Instance.isPlayerDead)
+				return;
+		
+			if (Time.time > nextFire) {
+				nextFire = Time.time + fireRate;
+				Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+			}
+
+			if (playerHealth <= 0) {
+				GameOver.Instance.isPlayerDead = true;
+			}
+
+			timeLeft -= Time.deltaTime;
+			minutes = Mathf.Floor (timeLeft / 60);
+
+			seconds = timeLeft % 60;
+
+			timeCounter.text = string.Format ("Time: {0:0}:{1:00}", minutes, seconds);
 		}
 	}
 
