@@ -59,32 +59,4 @@ public class ScoringManager_Survival : MonoBehaviour {
             
         }
     }
-
-    void TallyScore()
-    {
-        Debug.Log("Tally");
-        if (Game4_PlayerController.Instance.isStageClear)
-        {
-            if (kills >= 200 && time <= threeStarScore)
-            {
-                stars.sprite = starSprites[2];
-                currentScore = 3f;
-            }
-            else if (kills >= 200 && time <= twoStarScore)
-            {
-                stars.sprite = starSprites[1];
-                currentScore = 2f;
-            }
-            else if (kills >= 200 && time >= threeStarScore)
-            {
-                stars.sprite = starSprites[0];
-                currentScore = 1f;
-            }
-
-            achievedStar = currentScore;
-
-            Debug.Log("Satr = " + achievedStar);
-            CancelInvoke();
-        }
-    }
 }
