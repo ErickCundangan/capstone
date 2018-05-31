@@ -28,7 +28,7 @@ public class Game4_BulletController_Down : MonoBehaviour
     {
         if(!(other.tag == "Player" || other.tag == "SpawnPoint"))
             Destroy(gameObject);
-        if (other.tag == "Enemy")
+        if (other.tag == "Enemy" || other.tag == "EnemySword")
         {
             Game4_PlayerController.Instance.kills += 1;
         }

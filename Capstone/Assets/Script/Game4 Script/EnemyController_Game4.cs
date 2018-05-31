@@ -42,30 +42,31 @@ public class EnemyController_Game4 : MonoBehaviour
         distance =  Vector2.Distance(transform.position, target.position);
         direction = (target.transform.position - transform.position).normalized;
 
-       
-        if (isNotDead)
+        if (!Game4_PlayerController.Instance.isStageClear)
         {
-            if (distance > attackRange)            //MOVCE
+            if (isNotDead)
             {
-                if (isMoving)
+                if (distance > attackRange)            //MOVCE
                 {
-                    FollowTarget();
+                    if (isMoving)
+                    {
+                        FollowTarget();
+                    }
+                }
+                else                                      //ATTACK
+                {
+                    isMoving = false;
+                    isAttacking = true;
+                    Attack();
                 }
             }
-            else                                      //ATTACK
+            else
             {
-                isMoving = false;
-                isAttacking = true;
-                Attack();
+                Death();                                    //DIE
             }
-        }
-        else
-        {   
-            Death();                                    //DIE
-        }
 
-        attackTime += Time.deltaTime;
-
+            attackTime += Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

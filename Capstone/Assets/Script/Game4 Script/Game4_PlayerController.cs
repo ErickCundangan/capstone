@@ -32,7 +32,7 @@ public class Game4_PlayerController : MonoBehaviour
 
     public int kills;
 
-    private bool isStageClear;
+    public bool isStageClear;
     // Use this for initialization
     void Start()
     {
@@ -49,13 +49,14 @@ public class Game4_PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ChecIfStageIsClear();
-
+        
         playerMoving = false;
-        if (playerHealth > 0)
+        if (kills >= 200)
         {
-            
-
+            ChecIfStageIsClear();
+        }
+        else if (playerHealth > 0)
+        {
             if (CrossPlatformInputManager.GetAxisRaw("Horizontal") > 0.5f || CrossPlatformInputManager.GetAxisRaw("Horizontal") < -0.5f)
             {
                 //transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
@@ -121,17 +122,17 @@ public class Game4_PlayerController : MonoBehaviour
         {
             canMove = false;
             direction = "";
-            if (kills < 100)
+            //if (kills < 100)
                 gameOverPanel.SetActive(true);
-            else
-            {
-                stageClearPanel.SetActive(true);
+            //else
+            //{
                 dialogEnd.SetActive(true);
-            }
+            //}
 
             buttons.SetActive(true);
             StartCoroutine(Death());
         }
+
 
         if (!canMove)
         {
@@ -253,10 +254,17 @@ public class Game4_PlayerController : MonoBehaviour
 
     void ChecIfStageIsClear()
     {
-        if(kills >= 100)
+        if(kills >= 200)
         {
             isStageClear = true;
-			SaveManager.Instance.completeStage(4, 0);
+
+            stageClearPanel.SetActive(true);
+            buttons.SetActive(true);
+            myRigidbody.velocity = Vector2.zero;
+            myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+            anim.SetBool("PlayerMoving", false);
+
+            SaveManager.Instance.completeStage(4, 0);
 			SaveManager.Instance.Save (SaveManager.Instance.currentUser);
         }
     }

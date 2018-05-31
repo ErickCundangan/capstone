@@ -41,7 +41,7 @@ public class SpawnManager : MonoBehaviour {
         time += Time.deltaTime;
         killsAmp = Game4_PlayerController.Instance.kills / 30;
 
-        if (!(Game4_PlayerController.Instance.playerHealth <= 0))
+        if (!(Game4_PlayerController.Instance.playerHealth <= 0) && !(Game4_PlayerController.Instance.isStageClear))
         {
             if (time - killsAmp > lastTimeSword + spawnTimeSword)             //Spawn an enemy every interval
             {
@@ -73,6 +73,7 @@ public class SpawnManager : MonoBehaviour {
             textTime.text = string.Format("Time: {0:0}:{1:00}", minutes, seconds);
             textKills.text = "Kills: " + Game4_PlayerController.Instance.kills.ToString();
         }
+       
     }
 
     void SpawnSword()
