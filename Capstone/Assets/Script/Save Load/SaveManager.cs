@@ -100,4 +100,29 @@ public class SaveManager : MonoBehaviour {
 	public float[] GetSound() {
 		return new float[] {state.bgmVolume, state.sfxVolume};
 	}
+
+	public void SetHighScore (int game, int stage, int score) {
+		if (game == 1) {
+			state.gameOneScores [stage] = score;
+		} else if (game == 2) {
+			state.gameTwoScores [stage] = score;
+		} else if (game == 3) {
+			state.gameThreeScores [stage] = score;
+		} else if (game == 4) {
+			state.gameFourScores [stage] = score;
+		}
+	}
+
+	public int GetScore (int game, int stage) {
+		if (game == 1) {
+			return state.gameOneScores [stage];
+		} else if (game == 2) {
+			return state.gameTwoScores [stage];
+		} else if (game == 3) {
+			return state.gameThreeScores [stage];
+		} else if (game == 4) {
+			return state.gameFourScores [stage];
+		} else
+			return 0;
+	}
 }

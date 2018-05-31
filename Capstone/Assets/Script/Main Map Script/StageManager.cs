@@ -13,6 +13,19 @@ public class StageManager : MonoBehaviour {
 	public GameObject game4;
 	Button[] game4Stages;
 
+	public Image g1s1;
+	public Image g1s2;
+	public Image g1s3;
+	public Image g2s1;
+	public Image g2s2;
+	public Image g2s3;
+	public Image g2s4;
+	public Image g3s1;
+	public Image g3s2;
+	public Image g3s3;
+	public Image g3s4;
+	public Image g4s1;
+	public Sprite[] stars;
 	// Use this for initialization
 	void Start () {
 		game1Stages = game1.GetComponentsInChildren<Button> ();
@@ -71,6 +84,19 @@ public class StageManager : MonoBehaviour {
 
 		if (SaveManager.Instance.isStageCleared (4, 0))
 			game4Stages [1].interactable = true;
+
+		g1s1.sprite = LoadStars(1,1);
+		g1s2.sprite = LoadStars(1,2);
+		g1s3.sprite = LoadStars(1,3);
+		g2s1.sprite = LoadStars(2,1);
+		g2s2.sprite = LoadStars(2,2);
+		g2s3.sprite = LoadStars(2,3);
+		g2s4.sprite = LoadStars(2,4);
+		g3s1.sprite = LoadStars(3,1);
+		g3s2.sprite = LoadStars(3,2);
+		g3s3.sprite = LoadStars(3,3);
+		g3s4.sprite = LoadStars(3,4);
+		g4s1.sprite = LoadStars(4,1);
 	}
 
 	// Update is called once per frame
@@ -81,5 +107,17 @@ public class StageManager : MonoBehaviour {
 	public void PlayOnClick() {
 		AudioSource audio = GetComponent<AudioSource> ();
 		audio.Play ();
+	}
+
+	Sprite LoadStars(int game, int stage) {
+		int score;
+		if (SaveManager.Instance.GetScore (game, stage) == 3)
+			return stars [0];
+		else if (SaveManager.Instance.GetScore (game, stage) == 2)
+			return stars [1];
+		else if (SaveManager.Instance.GetScore (game, stage) == 1)
+			return stars [2];
+		else
+			return stars [3];
 	}
 }

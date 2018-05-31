@@ -10,4 +10,8 @@
 	public int postQuizScore = 0;
 	public float bgmVolume = 1f;
 	public float sfxVolume = 1f;
+	public int[] gameOneScores = new int[4];
+	public int[] gameTwoScores = new int[5];
+	public int[] gameThreeScores = new int[5];
+	public int[] gameFourScores = new int[2];
 }
