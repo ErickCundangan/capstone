@@ -55,7 +55,6 @@ public class BossController : MonoBehaviour {
 
 			if (anim != null) {
 				anim.SetBool ("isBossDead", true);
-				ScoreManager.Instance.currentScore += 1000;
 			}
 
 			SaveManager.Instance.completeStage (gameStage[0] - '0', gameStage[1] - '0' - 1);
