@@ -1320,7 +1320,7 @@ Prefab:
     - target: {fileID: 224840895430563442, guid: 28b5e6ed88a054e4a819fd14781a208e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 420
+      value: 1091.2635
       objectReference: {fileID: 0}
     - target: {fileID: 224840895430563442, guid: 28b5e6ed88a054e4a819fd14781a208e,
         type: 2}
@@ -2485,6 +2485,12 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &860572733 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114028049105750370, guid: 448ceee946b624c40bb9e8b4ddfd1f6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 336975252}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &996159228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,7 +2672,7 @@ Prefab:
     - target: {fileID: 224581316984846532, guid: 5d47e0c2b95dc544c9a4888140bc2a1b,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -420
+      value: -1091.2635
       objectReference: {fileID: 0}
     - target: {fileID: 224581316984846532, guid: 5d47e0c2b95dc544c9a4888140bc2a1b,
         type: 2}
@@ -2774,7 +2780,6 @@ GameObject:
   - component: {fileID: 1149518837}
   - component: {fileID: 1149518835}
   - component: {fileID: 1149518839}
-  - component: {fileID: 1149518840}
   m_Layer: 0
   m_Name: Exit_Level1
   m_TagString: Untagged
@@ -2913,22 +2918,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1149518840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149518833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e344067456e414b48be1c0b3d756b654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentScore: 0
-  threeStarScore: 20
-  twoStarScore: 15
-  oneStarScore: 10
-  time: 0
 --- !u!1 &1249554586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,6 +3435,7 @@ GameObject:
   - component: {fileID: 1278720607}
   - component: {fileID: 1278720610}
   - component: {fileID: 1278720611}
+  - component: {fileID: 1278720612}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3522,6 +3512,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorial: {fileID: 834245745}
+--- !u!114 &1278720612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278720606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e344067456e414b48be1c0b3d756b654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScore: 0
+  threeStarScore: 20
+  twoStarScore: 15
+  oneStarScore: 10
+  time: 0
+  stars: {fileID: 860572733}
+  starSprites:
+  - {fileID: 21300000, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
+  - {fileID: 21300002, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
+  - {fileID: 21300004, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
 --- !u!1 &1287325545
 GameObject:
   m_ObjectHideFlags: 0

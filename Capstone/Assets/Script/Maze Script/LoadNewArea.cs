@@ -7,7 +7,8 @@ using System.Linq;
 
 public class LoadNewArea : MonoBehaviour {
     PlayerController thePlayer;
-	public GameObject stageClearPanel;
+    public static LoadNewArea Instance { set; get; }
+    public GameObject stageClearPanel;
 	public GameObject gameOverPanel;
 	public GameObject buttons;
     public  string  levelToLoad;
@@ -24,10 +25,12 @@ public class LoadNewArea : MonoBehaviour {
     public  Text    counter;
     public  Text    timeCounter;
 
+    public bool stageComplete = false;
     Animator anim;
 
 	// Use this for initialization
 	void Start () {
+        Instance = this;
         thePlayer = FindObjectOfType<PlayerController>();
 
         anim = GetComponent<Animator>();
@@ -76,6 +79,7 @@ public class LoadNewArea : MonoBehaviour {
 		if (other.gameObject.name == "Heneral Luna") {
             if (ExitCounter == ExitRequirement)
             {
+                stageComplete = true;
 				string sceneName = SceneManager.GetActiveScene().name;
 				char[] gameStage = sceneName.Where (char.IsDigit).ToArray ();
 

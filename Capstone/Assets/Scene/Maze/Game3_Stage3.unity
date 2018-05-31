@@ -3560,8 +3560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab77046d855a1d409d4afad2078693d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgm: {fileID: 0}
+  sfx: {fileID: 0}
   options: {fileID: 2081694003}
-  audioListener: {fileID: 1867083245}
 --- !u!114 &847899443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4844,6 +4845,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 448ceee946b624c40bb9e8b4ddfd1f6c, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1517992329 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114028049105750370, guid: 448ceee946b624c40bb9e8b4ddfd1f6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1517992328}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1574289302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6015,6 +6022,7 @@ GameObject:
   - component: {fileID: 1867083244}
   - component: {fileID: 1867083249}
   - component: {fileID: 1867083250}
+  - component: {fileID: 1867083251}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6225,6 +6233,27 @@ MonoBehaviour:
   - {x: 24.75, y: -5.56}
   - {x: 13.25, y: -11.64}
   - {x: 1.98, y: 3.57}
+--- !u!114 &1867083251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867083243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e344067456e414b48be1c0b3d756b654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScore: 0
+  threeStarScore: 16
+  twoStarScore: 15
+  oneStarScore: 10
+  time: 0
+  stars: {fileID: 1517992329}
+  starSprites:
+  - {fileID: 21300000, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
+  - {fileID: 21300002, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
+  - {fileID: 21300004, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
 --- !u!1001 &1877656971
 Prefab:
   m_ObjectHideFlags: 0

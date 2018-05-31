@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoringManager_Survival : MonoBehaviour {
     public static ScoringManager_Survival Instance { set; get; }
@@ -12,6 +13,9 @@ public class ScoringManager_Survival : MonoBehaviour {
 
     public float time;
     public int kills;
+
+    public Image stars;
+    public Sprite[] starSprites;
     // Use this for initialization
     void Start()
     {
@@ -33,13 +37,17 @@ public class ScoringManager_Survival : MonoBehaviour {
         {
             if (kills >= 200 && time <= threeStarScore)
             {
+                stars.sprite = starSprites[2];
                 currentScore = 3f;
-            }else if (kills >= 200 && time <= twoStarScore)
+            }
+            else if (kills >= 200 && time <= twoStarScore)
             {
+                stars.sprite = starSprites[1];
                 currentScore = 2f;
             }
             else if (kills >= 200 && time >= threeStarScore)
             {
+                stars.sprite = starSprites[0];
                 currentScore = 1f;
             }
 
