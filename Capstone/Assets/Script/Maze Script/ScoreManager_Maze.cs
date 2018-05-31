@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreManager_Maze : MonoBehaviour {
     public static ScoreManager_Maze Instance { set; get; }
-    public float currentScore;
+    public int currentScore;
     public int threeStarScore;
     public int twoStarScore;
     public int oneStarScore;
@@ -32,42 +34,29 @@ public class ScoreManager_Maze : MonoBehaviour {
             if ( Mathf.Floor(time) <= oneStarScore) //one star
             {
                 stars.sprite = starSprites[2];
-                currentScore = 3f;
+                currentScore = 1;
             }
             else if (Mathf.Floor(time) <= twoStarScore) //two sta
             {
                 stars.sprite = starSprites[1];
-                currentScore = 2f;
+                currentScore = 2;
             }
             else if (Mathf.Floor(time) >= threeStarScore)//three star
             {
                 stars.sprite = starSprites[0];
-                currentScore = 1f;
+                currentScore = 3;
             }
-            flag = true;
-        }
-    }
+            
+            string sceneName = SceneManager.GetActiveScene().name;
+            char[] gameStage = sceneName.Where(char.IsDigit).ToArray();
 
-    void TallyScore()
-    {
-        if (StageClear.Instance.isStageComplete)
-        {
-            if(time <= oneStarScore) //one star
+            if (SaveManager.Instance.GetScore(gameStage[0] - '0', gameStage[1] - '0') < currentScore)
             {
-                stars.sprite = starSprites[2];
-                currentScore = 3f;
+                SaveManager.Instance.SetHighScore(gameStage[0] - '0', gameStage[1] - '0', currentScore);
+                SaveManager.Instance.Save(SaveManager.Instance.currentUser);
             }
-            else if (time <= twoStarScore) //two sta
-            {
-                stars.sprite = starSprites[1];
-                currentScore = 2f;
-            }
-            else if(time <= threeStarScore)//three star
-            {
-                stars.sprite = starSprites[0];
-                currentScore = 1f;
-            }
-            Debug.Log("star = " + currentScore);
+
+            flag = true;
         }
     }
 }

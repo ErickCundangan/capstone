@@ -33,20 +33,20 @@ public class StageManager : MonoBehaviour {
 		game3Stages = game3.GetComponentsInChildren<Button> ();
 		game4Stages = game4.GetComponentsInChildren<Button> ();
 
-		foreach (Button stage in game1Stages) {
-			stage.interactable = false;
-		}
-		foreach (Button stage in game2Stages) {
-			stage.interactable = false;
-		}
+		//foreach (Button stage in game1Stages) {
+		//	stage.interactable = false;
+		//}
+		//foreach (Button stage in game2Stages) {
+		//	stage.interactable = false;
+		//}
 
-		foreach (Button stage in game3Stages) {
-			stage.interactable = false;
-		}
+		//foreach (Button stage in game3Stages) {
+		//	stage.interactable = false;
+		//}
 
-		foreach (Button stage in game4Stages) {
-			stage.interactable = false;
-		}
+		//foreach (Button stage in game4Stages) {
+		//	stage.interactable = false;
+		//}
 
 		game1Stages [0].interactable = true;
 		if (SaveManager.Instance.isStageCleared (1, 0))
