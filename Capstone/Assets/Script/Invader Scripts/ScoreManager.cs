@@ -21,10 +21,15 @@ public class ScoreManager : MonoBehaviour {
 	public Text textScores;
 	public Image stars;
 	public Sprite[] starSprites;
-
+	public Text text3star;
+	public Text text2star;
+	public Text text1star;
 	// Use this for initialization
 	void Start () {
 		Instance = this;
+		text3star.text = "Score > " + threeStarScore;
+		text2star.text = "Score > " + twoStarScore;
+		text1star.text = "Score > " + oneStarScore;
 	}
 
 	bool flag = false;

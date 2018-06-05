@@ -2023,6 +2023,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
   - {fileID: 21300002, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
   - {fileID: 21300004, guid: cf6eac92905a918468c009cfabcf02cb, type: 3}
+  text3star: {fileID: 1263890317}
+  text2star: {fileID: 1263890316}
+  text1star: {fileID: 1263890315}
 --- !u!114 &901615022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2480,6 +2483,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c61051913e603a47a0b4fbb40887356, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1263890315 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114108362602924666, guid: 5c61051913e603a47a0b4fbb40887356,
+    type: 2}
+  m_PrefabInternal: {fileID: 1263890314}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1263890316 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114857571098688262, guid: 5c61051913e603a47a0b4fbb40887356,
+    type: 2}
+  m_PrefabInternal: {fileID: 1263890314}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1263890317 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921314968988924, guid: 5c61051913e603a47a0b4fbb40887356,
+    type: 2}
+  m_PrefabInternal: {fileID: 1263890314}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1264901656
 GameObject:
   m_ObjectHideFlags: 0
