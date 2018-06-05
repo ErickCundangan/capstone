@@ -10,6 +10,9 @@ TagManager:
   - PlayerBullet
   - SpawnPoint
   - EnemySword
+  - Heart
+  - FireUp
+  - EnemyHolder
   layers:
   - Default
   - TransparentFX

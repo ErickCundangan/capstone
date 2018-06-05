@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BossHealthSystem : MonoBehaviour {
 	public GameObject health;
 	public GameObject boss;
+	public Text textHealth;
 	BossController bossCtrlr;
 	Slider bossHealth;
 	// Use this for initialization
@@ -21,6 +22,7 @@ public class BossHealthSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		bossHealth.value = bossCtrlr.bossHealth;
+		textHealth.text = bossHealth.value + "/" + bossHealth.maxValue;
 	}
 
 	void ActivateHealthBar() {

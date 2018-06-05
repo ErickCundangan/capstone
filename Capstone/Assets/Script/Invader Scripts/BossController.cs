@@ -26,7 +26,7 @@ public class BossController : MonoBehaviour {
 			anim.SetBool ("isBossShooting", false);
 		}
 
-		if (boss.position.y >= 4 && EnemyController.Instance.enemyHolder.childCount == 0)
+		if (boss.position.y >= 4 && hasBossAppeared)
 			boss.position += Vector3.down * speed;
 		
 		else if (boss.position.y <= 4) {
