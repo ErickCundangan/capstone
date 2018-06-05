@@ -36,10 +36,5 @@ public class BulletController : MonoBehaviour {
 			BossController.Instance.bossHealth -= 1;
 			Destroy (gameObject);
 		}
-
-		if (other.tag == "EnemyBullet") {
-			Destroy (gameObject);
-			Destroy (other.gameObject);
-		}
 	}
 }
