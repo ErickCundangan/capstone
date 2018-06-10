@@ -45,6 +45,7 @@ public class CutsceneDialogueManager : MonoBehaviour {
 			dialogSpeaker = dialog [i].dialogueSpeaker;
 			dialogLines = dialog [i].dialogueLines;
 			dialogSprite = dialog [i].dialogueSprite;
+			dialog [i].StartAnim ();
 		} else {
 			EndCutScene ();
 			return;
