@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour {
 	int healthScore;
 	int timeScore;
 
+	public Text runningScore;
 	public Text textScores;
 	public Image stars;
 	public Sprite[] starSprites;
@@ -36,6 +37,7 @@ public class ScoreManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		runningScore.text = "Score: " + currentScore;
 		if (StageClear.Instance.isStageComplete && !flag) {
 			int star = 0;
 			healthScore = PlayerController2.Instance.playerHealth * 200;
