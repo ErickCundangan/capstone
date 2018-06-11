@@ -976,7 +976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSpeaker: Belgium
   dialogueLines:
-  - The country that general antonio luna studied the art of war.
+  - The country that General Antonio Luna studied the art of war.
   dialogueSprite: {fileID: 21300000, guid: a2917731d92fc574c991911902404eaa, type: 3}
   exitHolder: 1
   itemText: {fileID: 1598797399}
@@ -2350,7 +2350,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 488897366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 390, y: 152.20007, z: 0}
+  m_LocalPosition: {x: -100, y: -157.79993, z: 0}
   m_LocalScale: {x: 0.66666996, y: 0.66666996, z: 0.66666996}
   m_Children: []
   m_Father: {fileID: 1833499973}
@@ -3858,7 +3858,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929359234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 390, y: 92.20007, z: 0}
+  m_LocalPosition: {x: -100, y: -217.79993, z: 0}
   m_LocalScale: {x: 0.66666996, y: 0.66666996, z: 0.66666996}
   m_Children: []
   m_Father: {fileID: 1833499973}
@@ -4689,7 +4689,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1102234614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 390, y: 212.20007, z: 0}
+  m_LocalPosition: {x: -100, y: -97.79993, z: 0}
   m_LocalScale: {x: 0.66666996, y: 0.66666996, z: 0.66666996}
   m_Children: []
   m_Father: {fileID: 1833499973}
@@ -5601,7 +5601,7 @@ MonoBehaviour:
   dialogueLines:
   - A legal identity document in the philippines.
   - The historical event of "Cry of Pugadlawin" which the katipuneros tear their cedulas.
-  - The Cry of Pugadlawin happened in august 23, 1896
+  - The Cry of Pugadlawin happened in August 23, 1896
   dialogueSprite: {fileID: 21300000, guid: 6f51ada3faaad2542b552adffda1ee5d, type: 3}
   exitHolder: 1
   itemText: {fileID: 187582425}
@@ -7782,7 +7782,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833499966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 360, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 640032140}
