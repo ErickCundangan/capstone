@@ -32,21 +32,16 @@ public class ScoringManager_Survival : MonoBehaviour {
         Debug.Log("Tally");
         if (Game4_PlayerController.Instance.isStageClear)
         {
-            if (kills >= 200 && time <= threeStarScore)
-            {
-                stars.sprite = starSprites[2];
-                currentScore = 1;
-            }
-            else if (kills >= 200 && time <= twoStarScore)
-            {
-                stars.sprite = starSprites[1];
-                currentScore = 2;
-            }
-            else if (kills >= 200 && time >= threeStarScore)
-            {
-                stars.sprite = starSprites[0];
-                currentScore = 3;
-            }
+			if (time <= threeStarScore) {
+				stars.sprite = starSprites [0];
+				currentScore = 3;
+			} else if (time <= twoStarScore && time > threeStarScore) {
+				stars.sprite = starSprites [1];
+				currentScore = 2;
+			} else if (time <= oneStarScore && time > twoStarScore) {
+				stars.sprite = starSprites [2];
+				currentScore = 1;
+			}
 
             string sceneName = SceneManager.GetActiveScene().name;
             char[] gameStage = sceneName.Where(char.IsDigit).ToArray();

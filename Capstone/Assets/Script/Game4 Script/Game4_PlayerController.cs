@@ -254,18 +254,15 @@ public class Game4_PlayerController : MonoBehaviour
 
     void ChecIfStageIsClear()
     {
-        if(kills >= 200 )
-        {
-            isStageClear = true;
+        isStageClear = true;
 
-            stageClearPanel.SetActive(true);
-            buttons.SetActive(true);
-            myRigidbody.velocity = Vector2.zero;
-            myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
-            anim.SetBool("PlayerMoving", false);
+        stageClearPanel.SetActive(true);
+        buttons.SetActive(true);
+        myRigidbody.velocity = Vector2.zero;
+        myRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        anim.SetBool("PlayerMoving", false);
 
-            SaveManager.Instance.completeStage(4, 0);
-			SaveManager.Instance.Save (SaveManager.Instance.currentUser);
-        }
+        SaveManager.Instance.completeStage(4, 0);
+		SaveManager.Instance.Save (SaveManager.Instance.currentUser);
     }
 }

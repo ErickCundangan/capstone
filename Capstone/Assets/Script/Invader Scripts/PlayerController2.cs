@@ -12,7 +12,7 @@ public class PlayerController2 : MonoBehaviour {
 	public float fireRate;
 	public float maxBound, minBound;
 	private float nextFire;
-
+	private float nextFire2;
 	public Text timeCounter;
 	public float timeLeft;
 	private float minutes;

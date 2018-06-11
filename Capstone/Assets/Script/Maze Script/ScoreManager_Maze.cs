@@ -31,22 +31,17 @@ public class ScoreManager_Maze : MonoBehaviour {
         time = LoadNewArea.Instance.timeLeft;
 
         if (LoadNewArea.Instance.stageComplete && !flag) {
-            if ( Mathf.Floor(time) <= oneStarScore) //one star
-            {
-                stars.sprite = starSprites[2];
-                currentScore = 1;
-            }
-            else if (Mathf.Floor(time) <= twoStarScore) //two sta
-            {
-                stars.sprite = starSprites[1];
-                currentScore = 2;
-            }
-            else if (Mathf.Floor(time) >= threeStarScore)//three star
-            {
-                stars.sprite = starSprites[0];
-                currentScore = 3;
-            }
-            
+			if (Mathf.Floor(time) >= threeStarScore) {
+				stars.sprite = starSprites [0];
+				currentScore = 3;
+			} else if (Mathf.Floor(time) >= twoStarScore && Mathf.Floor(time) < threeStarScore) {
+				stars.sprite = starSprites [1];
+				currentScore = 2;
+			} else if (Mathf.Floor(time) > oneStarScore && Mathf.Floor(time) < twoStarScore) {
+				stars.sprite = starSprites [2];
+				currentScore = 1;
+			}
+
             string sceneName = SceneManager.GetActiveScene().name;
             char[] gameStage = sceneName.Where(char.IsDigit).ToArray();
 
