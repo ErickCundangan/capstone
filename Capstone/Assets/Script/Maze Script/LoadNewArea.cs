@@ -24,7 +24,7 @@ public class LoadNewArea : MonoBehaviour {
 
     public  Text    counter;
     public  Text    timeCounter;
-
+	public	Slider	timeSlider;
     public bool stageComplete = false;
     Animator anim;
 
@@ -32,12 +32,13 @@ public class LoadNewArea : MonoBehaviour {
 	void Start () {
         Instance = this;
         thePlayer = FindObjectOfType<PlayerController>();
-
         anim = GetComponent<Animator>();
+		timeSlider.maxValue = timeLeft;
     }
 	
 	// Update is called once per frame
 	void Update () {
+		timeSlider.value = timeLeft;
         //Talk to counter
         counter.text = ExitCounter.ToString();
 

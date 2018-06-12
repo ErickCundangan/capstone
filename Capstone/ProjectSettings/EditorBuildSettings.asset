@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scene/Cutscene/Meeting.unity
     guid: b99d9516d2ff78241a65d4c55cf1f740
   - enabled: 1
+    path: Assets/Scene/Cutscene/Finding Game.unity
+    guid: e1abd908ba53afa41be5ab7cd2ab3636
+  - enabled: 1
+    path: Assets/Scene/Cutscene/Finding Game 2.unity
+    guid: 9cb8d390167c91b4f884a58abb34669b
+  - enabled: 1
     path: Assets/Scene/Finding Game/Game1_Stage1.unity
     guid: 514a62de29023f442ab5a6fde1e6972c
   - enabled: 1

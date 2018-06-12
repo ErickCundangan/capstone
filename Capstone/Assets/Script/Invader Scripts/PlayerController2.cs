@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController2 : MonoBehaviour {
 	public static PlayerController2 Instance { set; get; }
@@ -37,7 +38,14 @@ public class PlayerController2 : MonoBehaviour {
 		
 			if (Time.time > nextFire) {
 				nextFire = Time.time + fireRate;
-				Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+
+				if (SceneManager.GetActiveScene ().name.Equals ("Game2_Stage4")) {
+					Instantiate (shot, new Vector3 (shotSpawn.position.x - 0.2f, shotSpawn.position.y, shotSpawn.position.z), shotSpawn.rotation);
+					Instantiate (shot, new Vector3 (shotSpawn.position.x + 0.2f, shotSpawn.position.y, shotSpawn.position.z), shotSpawn.rotation);
+				
+				} else {
+					Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+				}
 			}
 
 			if (playerHealth <= 0) {
