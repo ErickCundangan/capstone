@@ -5244,8 +5244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1261604864}
   moveSpeed: 5
-  minX: -12
-  maxX: 10
+  minX: -16
+  maxX: 14
   minY: 0
   maxY: 25.5
 --- !u!81 &969317527
@@ -7115,8 +7115,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2029829739
-  m_SortingLayer: 1
+  m_SortingLayerID: 495427961
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: e666aca9eb117944ab2267b8f450f9a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8130,7 +8130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Time left < 5 seconds
+  m_Text: Time left < 15 seconds
 --- !u!222 &1382561479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8204,7 +8204,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Time left < 10 seconds
+  m_Text: Time left < 30 seconds
 --- !u!222 &1382949427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11987,7 +11987,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time left \u2265 10 seconds"
+  m_Text: "Time left \u2265 30 seconds"
 --- !u!222 &2005755510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12082,9 +12082,9 @@ RectTransform:
   m_Father: {fileID: 2065905830}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 265}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -95}
   m_SizeDelta: {x: 220, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2040488646
@@ -12343,7 +12343,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 720}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 48

@@ -675,7 +675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Time left < 10 seconds
+  m_Text: Time left < 25 seconds
 --- !u!222 &139361171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -888,8 +888,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1430429245}
   moveSpeed: 5
-  minX: -2
-  maxX: 0
+  minX: -6
+  maxX: 4
   minY: -2
   maxY: 2
 --- !u!114 &203779604
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   - {fileID: 1262889837}
   points:
   - {x: -2.5, y: 3.5}
-  - {x: -7, y: 4.5}
+  - {x: -8, y: 3}
   - {x: 6, y: 0.5}
   - {x: 0.1, y: -1.4}
   - {x: -8, y: -1}
@@ -3719,7 +3719,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789701080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.55, y: 3.55, z: 0}
+  m_LocalPosition: {x: -8.04, y: 2.94, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 1115519728}
@@ -5647,7 +5647,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Time left < 5 seconds
+  m_Text: Time left < 10 seconds
 --- !u!222 &1445483405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6690,9 +6690,9 @@ RectTransform:
   m_Father: {fileID: 1694833150}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 265}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -95}
   m_SizeDelta: {x: 220, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709211468
@@ -6956,7 +6956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time left \u2265 10 seconds"
+  m_Text: "Time left \u2265 25 seconds"
 --- !u!222 &1735151481
 CanvasRenderer:
   m_ObjectHideFlags: 0

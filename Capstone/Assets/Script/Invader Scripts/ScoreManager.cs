@@ -39,11 +39,14 @@ public class ScoreManager : MonoBehaviour {
 	void Update () {
 		runningScore.text = "Score: " + currentScore;
 		if (StageClear.Instance.isStageComplete && !flag) {
+
+			//score tally
+
 			int star = 0;
-			healthScore = PlayerController2.Instance.playerHealth * 200;
-			timeScore = (int) Mathf.Floor (PlayerController2.Instance.timeLeft) * 50;
-			totalScore = currentScore + healthScore + timeScore + bossScore;
-			textScores.text = currentScore + "\n" + bossScore + "\n" + healthScore + "\n" + timeScore + "\n" + totalScore;
+			healthScore = PlayerController2.Instance.playerHealth * 200; //remaining health * score per health
+			timeScore = (int) Mathf.Floor (PlayerController2.Instance.timeLeft) * 50; //round down remaining time * score per time left
+			totalScore = currentScore + healthScore + timeScore + bossScore; //total all the scores;
+			textScores.text = currentScore + "\n" + bossScore + "\n" + healthScore + "\n" + timeScore + "\n" + totalScore; //display score tally
 
 			if (totalScore >= threeStarScore) {
 				stars.sprite = starSprites [0];
